@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.5</TargetFramework>
+    <RootNamespace>V2Ray.Core</RootNamespace>
+    <AssemblyName>V2Ray.SDK</AssemblyName>
+    <PackageId>V2Ray.SDK</PackageId>
+    <Authors>Ian Li</Authors>
+    <Company>Project V</Company>
+    <Product>Project V</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>3.47.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.6.1" />
+    <PackageReference Include="Grpc" Version="1.15.0" />
+  </ItemGroup>
+
+</Project>
