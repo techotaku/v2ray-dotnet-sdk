@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "tool": {
+      "commandName": "Project",
+      "commandLineArgs": "..\\..\\..\\..\\..\\..\\Go ..\\..\\..\\..\\sdk"
+    }
+  }
+}
