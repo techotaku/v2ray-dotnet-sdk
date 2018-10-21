@@ -13,7 +13,7 @@
     <Description>V2Ray .Net Standard SDK</Description>
     <PackageProjectUrl>https://github.com/techotaku/v2ray-dotnet-sdk</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/techotaku/v2ray-dotnet-sdk/master/LICENSE</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/techotaku/v2ray-dotnet-sdk</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
