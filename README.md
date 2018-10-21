@@ -1,6 +1,6 @@
 # V2Ray .Net Standard SDK  
 
-[![nuget](https://img.shields.io/nuget/v/V2Ray.SDK.svg)](https://www.nuget.org/packages/V2Ray.SDK/)  
+[![nuget](https://img.shields.io/nuget/v/v2ray.sdk.svg)](https://www.nuget.org/packages/V2Ray.SDK/)  
 
 A .Net Standard (>=1.5) SDK for [V2Ray](https://github.com/v2ray/v2ray-core/).
 
