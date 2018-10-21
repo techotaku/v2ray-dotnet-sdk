@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sdk", "sdk\sdk.csproj", "{A22F45ED-3C31-45A1-ACDB-F8BA01901DB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sdk", "sdk\sdk.csproj", "{A22F45ED-3C31-45A1-ACDB-F8BA01901DB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tool", "tool\tool.csproj", "{D7E8B890-684C-4CBA-99B8-AAFC1AA78E90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tool", "tool\tool.csproj", "{D7E8B890-684C-4CBA-99B8-AAFC1AA78E90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
