@@ -9,16 +9,17 @@
     <Company>Project V</Company>
     <Product>Project V</Product>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>3.47.0</Version>
+    <Version>4.2.0</Version>
     <Description>V2Ray .Net Standard SDK</Description>
     <PackageProjectUrl>https://github.com/techotaku/v2ray-dotnet-sdk</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/techotaku/v2ray-dotnet-sdk/master/LICENSE</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.6.1" />
-    <PackageReference Include="Grpc" Version="1.15.0" />
+    <PackageReference Include="Grpc" Version="1.16.0" />
   </ItemGroup>
 
 </Project>

@@ -36,21 +36,23 @@ namespace V2Ray.Core.App.Router {
             "KAsyHC52MnJheS5jb3JlLmFwcC5yb3V0ZXIuR2VvSVAiTgoHR2VvU2l0ZRIU",
             "Cgxjb3VudHJ5X2NvZGUYASABKAkSLQoGZG9tYWluGAIgAygLMh0udjJyYXku",
             "Y29yZS5hcHAucm91dGVyLkRvbWFpbiI8CgtHZW9TaXRlTGlzdBItCgVlbnRy",
-            "eRgBIAMoCzIeLnYycmF5LmNvcmUuYXBwLnJvdXRlci5HZW9TaXRlItECCgtS",
+            "eRgBIAMoCzIeLnYycmF5LmNvcmUuYXBwLnJvdXRlci5HZW9TaXRlIroDCgtS",
             "b3V0aW5nUnVsZRILCgN0YWcYASABKAkSLQoGZG9tYWluGAIgAygLMh0udjJy",
-            "YXkuY29yZS5hcHAucm91dGVyLkRvbWFpbhIpCgRjaWRyGAMgAygLMhsudjJy",
-            "YXkuY29yZS5hcHAucm91dGVyLkNJRFISNAoKcG9ydF9yYW5nZRgEIAEoCzIg",
-            "LnYycmF5LmNvcmUuY29tbW9uLm5ldC5Qb3J0UmFuZ2USOAoMbmV0d29ya19s",
-            "aXN0GAUgASgLMiIudjJyYXkuY29yZS5jb21tb24ubmV0Lk5ldHdvcmtMaXN0",
-            "EjAKC3NvdXJjZV9jaWRyGAYgAygLMhsudjJyYXkuY29yZS5hcHAucm91dGVy",
-            "LkNJRFISEgoKdXNlcl9lbWFpbBgHIAMoCRITCgtpbmJvdW5kX3RhZxgIIAMo",
-            "CRIQCghwcm90b2NvbBgJIAMoCSLKAQoGQ29uZmlnEkUKD2RvbWFpbl9zdHJh",
-            "dGVneRgBIAEoDjIsLnYycmF5LmNvcmUuYXBwLnJvdXRlci5Db25maWcuRG9t",
-            "YWluU3RyYXRlZ3kSMAoEcnVsZRgCIAMoCzIiLnYycmF5LmNvcmUuYXBwLnJv",
-            "dXRlci5Sb3V0aW5nUnVsZSJHCg5Eb21haW5TdHJhdGVneRIICgRBc0lzEAAS",
-            "CQoFVXNlSXAQARIQCgxJcElmTm9uTWF0Y2gQAhIOCgpJcE9uRGVtYW5kEANC",
-            "PQoZY29tLnYycmF5LmNvcmUuYXBwLnJvdXRlclABWgZyb3V0ZXKqAhVWMlJh",
-            "eS5Db3JlLkFwcC5Sb3V0ZXJiBnByb3RvMw=="));
+            "YXkuY29yZS5hcHAucm91dGVyLkRvbWFpbhItCgRjaWRyGAMgAygLMhsudjJy",
+            "YXkuY29yZS5hcHAucm91dGVyLkNJRFJCAhgBEisKBWdlb2lwGAogAygLMhwu",
+            "djJyYXkuY29yZS5hcHAucm91dGVyLkdlb0lQEjQKCnBvcnRfcmFuZ2UYBCAB",
+            "KAsyIC52MnJheS5jb3JlLmNvbW1vbi5uZXQuUG9ydFJhbmdlEjgKDG5ldHdv",
+            "cmtfbGlzdBgFIAEoCzIiLnYycmF5LmNvcmUuY29tbW9uLm5ldC5OZXR3b3Jr",
+            "TGlzdBI0Cgtzb3VyY2VfY2lkchgGIAMoCzIbLnYycmF5LmNvcmUuYXBwLnJv",
+            "dXRlci5DSURSQgIYARIyCgxzb3VyY2VfZ2VvaXAYCyADKAsyHC52MnJheS5j",
+            "b3JlLmFwcC5yb3V0ZXIuR2VvSVASEgoKdXNlcl9lbWFpbBgHIAMoCRITCgtp",
+            "bmJvdW5kX3RhZxgIIAMoCRIQCghwcm90b2NvbBgJIAMoCSLKAQoGQ29uZmln",
+            "EkUKD2RvbWFpbl9zdHJhdGVneRgBIAEoDjIsLnYycmF5LmNvcmUuYXBwLnJv",
+            "dXRlci5Db25maWcuRG9tYWluU3RyYXRlZ3kSMAoEcnVsZRgCIAMoCzIiLnYy",
+            "cmF5LmNvcmUuYXBwLnJvdXRlci5Sb3V0aW5nUnVsZSJHCg5Eb21haW5TdHJh",
+            "dGVneRIICgRBc0lzEAASCQoFVXNlSXAQARIQCgxJcElmTm9uTWF0Y2gQAhIO",
+            "CgpJcE9uRGVtYW5kEANCPQoZY29tLnYycmF5LmNvcmUuYXBwLnJvdXRlclAB",
+            "WgZyb3V0ZXKqAhVWMlJheS5Db3JlLkFwcC5Sb3V0ZXJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.PortReflection.Descriptor, global::V2Ray.Core.Common.Net.NetworkReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -60,7 +62,7 @@ namespace V2Ray.Core.App.Router {
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoIPList), global::V2Ray.Core.App.Router.GeoIPList.Parser, new[]{ "Entry" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoSite), global::V2Ray.Core.App.Router.GeoSite.Parser, new[]{ "CountryCode", "Domain" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoSiteList), global::V2Ray.Core.App.Router.GeoSiteList.Parser, new[]{ "Entry" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.RoutingRule), global::V2Ray.Core.App.Router.RoutingRule.Parser, new[]{ "Tag", "Domain", "Cidr", "PortRange", "NetworkList", "SourceCidr", "UserEmail", "InboundTag", "Protocol" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.RoutingRule), global::V2Ray.Core.App.Router.RoutingRule.Parser, new[]{ "Tag", "Domain", "Cidr", "Geoip", "PortRange", "NetworkList", "SourceCidr", "SourceGeoip", "UserEmail", "InboundTag", "Protocol" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Config), global::V2Ray.Core.App.Router.Config.Parser, new[]{ "DomainStrategy", "Rule" }, null, new[]{ typeof(global::V2Ray.Core.App.Router.Config.Types.DomainStrategy) }, null)
           }));
     }
@@ -997,9 +999,11 @@ namespace V2Ray.Core.App.Router {
       tag_ = other.tag_;
       domain_ = other.domain_.Clone();
       cidr_ = other.cidr_.Clone();
+      geoip_ = other.geoip_.Clone();
       portRange_ = other.portRange_ != null ? other.portRange_.Clone() : null;
       networkList_ = other.networkList_ != null ? other.networkList_.Clone() : null;
       sourceCidr_ = other.sourceCidr_.Clone();
+      sourceGeoip_ = other.sourceGeoip_.Clone();
       userEmail_ = other.userEmail_.Clone();
       inboundTag_ = other.inboundTag_.Clone();
       protocol_ = other.protocol_.Clone();
@@ -1014,6 +1018,9 @@ namespace V2Ray.Core.App.Router {
     /// <summary>Field number for the "tag" field.</summary>
     public const int TagFieldNumber = 1;
     private string tag_ = "";
+    /// <summary>
+    /// Tag of outbound that this rule is pointing to.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Tag {
       get { return tag_; }
@@ -1027,6 +1034,9 @@ namespace V2Ray.Core.App.Router {
     private static readonly pb::FieldCodec<global::V2Ray.Core.App.Router.Domain> _repeated_domain_codec
         = pb::FieldCodec.ForMessage(18, global::V2Ray.Core.App.Router.Domain.Parser);
     private readonly pbc::RepeatedField<global::V2Ray.Core.App.Router.Domain> domain_ = new pbc::RepeatedField<global::V2Ray.Core.App.Router.Domain>();
+    /// <summary>
+    /// List of domains for target domain matching.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::V2Ray.Core.App.Router.Domain> Domain {
       get { return domain_; }
@@ -1037,9 +1047,29 @@ namespace V2Ray.Core.App.Router {
     private static readonly pb::FieldCodec<global::V2Ray.Core.App.Router.CIDR> _repeated_cidr_codec
         = pb::FieldCodec.ForMessage(26, global::V2Ray.Core.App.Router.CIDR.Parser);
     private readonly pbc::RepeatedField<global::V2Ray.Core.App.Router.CIDR> cidr_ = new pbc::RepeatedField<global::V2Ray.Core.App.Router.CIDR>();
+    /// <summary>
+    /// List of CIDRs for target IP address matching.
+    /// The list must be sorted beforehand.
+    /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::V2Ray.Core.App.Router.CIDR> Cidr {
       get { return cidr_; }
+    }
+
+    /// <summary>Field number for the "geoip" field.</summary>
+    public const int GeoipFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::V2Ray.Core.App.Router.GeoIP> _repeated_geoip_codec
+        = pb::FieldCodec.ForMessage(82, global::V2Ray.Core.App.Router.GeoIP.Parser);
+    private readonly pbc::RepeatedField<global::V2Ray.Core.App.Router.GeoIP> geoip_ = new pbc::RepeatedField<global::V2Ray.Core.App.Router.GeoIP>();
+    /// <summary>
+    /// List of GeoIPs for target IP address matching. If this entry exists, the cidr above will have no effect.
+    /// GeoIP fields with the same country code are supposed to contain exactly same content. They will be merged during runtime.
+    /// For customized GeoIPs, please leave country code empty.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::V2Ray.Core.App.Router.GeoIP> Geoip {
+      get { return geoip_; }
     }
 
     /// <summary>Field number for the "port_range" field.</summary>
@@ -1069,9 +1099,26 @@ namespace V2Ray.Core.App.Router {
     private static readonly pb::FieldCodec<global::V2Ray.Core.App.Router.CIDR> _repeated_sourceCidr_codec
         = pb::FieldCodec.ForMessage(50, global::V2Ray.Core.App.Router.CIDR.Parser);
     private readonly pbc::RepeatedField<global::V2Ray.Core.App.Router.CIDR> sourceCidr_ = new pbc::RepeatedField<global::V2Ray.Core.App.Router.CIDR>();
+    /// <summary>
+    /// List of CIDRs for source IP address matching.
+    /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::V2Ray.Core.App.Router.CIDR> SourceCidr {
       get { return sourceCidr_; }
+    }
+
+    /// <summary>Field number for the "source_geoip" field.</summary>
+    public const int SourceGeoipFieldNumber = 11;
+    private static readonly pb::FieldCodec<global::V2Ray.Core.App.Router.GeoIP> _repeated_sourceGeoip_codec
+        = pb::FieldCodec.ForMessage(90, global::V2Ray.Core.App.Router.GeoIP.Parser);
+    private readonly pbc::RepeatedField<global::V2Ray.Core.App.Router.GeoIP> sourceGeoip_ = new pbc::RepeatedField<global::V2Ray.Core.App.Router.GeoIP>();
+    /// <summary>
+    /// List of GeoIPs for source IP address matching. If this entry exists, the source_cidr above will have no effect.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::V2Ray.Core.App.Router.GeoIP> SourceGeoip {
+      get { return sourceGeoip_; }
     }
 
     /// <summary>Field number for the "user_email" field.</summary>
@@ -1120,9 +1167,11 @@ namespace V2Ray.Core.App.Router {
       if (Tag != other.Tag) return false;
       if(!domain_.Equals(other.domain_)) return false;
       if(!cidr_.Equals(other.cidr_)) return false;
+      if(!geoip_.Equals(other.geoip_)) return false;
       if (!object.Equals(PortRange, other.PortRange)) return false;
       if (!object.Equals(NetworkList, other.NetworkList)) return false;
       if(!sourceCidr_.Equals(other.sourceCidr_)) return false;
+      if(!sourceGeoip_.Equals(other.sourceGeoip_)) return false;
       if(!userEmail_.Equals(other.userEmail_)) return false;
       if(!inboundTag_.Equals(other.inboundTag_)) return false;
       if(!protocol_.Equals(other.protocol_)) return false;
@@ -1135,9 +1184,11 @@ namespace V2Ray.Core.App.Router {
       if (Tag.Length != 0) hash ^= Tag.GetHashCode();
       hash ^= domain_.GetHashCode();
       hash ^= cidr_.GetHashCode();
+      hash ^= geoip_.GetHashCode();
       if (portRange_ != null) hash ^= PortRange.GetHashCode();
       if (networkList_ != null) hash ^= NetworkList.GetHashCode();
       hash ^= sourceCidr_.GetHashCode();
+      hash ^= sourceGeoip_.GetHashCode();
       hash ^= userEmail_.GetHashCode();
       hash ^= inboundTag_.GetHashCode();
       hash ^= protocol_.GetHashCode();
@@ -1172,6 +1223,8 @@ namespace V2Ray.Core.App.Router {
       userEmail_.WriteTo(output, _repeated_userEmail_codec);
       inboundTag_.WriteTo(output, _repeated_inboundTag_codec);
       protocol_.WriteTo(output, _repeated_protocol_codec);
+      geoip_.WriteTo(output, _repeated_geoip_codec);
+      sourceGeoip_.WriteTo(output, _repeated_sourceGeoip_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1185,6 +1238,7 @@ namespace V2Ray.Core.App.Router {
       }
       size += domain_.CalculateSize(_repeated_domain_codec);
       size += cidr_.CalculateSize(_repeated_cidr_codec);
+      size += geoip_.CalculateSize(_repeated_geoip_codec);
       if (portRange_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PortRange);
       }
@@ -1192,6 +1246,7 @@ namespace V2Ray.Core.App.Router {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(NetworkList);
       }
       size += sourceCidr_.CalculateSize(_repeated_sourceCidr_codec);
+      size += sourceGeoip_.CalculateSize(_repeated_sourceGeoip_codec);
       size += userEmail_.CalculateSize(_repeated_userEmail_codec);
       size += inboundTag_.CalculateSize(_repeated_inboundTag_codec);
       size += protocol_.CalculateSize(_repeated_protocol_codec);
@@ -1211,6 +1266,7 @@ namespace V2Ray.Core.App.Router {
       }
       domain_.Add(other.domain_);
       cidr_.Add(other.cidr_);
+      geoip_.Add(other.geoip_);
       if (other.portRange_ != null) {
         if (portRange_ == null) {
           portRange_ = new global::V2Ray.Core.Common.Net.PortRange();
@@ -1224,6 +1280,7 @@ namespace V2Ray.Core.App.Router {
         NetworkList.MergeFrom(other.NetworkList);
       }
       sourceCidr_.Add(other.sourceCidr_);
+      sourceGeoip_.Add(other.sourceGeoip_);
       userEmail_.Add(other.userEmail_);
       inboundTag_.Add(other.inboundTag_);
       protocol_.Add(other.protocol_);
@@ -1278,6 +1335,14 @@ namespace V2Ray.Core.App.Router {
           }
           case 74: {
             protocol_.AddEntriesFrom(input, _repeated_protocol_codec);
+            break;
+          }
+          case 82: {
+            geoip_.AddEntriesFrom(input, _repeated_geoip_codec);
+            break;
+          }
+          case 90: {
+            sourceGeoip_.AddEntriesFrom(input, _repeated_sourceGeoip_codec);
             break;
           }
         }
