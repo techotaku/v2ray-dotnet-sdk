@@ -46,7 +46,7 @@ namespace V2Ray.SDK.Tool
                     }
                     startInfo.Arguments += $" {proto}";
                     process.StartInfo = startInfo;
-                    Console.Write($"Generating {proto}...");
+                    Console.Write($"Generating for {proto}...");
                     process.Start();
                     process.WaitForExit(1000);
                     if (process.ExitCode == 0)
