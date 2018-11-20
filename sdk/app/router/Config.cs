@@ -36,23 +36,27 @@ namespace V2Ray.Core.App.Router {
             "KAsyHC52MnJheS5jb3JlLmFwcC5yb3V0ZXIuR2VvSVAiTgoHR2VvU2l0ZRIU",
             "Cgxjb3VudHJ5X2NvZGUYASABKAkSLQoGZG9tYWluGAIgAygLMh0udjJyYXku",
             "Y29yZS5hcHAucm91dGVyLkRvbWFpbiI8CgtHZW9TaXRlTGlzdBItCgVlbnRy",
-            "eRgBIAMoCzIeLnYycmF5LmNvcmUuYXBwLnJvdXRlci5HZW9TaXRlIroDCgtS",
-            "b3V0aW5nUnVsZRILCgN0YWcYASABKAkSLQoGZG9tYWluGAIgAygLMh0udjJy",
-            "YXkuY29yZS5hcHAucm91dGVyLkRvbWFpbhItCgRjaWRyGAMgAygLMhsudjJy",
-            "YXkuY29yZS5hcHAucm91dGVyLkNJRFJCAhgBEisKBWdlb2lwGAogAygLMhwu",
-            "djJyYXkuY29yZS5hcHAucm91dGVyLkdlb0lQEjQKCnBvcnRfcmFuZ2UYBCAB",
-            "KAsyIC52MnJheS5jb3JlLmNvbW1vbi5uZXQuUG9ydFJhbmdlEjgKDG5ldHdv",
-            "cmtfbGlzdBgFIAEoCzIiLnYycmF5LmNvcmUuY29tbW9uLm5ldC5OZXR3b3Jr",
-            "TGlzdBI0Cgtzb3VyY2VfY2lkchgGIAMoCzIbLnYycmF5LmNvcmUuYXBwLnJv",
-            "dXRlci5DSURSQgIYARIyCgxzb3VyY2VfZ2VvaXAYCyADKAsyHC52MnJheS5j",
-            "b3JlLmFwcC5yb3V0ZXIuR2VvSVASEgoKdXNlcl9lbWFpbBgHIAMoCRITCgtp",
-            "bmJvdW5kX3RhZxgIIAMoCRIQCghwcm90b2NvbBgJIAMoCSLKAQoGQ29uZmln",
-            "EkUKD2RvbWFpbl9zdHJhdGVneRgBIAEoDjIsLnYycmF5LmNvcmUuYXBwLnJv",
-            "dXRlci5Db25maWcuRG9tYWluU3RyYXRlZ3kSMAoEcnVsZRgCIAMoCzIiLnYy",
-            "cmF5LmNvcmUuYXBwLnJvdXRlci5Sb3V0aW5nUnVsZSJHCg5Eb21haW5TdHJh",
-            "dGVneRIICgRBc0lzEAASCQoFVXNlSXAQARIQCgxJcElmTm9uTWF0Y2gQAhIO",
-            "CgpJcE9uRGVtYW5kEANCPQoZY29tLnYycmF5LmNvcmUuYXBwLnJvdXRlclAB",
-            "WgZyb3V0ZXKqAhVWMlJheS5Db3JlLkFwcC5Sb3V0ZXJiBnByb3RvMw=="));
+            "eRgBIAMoCzIeLnYycmF5LmNvcmUuYXBwLnJvdXRlci5HZW9TaXRlIuMDCgtS",
+            "b3V0aW5nUnVsZRINCgN0YWcYASABKAlIABIXCg1iYWxhbmNpbmdfdGFnGAwg",
+            "ASgJSAASLQoGZG9tYWluGAIgAygLMh0udjJyYXkuY29yZS5hcHAucm91dGVy",
+            "LkRvbWFpbhItCgRjaWRyGAMgAygLMhsudjJyYXkuY29yZS5hcHAucm91dGVy",
+            "LkNJRFJCAhgBEisKBWdlb2lwGAogAygLMhwudjJyYXkuY29yZS5hcHAucm91",
+            "dGVyLkdlb0lQEjQKCnBvcnRfcmFuZ2UYBCABKAsyIC52MnJheS5jb3JlLmNv",
+            "bW1vbi5uZXQuUG9ydFJhbmdlEjgKDG5ldHdvcmtfbGlzdBgFIAEoCzIiLnYy",
+            "cmF5LmNvcmUuY29tbW9uLm5ldC5OZXR3b3JrTGlzdBI0Cgtzb3VyY2VfY2lk",
+            "chgGIAMoCzIbLnYycmF5LmNvcmUuYXBwLnJvdXRlci5DSURSQgIYARIyCgxz",
+            "b3VyY2VfZ2VvaXAYCyADKAsyHC52MnJheS5jb3JlLmFwcC5yb3V0ZXIuR2Vv",
+            "SVASEgoKdXNlcl9lbWFpbBgHIAMoCRITCgtpbmJvdW5kX3RhZxgIIAMoCRIQ",
+            "Cghwcm90b2NvbBgJIAMoCUIMCgp0YXJnZXRfdGFnIjcKDUJhbGFuY2luZ1J1",
+            "bGUSCwoDdGFnGAEgASgJEhkKEW91dGJvdW5kX3NlbGVjdG9yGAIgAygJIogC",
+            "CgZDb25maWcSRQoPZG9tYWluX3N0cmF0ZWd5GAEgASgOMiwudjJyYXkuY29y",
+            "ZS5hcHAucm91dGVyLkNvbmZpZy5Eb21haW5TdHJhdGVneRIwCgRydWxlGAIg",
+            "AygLMiIudjJyYXkuY29yZS5hcHAucm91dGVyLlJvdXRpbmdSdWxlEjwKDmJh",
+            "bGFuY2luZ19ydWxlGAMgAygLMiQudjJyYXkuY29yZS5hcHAucm91dGVyLkJh",
+            "bGFuY2luZ1J1bGUiRwoORG9tYWluU3RyYXRlZ3kSCAoEQXNJcxAAEgkKBVVz",
+            "ZUlwEAESEAoMSXBJZk5vbk1hdGNoEAISDgoKSXBPbkRlbWFuZBADQj0KGWNv",
+            "bS52MnJheS5jb3JlLmFwcC5yb3V0ZXJQAVoGcm91dGVyqgIVVjJSYXkuQ29y",
+            "ZS5BcHAuUm91dGVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.PortReflection.Descriptor, global::V2Ray.Core.Common.Net.NetworkReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -62,8 +66,9 @@ namespace V2Ray.Core.App.Router {
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoIPList), global::V2Ray.Core.App.Router.GeoIPList.Parser, new[]{ "Entry" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoSite), global::V2Ray.Core.App.Router.GeoSite.Parser, new[]{ "CountryCode", "Domain" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoSiteList), global::V2Ray.Core.App.Router.GeoSiteList.Parser, new[]{ "Entry" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.RoutingRule), global::V2Ray.Core.App.Router.RoutingRule.Parser, new[]{ "Tag", "Domain", "Cidr", "Geoip", "PortRange", "NetworkList", "SourceCidr", "SourceGeoip", "UserEmail", "InboundTag", "Protocol" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Config), global::V2Ray.Core.App.Router.Config.Parser, new[]{ "DomainStrategy", "Rule" }, null, new[]{ typeof(global::V2Ray.Core.App.Router.Config.Types.DomainStrategy) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.RoutingRule), global::V2Ray.Core.App.Router.RoutingRule.Parser, new[]{ "Tag", "BalancingTag", "Domain", "Cidr", "Geoip", "PortRange", "NetworkList", "SourceCidr", "SourceGeoip", "UserEmail", "InboundTag", "Protocol" }, new[]{ "TargetTag" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.BalancingRule), global::V2Ray.Core.App.Router.BalancingRule.Parser, new[]{ "Tag", "OutboundSelector" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Config), global::V2Ray.Core.App.Router.Config.Parser, new[]{ "DomainStrategy", "Rule", "BalancingRule" }, null, new[]{ typeof(global::V2Ray.Core.App.Router.Config.Types.DomainStrategy) }, null)
           }));
     }
     #endregion
@@ -996,7 +1001,6 @@ namespace V2Ray.Core.App.Router {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RoutingRule(RoutingRule other) : this() {
-      tag_ = other.tag_;
       domain_ = other.domain_.Clone();
       cidr_ = other.cidr_.Clone();
       geoip_ = other.geoip_.Clone();
@@ -1007,6 +1011,15 @@ namespace V2Ray.Core.App.Router {
       userEmail_ = other.userEmail_.Clone();
       inboundTag_ = other.inboundTag_.Clone();
       protocol_ = other.protocol_.Clone();
+      switch (other.TargetTagCase) {
+        case TargetTagOneofCase.Tag:
+          Tag = other.Tag;
+          break;
+        case TargetTagOneofCase.BalancingTag:
+          BalancingTag = other.BalancingTag;
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1017,15 +1030,29 @@ namespace V2Ray.Core.App.Router {
 
     /// <summary>Field number for the "tag" field.</summary>
     public const int TagFieldNumber = 1;
-    private string tag_ = "";
     /// <summary>
     /// Tag of outbound that this rule is pointing to.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Tag {
-      get { return tag_; }
+      get { return targetTagCase_ == TargetTagOneofCase.Tag ? (string) targetTag_ : ""; }
       set {
-        tag_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        targetTag_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        targetTagCase_ = TargetTagOneofCase.Tag;
+      }
+    }
+
+    /// <summary>Field number for the "balancing_tag" field.</summary>
+    public const int BalancingTagFieldNumber = 12;
+    /// <summary>
+    /// Tag of routing balancer.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string BalancingTag {
+      get { return targetTagCase_ == TargetTagOneofCase.BalancingTag ? (string) targetTag_ : ""; }
+      set {
+        targetTag_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        targetTagCase_ = TargetTagOneofCase.BalancingTag;
       }
     }
 
@@ -1151,6 +1178,25 @@ namespace V2Ray.Core.App.Router {
       get { return protocol_; }
     }
 
+    private object targetTag_;
+    /// <summary>Enum of possible cases for the "target_tag" oneof.</summary>
+    public enum TargetTagOneofCase {
+      None = 0,
+      Tag = 1,
+      BalancingTag = 12,
+    }
+    private TargetTagOneofCase targetTagCase_ = TargetTagOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TargetTagOneofCase TargetTagCase {
+      get { return targetTagCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearTargetTag() {
+      targetTagCase_ = TargetTagOneofCase.None;
+      targetTag_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RoutingRule);
@@ -1165,6 +1211,7 @@ namespace V2Ray.Core.App.Router {
         return true;
       }
       if (Tag != other.Tag) return false;
+      if (BalancingTag != other.BalancingTag) return false;
       if(!domain_.Equals(other.domain_)) return false;
       if(!cidr_.Equals(other.cidr_)) return false;
       if(!geoip_.Equals(other.geoip_)) return false;
@@ -1175,13 +1222,15 @@ namespace V2Ray.Core.App.Router {
       if(!userEmail_.Equals(other.userEmail_)) return false;
       if(!inboundTag_.Equals(other.inboundTag_)) return false;
       if(!protocol_.Equals(other.protocol_)) return false;
+      if (TargetTagCase != other.TargetTagCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Tag.Length != 0) hash ^= Tag.GetHashCode();
+      if (targetTagCase_ == TargetTagOneofCase.Tag) hash ^= Tag.GetHashCode();
+      if (targetTagCase_ == TargetTagOneofCase.BalancingTag) hash ^= BalancingTag.GetHashCode();
       hash ^= domain_.GetHashCode();
       hash ^= cidr_.GetHashCode();
       hash ^= geoip_.GetHashCode();
@@ -1192,6 +1241,7 @@ namespace V2Ray.Core.App.Router {
       hash ^= userEmail_.GetHashCode();
       hash ^= inboundTag_.GetHashCode();
       hash ^= protocol_.GetHashCode();
+      hash ^= (int) targetTagCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1205,7 +1255,7 @@ namespace V2Ray.Core.App.Router {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Tag.Length != 0) {
+      if (targetTagCase_ == TargetTagOneofCase.Tag) {
         output.WriteRawTag(10);
         output.WriteString(Tag);
       }
@@ -1225,6 +1275,10 @@ namespace V2Ray.Core.App.Router {
       protocol_.WriteTo(output, _repeated_protocol_codec);
       geoip_.WriteTo(output, _repeated_geoip_codec);
       sourceGeoip_.WriteTo(output, _repeated_sourceGeoip_codec);
+      if (targetTagCase_ == TargetTagOneofCase.BalancingTag) {
+        output.WriteRawTag(98);
+        output.WriteString(BalancingTag);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1233,8 +1287,11 @@ namespace V2Ray.Core.App.Router {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Tag.Length != 0) {
+      if (targetTagCase_ == TargetTagOneofCase.Tag) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Tag);
+      }
+      if (targetTagCase_ == TargetTagOneofCase.BalancingTag) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BalancingTag);
       }
       size += domain_.CalculateSize(_repeated_domain_codec);
       size += cidr_.CalculateSize(_repeated_cidr_codec);
@@ -1261,9 +1318,6 @@ namespace V2Ray.Core.App.Router {
       if (other == null) {
         return;
       }
-      if (other.Tag.Length != 0) {
-        Tag = other.Tag;
-      }
       domain_.Add(other.domain_);
       cidr_.Add(other.cidr_);
       geoip_.Add(other.geoip_);
@@ -1284,6 +1338,15 @@ namespace V2Ray.Core.App.Router {
       userEmail_.Add(other.userEmail_);
       inboundTag_.Add(other.inboundTag_);
       protocol_.Add(other.protocol_);
+      switch (other.TargetTagCase) {
+        case TargetTagOneofCase.Tag:
+          Tag = other.Tag;
+          break;
+        case TargetTagOneofCase.BalancingTag:
+          BalancingTag = other.BalancingTag;
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1345,6 +1408,159 @@ namespace V2Ray.Core.App.Router {
             sourceGeoip_.AddEntriesFrom(input, _repeated_sourceGeoip_codec);
             break;
           }
+          case 98: {
+            BalancingTag = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class BalancingRule : pb::IMessage<BalancingRule> {
+    private static readonly pb::MessageParser<BalancingRule> _parser = new pb::MessageParser<BalancingRule>(() => new BalancingRule());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<BalancingRule> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::V2Ray.Core.App.Router.ConfigReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BalancingRule() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BalancingRule(BalancingRule other) : this() {
+      tag_ = other.tag_;
+      outboundSelector_ = other.outboundSelector_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BalancingRule Clone() {
+      return new BalancingRule(this);
+    }
+
+    /// <summary>Field number for the "tag" field.</summary>
+    public const int TagFieldNumber = 1;
+    private string tag_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Tag {
+      get { return tag_; }
+      set {
+        tag_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "outbound_selector" field.</summary>
+    public const int OutboundSelectorFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_outboundSelector_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> outboundSelector_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> OutboundSelector {
+      get { return outboundSelector_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as BalancingRule);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(BalancingRule other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Tag != other.Tag) return false;
+      if(!outboundSelector_.Equals(other.outboundSelector_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Tag.Length != 0) hash ^= Tag.GetHashCode();
+      hash ^= outboundSelector_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Tag.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Tag);
+      }
+      outboundSelector_.WriteTo(output, _repeated_outboundSelector_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Tag.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Tag);
+      }
+      size += outboundSelector_.CalculateSize(_repeated_outboundSelector_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(BalancingRule other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Tag.Length != 0) {
+        Tag = other.Tag;
+      }
+      outboundSelector_.Add(other.outboundSelector_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Tag = input.ReadString();
+            break;
+          }
+          case 18: {
+            outboundSelector_.AddEntriesFrom(input, _repeated_outboundSelector_codec);
+            break;
+          }
         }
       }
     }
@@ -1359,7 +1575,7 @@ namespace V2Ray.Core.App.Router {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::V2Ray.Core.App.Router.ConfigReflection.Descriptor.MessageTypes[7]; }
+      get { return global::V2Ray.Core.App.Router.ConfigReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1378,6 +1594,7 @@ namespace V2Ray.Core.App.Router {
     public Config(Config other) : this() {
       domainStrategy_ = other.domainStrategy_;
       rule_ = other.rule_.Clone();
+      balancingRule_ = other.balancingRule_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1407,6 +1624,16 @@ namespace V2Ray.Core.App.Router {
       get { return rule_; }
     }
 
+    /// <summary>Field number for the "balancing_rule" field.</summary>
+    public const int BalancingRuleFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::V2Ray.Core.App.Router.BalancingRule> _repeated_balancingRule_codec
+        = pb::FieldCodec.ForMessage(26, global::V2Ray.Core.App.Router.BalancingRule.Parser);
+    private readonly pbc::RepeatedField<global::V2Ray.Core.App.Router.BalancingRule> balancingRule_ = new pbc::RepeatedField<global::V2Ray.Core.App.Router.BalancingRule>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::V2Ray.Core.App.Router.BalancingRule> BalancingRule {
+      get { return balancingRule_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Config);
@@ -1422,6 +1649,7 @@ namespace V2Ray.Core.App.Router {
       }
       if (DomainStrategy != other.DomainStrategy) return false;
       if(!rule_.Equals(other.rule_)) return false;
+      if(!balancingRule_.Equals(other.balancingRule_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1430,6 +1658,7 @@ namespace V2Ray.Core.App.Router {
       int hash = 1;
       if (DomainStrategy != 0) hash ^= DomainStrategy.GetHashCode();
       hash ^= rule_.GetHashCode();
+      hash ^= balancingRule_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1448,6 +1677,7 @@ namespace V2Ray.Core.App.Router {
         output.WriteEnum((int) DomainStrategy);
       }
       rule_.WriteTo(output, _repeated_rule_codec);
+      balancingRule_.WriteTo(output, _repeated_balancingRule_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1460,6 +1690,7 @@ namespace V2Ray.Core.App.Router {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DomainStrategy);
       }
       size += rule_.CalculateSize(_repeated_rule_codec);
+      size += balancingRule_.CalculateSize(_repeated_balancingRule_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1475,6 +1706,7 @@ namespace V2Ray.Core.App.Router {
         DomainStrategy = other.DomainStrategy;
       }
       rule_.Add(other.rule_);
+      balancingRule_.Add(other.balancingRule_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1492,6 +1724,10 @@ namespace V2Ray.Core.App.Router {
           }
           case 18: {
             rule_.AddEntriesFrom(input, _repeated_rule_codec);
+            break;
+          }
+          case 26: {
+            balancingRule_.AddEntriesFrom(input, _repeated_balancingRule_codec);
             break;
           }
         }

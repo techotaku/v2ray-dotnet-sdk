@@ -28,14 +28,15 @@ namespace V2Ray.Core.Proxy.Freedom {
             "djJyYXkuY29yZS5wcm94eS5mcmVlZG9tGjB2MnJheS5jb20vY29yZS9jb21t",
             "b24vcHJvdG9jb2wvc2VydmVyX3NwZWMucHJvdG8iUQoTRGVzdGluYXRpb25P",
             "dmVycmlkZRI6CgZzZXJ2ZXIYASABKAsyKi52MnJheS5jb3JlLmNvbW1vbi5w",
-            "cm90b2NvbC5TZXJ2ZXJFbmRwb2ludCLxAQoGQ29uZmlnEkgKD2RvbWFpbl9z",
+            "cm90b2NvbC5TZXJ2ZXJFbmRwb2ludCKLAgoGQ29uZmlnEkgKD2RvbWFpbl9z",
             "dHJhdGVneRgBIAEoDjIvLnYycmF5LmNvcmUucHJveHkuZnJlZWRvbS5Db25m",
             "aWcuRG9tYWluU3RyYXRlZ3kSEwoHdGltZW91dBgCIAEoDUICGAESSwoUZGVz",
             "dGluYXRpb25fb3ZlcnJpZGUYAyABKAsyLS52MnJheS5jb3JlLnByb3h5LmZy",
             "ZWVkb20uRGVzdGluYXRpb25PdmVycmlkZRISCgp1c2VyX2xldmVsGAQgASgN",
-            "IicKDkRvbWFpblN0cmF0ZWd5EgkKBUFTX0lTEAASCgoGVVNFX0lQEAFCRAoc",
-            "Y29tLnYycmF5LmNvcmUucHJveHkuZnJlZWRvbVABWgdmcmVlZG9tqgIYVjJS",
-            "YXkuQ29yZS5Qcm94eS5GcmVlZG9tYgZwcm90bzM="));
+            "IkEKDkRvbWFpblN0cmF0ZWd5EgkKBUFTX0lTEAASCgoGVVNFX0lQEAESCwoH",
+            "VVNFX0lQNBACEgsKB1VTRV9JUDYQA0JEChxjb20udjJyYXkuY29yZS5wcm94",
+            "eS5mcmVlZG9tUAFaB2ZyZWVkb22qAhhWMlJheS5Db3JlLlByb3h5LkZyZWVk",
+            "b21iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Protocol.ServerSpecReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -407,6 +408,8 @@ namespace V2Ray.Core.Proxy.Freedom {
       public enum DomainStrategy {
         [pbr::OriginalName("AS_IS")] AsIs = 0,
         [pbr::OriginalName("USE_IP")] UseIp = 1,
+        [pbr::OriginalName("USE_IP4")] UseIp4 = 2,
+        [pbr::OriginalName("USE_IP6")] UseIp6 = 3,
       }
 
     }
