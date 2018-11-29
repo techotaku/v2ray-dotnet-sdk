@@ -39,25 +39,26 @@ namespace V2Ray.Core.Transport.Internet {
             "MnJheS5jb3JlLmNvbW1vbi5zZXJpYWwuVHlwZWRNZXNzYWdlEkQKD3NvY2tl",
             "dF9zZXR0aW5ncxgGIAEoCzIrLnYycmF5LmNvcmUudHJhbnNwb3J0LmludGVy",
             "bmV0LlNvY2tldENvbmZpZyIaCgtQcm94eUNvbmZpZxILCgN0YWcYASABKAki",
-            "vgIKDFNvY2tldENvbmZpZxIMCgRtYXJrGAEgASgFEkkKA3RmbxgCIAEoDjI8",
+            "5wIKDFNvY2tldENvbmZpZxIMCgRtYXJrGAEgASgFEkkKA3RmbxgCIAEoDjI8",
             "LnYycmF5LmNvcmUudHJhbnNwb3J0LmludGVybmV0LlNvY2tldENvbmZpZy5U",
             "Q1BGYXN0T3BlblN0YXRlEkYKBnRwcm94eRgDIAEoDjI2LnYycmF5LmNvcmUu",
             "dHJhbnNwb3J0LmludGVybmV0LlNvY2tldENvbmZpZy5UUHJveHlNb2RlEiUK",
-            "HXJlY2VpdmVfb3JpZ2luYWxfZGVzdF9hZGRyZXNzGAQgASgIIjUKEFRDUEZh",
-            "c3RPcGVuU3RhdGUSCAoEQXNJcxAAEgoKBkVuYWJsZRABEgsKB0Rpc2FibGUQ",
-            "AiIvCgpUUHJveHlNb2RlEgcKA09mZhAAEgoKBlRQcm94eRABEgwKCFJlZGly",
-            "ZWN0EAIqWgoRVHJhbnNwb3J0UHJvdG9jb2wSBwoDVENQEAASBwoDVURQEAES",
-            "CAoETUtDUBACEg0KCVdlYlNvY2tldBADEggKBEhUVFAQBBIQCgxEb21haW5T",
-            "b2NrZXQQBUJPCiFjb20udjJyYXkuY29yZS50cmFuc3BvcnQuaW50ZXJuZXRQ",
-            "AVoIaW50ZXJuZXSqAh1WMlJheS5Db3JlLlRyYW5zcG9ydC5JbnRlcm5ldGIG",
-            "cHJvdG8z"));
+            "HXJlY2VpdmVfb3JpZ2luYWxfZGVzdF9hZGRyZXNzGAQgASgIEhQKDGJpbmRf",
+            "YWRkcmVzcxgFIAEoDBIRCgliaW5kX3BvcnQYBiABKA0iNQoQVENQRmFzdE9w",
+            "ZW5TdGF0ZRIICgRBc0lzEAASCgoGRW5hYmxlEAESCwoHRGlzYWJsZRACIi8K",
+            "ClRQcm94eU1vZGUSBwoDT2ZmEAASCgoGVFByb3h5EAESDAoIUmVkaXJlY3QQ",
+            "AipaChFUcmFuc3BvcnRQcm90b2NvbBIHCgNUQ1AQABIHCgNVRFAQARIICgRN",
+            "S0NQEAISDQoJV2ViU29ja2V0EAMSCAoESFRUUBAEEhAKDERvbWFpblNvY2tl",
+            "dBAFQk8KIWNvbS52MnJheS5jb3JlLnRyYW5zcG9ydC5pbnRlcm5ldFABWghp",
+            "bnRlcm5ldKoCHVYyUmF5LkNvcmUuVHJhbnNwb3J0LkludGVybmV0YgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.Transport.Internet.TransportProtocol), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.TransportConfig), global::V2Ray.Core.Transport.Internet.TransportConfig.Parser, new[]{ "Protocol", "ProtocolName", "Settings" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.StreamConfig), global::V2Ray.Core.Transport.Internet.StreamConfig.Parser, new[]{ "Protocol", "ProtocolName", "TransportSettings", "SecurityType", "SecuritySettings", "SocketSettings" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.ProxyConfig), global::V2Ray.Core.Transport.Internet.ProxyConfig.Parser, new[]{ "Tag" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.SocketConfig), global::V2Ray.Core.Transport.Internet.SocketConfig.Parser, new[]{ "Mark", "Tfo", "Tproxy", "ReceiveOriginalDestAddress" }, null, new[]{ typeof(global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState), typeof(global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.SocketConfig), global::V2Ray.Core.Transport.Internet.SocketConfig.Parser, new[]{ "Mark", "Tfo", "Tproxy", "ReceiveOriginalDestAddress", "BindAddress", "BindPort" }, null, new[]{ typeof(global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState), typeof(global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode) }, null)
           }));
     }
     #endregion
@@ -710,6 +711,8 @@ namespace V2Ray.Core.Transport.Internet {
       tfo_ = other.tfo_;
       tproxy_ = other.tproxy_;
       receiveOriginalDestAddress_ = other.receiveOriginalDestAddress_;
+      bindAddress_ = other.bindAddress_;
+      bindPort_ = other.bindPort_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -775,6 +778,28 @@ namespace V2Ray.Core.Transport.Internet {
       }
     }
 
+    /// <summary>Field number for the "bind_address" field.</summary>
+    public const int BindAddressFieldNumber = 5;
+    private pb::ByteString bindAddress_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString BindAddress {
+      get { return bindAddress_; }
+      set {
+        bindAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "bind_port" field.</summary>
+    public const int BindPortFieldNumber = 6;
+    private uint bindPort_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint BindPort {
+      get { return bindPort_; }
+      set {
+        bindPort_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SocketConfig);
@@ -792,6 +817,8 @@ namespace V2Ray.Core.Transport.Internet {
       if (Tfo != other.Tfo) return false;
       if (Tproxy != other.Tproxy) return false;
       if (ReceiveOriginalDestAddress != other.ReceiveOriginalDestAddress) return false;
+      if (BindAddress != other.BindAddress) return false;
+      if (BindPort != other.BindPort) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -802,6 +829,8 @@ namespace V2Ray.Core.Transport.Internet {
       if (Tfo != 0) hash ^= Tfo.GetHashCode();
       if (Tproxy != 0) hash ^= Tproxy.GetHashCode();
       if (ReceiveOriginalDestAddress != false) hash ^= ReceiveOriginalDestAddress.GetHashCode();
+      if (BindAddress.Length != 0) hash ^= BindAddress.GetHashCode();
+      if (BindPort != 0) hash ^= BindPort.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -831,6 +860,14 @@ namespace V2Ray.Core.Transport.Internet {
         output.WriteRawTag(32);
         output.WriteBool(ReceiveOriginalDestAddress);
       }
+      if (BindAddress.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteBytes(BindAddress);
+      }
+      if (BindPort != 0) {
+        output.WriteRawTag(48);
+        output.WriteUInt32(BindPort);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -850,6 +887,12 @@ namespace V2Ray.Core.Transport.Internet {
       }
       if (ReceiveOriginalDestAddress != false) {
         size += 1 + 1;
+      }
+      if (BindAddress.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(BindAddress);
+      }
+      if (BindPort != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BindPort);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -873,6 +916,12 @@ namespace V2Ray.Core.Transport.Internet {
       }
       if (other.ReceiveOriginalDestAddress != false) {
         ReceiveOriginalDestAddress = other.ReceiveOriginalDestAddress;
+      }
+      if (other.BindAddress.Length != 0) {
+        BindAddress = other.BindAddress;
+      }
+      if (other.BindPort != 0) {
+        BindPort = other.BindPort;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -899,6 +948,14 @@ namespace V2Ray.Core.Transport.Internet {
           }
           case 32: {
             ReceiveOriginalDestAddress = input.ReadBool();
+            break;
+          }
+          case 42: {
+            BindAddress = input.ReadBytes();
+            break;
+          }
+          case 48: {
+            BindPort = input.ReadUInt32();
             break;
           }
         }

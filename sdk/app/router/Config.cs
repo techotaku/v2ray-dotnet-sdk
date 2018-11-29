@@ -36,27 +36,28 @@ namespace V2Ray.Core.App.Router {
             "KAsyHC52MnJheS5jb3JlLmFwcC5yb3V0ZXIuR2VvSVAiTgoHR2VvU2l0ZRIU",
             "Cgxjb3VudHJ5X2NvZGUYASABKAkSLQoGZG9tYWluGAIgAygLMh0udjJyYXku",
             "Y29yZS5hcHAucm91dGVyLkRvbWFpbiI8CgtHZW9TaXRlTGlzdBItCgVlbnRy",
-            "eRgBIAMoCzIeLnYycmF5LmNvcmUuYXBwLnJvdXRlci5HZW9TaXRlIuMDCgtS",
+            "eRgBIAMoCzIeLnYycmF5LmNvcmUuYXBwLnJvdXRlci5HZW9TaXRlIpkECgtS",
             "b3V0aW5nUnVsZRINCgN0YWcYASABKAlIABIXCg1iYWxhbmNpbmdfdGFnGAwg",
             "ASgJSAASLQoGZG9tYWluGAIgAygLMh0udjJyYXkuY29yZS5hcHAucm91dGVy",
             "LkRvbWFpbhItCgRjaWRyGAMgAygLMhsudjJyYXkuY29yZS5hcHAucm91dGVy",
             "LkNJRFJCAhgBEisKBWdlb2lwGAogAygLMhwudjJyYXkuY29yZS5hcHAucm91",
             "dGVyLkdlb0lQEjQKCnBvcnRfcmFuZ2UYBCABKAsyIC52MnJheS5jb3JlLmNv",
-            "bW1vbi5uZXQuUG9ydFJhbmdlEjgKDG5ldHdvcmtfbGlzdBgFIAEoCzIiLnYy",
-            "cmF5LmNvcmUuY29tbW9uLm5ldC5OZXR3b3JrTGlzdBI0Cgtzb3VyY2VfY2lk",
-            "chgGIAMoCzIbLnYycmF5LmNvcmUuYXBwLnJvdXRlci5DSURSQgIYARIyCgxz",
-            "b3VyY2VfZ2VvaXAYCyADKAsyHC52MnJheS5jb3JlLmFwcC5yb3V0ZXIuR2Vv",
-            "SVASEgoKdXNlcl9lbWFpbBgHIAMoCRITCgtpbmJvdW5kX3RhZxgIIAMoCRIQ",
-            "Cghwcm90b2NvbBgJIAMoCUIMCgp0YXJnZXRfdGFnIjcKDUJhbGFuY2luZ1J1",
-            "bGUSCwoDdGFnGAEgASgJEhkKEW91dGJvdW5kX3NlbGVjdG9yGAIgAygJIogC",
-            "CgZDb25maWcSRQoPZG9tYWluX3N0cmF0ZWd5GAEgASgOMiwudjJyYXkuY29y",
-            "ZS5hcHAucm91dGVyLkNvbmZpZy5Eb21haW5TdHJhdGVneRIwCgRydWxlGAIg",
-            "AygLMiIudjJyYXkuY29yZS5hcHAucm91dGVyLlJvdXRpbmdSdWxlEjwKDmJh",
-            "bGFuY2luZ19ydWxlGAMgAygLMiQudjJyYXkuY29yZS5hcHAucm91dGVyLkJh",
-            "bGFuY2luZ1J1bGUiRwoORG9tYWluU3RyYXRlZ3kSCAoEQXNJcxAAEgkKBVVz",
-            "ZUlwEAESEAoMSXBJZk5vbk1hdGNoEAISDgoKSXBPbkRlbWFuZBADQj0KGWNv",
-            "bS52MnJheS5jb3JlLmFwcC5yb3V0ZXJQAVoGcm91dGVyqgIVVjJSYXkuQ29y",
-            "ZS5BcHAuUm91dGVyYgZwcm90bzM="));
+            "bW1vbi5uZXQuUG9ydFJhbmdlEjwKDG5ldHdvcmtfbGlzdBgFIAEoCzIiLnYy",
+            "cmF5LmNvcmUuY29tbW9uLm5ldC5OZXR3b3JrTGlzdEICGAESMAoIbmV0d29y",
+            "a3MYDSADKA4yHi52MnJheS5jb3JlLmNvbW1vbi5uZXQuTmV0d29yaxI0Cgtz",
+            "b3VyY2VfY2lkchgGIAMoCzIbLnYycmF5LmNvcmUuYXBwLnJvdXRlci5DSURS",
+            "QgIYARIyCgxzb3VyY2VfZ2VvaXAYCyADKAsyHC52MnJheS5jb3JlLmFwcC5y",
+            "b3V0ZXIuR2VvSVASEgoKdXNlcl9lbWFpbBgHIAMoCRITCgtpbmJvdW5kX3Rh",
+            "ZxgIIAMoCRIQCghwcm90b2NvbBgJIAMoCUIMCgp0YXJnZXRfdGFnIjcKDUJh",
+            "bGFuY2luZ1J1bGUSCwoDdGFnGAEgASgJEhkKEW91dGJvdW5kX3NlbGVjdG9y",
+            "GAIgAygJIogCCgZDb25maWcSRQoPZG9tYWluX3N0cmF0ZWd5GAEgASgOMiwu",
+            "djJyYXkuY29yZS5hcHAucm91dGVyLkNvbmZpZy5Eb21haW5TdHJhdGVneRIw",
+            "CgRydWxlGAIgAygLMiIudjJyYXkuY29yZS5hcHAucm91dGVyLlJvdXRpbmdS",
+            "dWxlEjwKDmJhbGFuY2luZ19ydWxlGAMgAygLMiQudjJyYXkuY29yZS5hcHAu",
+            "cm91dGVyLkJhbGFuY2luZ1J1bGUiRwoORG9tYWluU3RyYXRlZ3kSCAoEQXNJ",
+            "cxAAEgkKBVVzZUlwEAESEAoMSXBJZk5vbk1hdGNoEAISDgoKSXBPbkRlbWFu",
+            "ZBADQj0KGWNvbS52MnJheS5jb3JlLmFwcC5yb3V0ZXJQAVoGcm91dGVyqgIV",
+            "VjJSYXkuQ29yZS5BcHAuUm91dGVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.PortReflection.Descriptor, global::V2Ray.Core.Common.Net.NetworkReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -66,7 +67,7 @@ namespace V2Ray.Core.App.Router {
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoIPList), global::V2Ray.Core.App.Router.GeoIPList.Parser, new[]{ "Entry" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoSite), global::V2Ray.Core.App.Router.GeoSite.Parser, new[]{ "CountryCode", "Domain" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoSiteList), global::V2Ray.Core.App.Router.GeoSiteList.Parser, new[]{ "Entry" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.RoutingRule), global::V2Ray.Core.App.Router.RoutingRule.Parser, new[]{ "Tag", "BalancingTag", "Domain", "Cidr", "Geoip", "PortRange", "NetworkList", "SourceCidr", "SourceGeoip", "UserEmail", "InboundTag", "Protocol" }, new[]{ "TargetTag" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.RoutingRule), global::V2Ray.Core.App.Router.RoutingRule.Parser, new[]{ "Tag", "BalancingTag", "Domain", "Cidr", "Geoip", "PortRange", "NetworkList", "Networks", "SourceCidr", "SourceGeoip", "UserEmail", "InboundTag", "Protocol" }, new[]{ "TargetTag" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.BalancingRule), global::V2Ray.Core.App.Router.BalancingRule.Parser, new[]{ "Tag", "OutboundSelector" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Config), global::V2Ray.Core.App.Router.Config.Parser, new[]{ "DomainStrategy", "Rule", "BalancingRule" }, null, new[]{ typeof(global::V2Ray.Core.App.Router.Config.Types.DomainStrategy) }, null)
           }));
@@ -1006,6 +1007,7 @@ namespace V2Ray.Core.App.Router {
       geoip_ = other.geoip_.Clone();
       portRange_ = other.portRange_ != null ? other.portRange_.Clone() : null;
       networkList_ = other.networkList_ != null ? other.networkList_.Clone() : null;
+      networks_ = other.networks_.Clone();
       sourceCidr_ = other.sourceCidr_.Clone();
       sourceGeoip_ = other.sourceGeoip_.Clone();
       userEmail_ = other.userEmail_.Clone();
@@ -1113,12 +1115,29 @@ namespace V2Ray.Core.App.Router {
     /// <summary>Field number for the "network_list" field.</summary>
     public const int NetworkListFieldNumber = 5;
     private global::V2Ray.Core.Common.Net.NetworkList networkList_;
+    /// <summary>
+    /// List of networks. Deprecated. Use networks.
+    /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.Common.Net.NetworkList NetworkList {
       get { return networkList_; }
       set {
         networkList_ = value;
       }
+    }
+
+    /// <summary>Field number for the "networks" field.</summary>
+    public const int NetworksFieldNumber = 13;
+    private static readonly pb::FieldCodec<global::V2Ray.Core.Common.Net.Network> _repeated_networks_codec
+        = pb::FieldCodec.ForEnum(106, x => (int) x, x => (global::V2Ray.Core.Common.Net.Network) x);
+    private readonly pbc::RepeatedField<global::V2Ray.Core.Common.Net.Network> networks_ = new pbc::RepeatedField<global::V2Ray.Core.Common.Net.Network>();
+    /// <summary>
+    /// List of networks for matching.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::V2Ray.Core.Common.Net.Network> Networks {
+      get { return networks_; }
     }
 
     /// <summary>Field number for the "source_cidr" field.</summary>
@@ -1217,6 +1236,7 @@ namespace V2Ray.Core.App.Router {
       if(!geoip_.Equals(other.geoip_)) return false;
       if (!object.Equals(PortRange, other.PortRange)) return false;
       if (!object.Equals(NetworkList, other.NetworkList)) return false;
+      if(!networks_.Equals(other.networks_)) return false;
       if(!sourceCidr_.Equals(other.sourceCidr_)) return false;
       if(!sourceGeoip_.Equals(other.sourceGeoip_)) return false;
       if(!userEmail_.Equals(other.userEmail_)) return false;
@@ -1236,6 +1256,7 @@ namespace V2Ray.Core.App.Router {
       hash ^= geoip_.GetHashCode();
       if (portRange_ != null) hash ^= PortRange.GetHashCode();
       if (networkList_ != null) hash ^= NetworkList.GetHashCode();
+      hash ^= networks_.GetHashCode();
       hash ^= sourceCidr_.GetHashCode();
       hash ^= sourceGeoip_.GetHashCode();
       hash ^= userEmail_.GetHashCode();
@@ -1279,6 +1300,7 @@ namespace V2Ray.Core.App.Router {
         output.WriteRawTag(98);
         output.WriteString(BalancingTag);
       }
+      networks_.WriteTo(output, _repeated_networks_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1302,6 +1324,7 @@ namespace V2Ray.Core.App.Router {
       if (networkList_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(NetworkList);
       }
+      size += networks_.CalculateSize(_repeated_networks_codec);
       size += sourceCidr_.CalculateSize(_repeated_sourceCidr_codec);
       size += sourceGeoip_.CalculateSize(_repeated_sourceGeoip_codec);
       size += userEmail_.CalculateSize(_repeated_userEmail_codec);
@@ -1333,6 +1356,7 @@ namespace V2Ray.Core.App.Router {
         }
         NetworkList.MergeFrom(other.NetworkList);
       }
+      networks_.Add(other.networks_);
       sourceCidr_.Add(other.sourceCidr_);
       sourceGeoip_.Add(other.sourceGeoip_);
       userEmail_.Add(other.userEmail_);
@@ -1410,6 +1434,11 @@ namespace V2Ray.Core.App.Router {
           }
           case 98: {
             BalancingTag = input.ReadString();
+            break;
+          }
+          case 106:
+          case 104: {
+            networks_.AddEntriesFrom(input, _repeated_networks_codec);
             break;
           }
         }

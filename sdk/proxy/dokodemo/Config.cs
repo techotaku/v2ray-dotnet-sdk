@@ -27,17 +27,18 @@ namespace V2Ray.Core.Proxy.Dokodemo {
             "Cip2MnJheS5jb20vY29yZS9wcm94eS9kb2tvZGVtby9jb25maWcucHJvdG8S",
             "GXYycmF5LmNvcmUucHJveHkuZG9rb2RlbW8aJ3YycmF5LmNvbS9jb3JlL2Nv",
             "bW1vbi9uZXQvYWRkcmVzcy5wcm90bxondjJyYXkuY29tL2NvcmUvY29tbW9u",
-            "L25ldC9uZXR3b3JrLnByb3RvIsYBCgZDb25maWcSMgoHYWRkcmVzcxgBIAEo",
+            "L25ldC9uZXR3b3JrLnByb3RvIvwBCgZDb25maWcSMgoHYWRkcmVzcxgBIAEo",
             "CzIhLnYycmF5LmNvcmUuY29tbW9uLm5ldC5JUE9yRG9tYWluEgwKBHBvcnQY",
-            "AiABKA0SOAoMbmV0d29ya19saXN0GAMgASgLMiIudjJyYXkuY29yZS5jb21t",
-            "b24ubmV0Lk5ldHdvcmtMaXN0EhMKB3RpbWVvdXQYBCABKA1CAhgBEhcKD2Zv",
-            "bGxvd19yZWRpcmVjdBgFIAEoCBISCgp1c2VyX2xldmVsGAYgASgNQkcKHWNv",
-            "bS52MnJheS5jb3JlLnByb3h5LmRva29kZW1vUAFaCGRva29kZW1vqgIZVjJS",
-            "YXkuQ29yZS5Qcm94eS5Eb2tvZGVtb2IGcHJvdG8z"));
+            "AiABKA0SPAoMbmV0d29ya19saXN0GAMgASgLMiIudjJyYXkuY29yZS5jb21t",
+            "b24ubmV0Lk5ldHdvcmtMaXN0QgIYARIwCghuZXR3b3JrcxgHIAMoDjIeLnYy",
+            "cmF5LmNvcmUuY29tbW9uLm5ldC5OZXR3b3JrEhMKB3RpbWVvdXQYBCABKA1C",
+            "AhgBEhcKD2ZvbGxvd19yZWRpcmVjdBgFIAEoCBISCgp1c2VyX2xldmVsGAYg",
+            "ASgNQkcKHWNvbS52MnJheS5jb3JlLnByb3h5LmRva29kZW1vUAFaCGRva29k",
+            "ZW1vqgIZVjJSYXkuQ29yZS5Qcm94eS5Eb2tvZGVtb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.AddressReflection.Descriptor, global::V2Ray.Core.Common.Net.NetworkReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Dokodemo.Config), global::V2Ray.Core.Proxy.Dokodemo.Config.Parser, new[]{ "Address", "Port", "NetworkList", "Timeout", "FollowRedirect", "UserLevel" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Dokodemo.Config), global::V2Ray.Core.Proxy.Dokodemo.Config.Parser, new[]{ "Address", "Port", "NetworkList", "Networks", "Timeout", "FollowRedirect", "UserLevel" }, null, null, null)
           }));
     }
     #endregion
@@ -72,6 +73,7 @@ namespace V2Ray.Core.Proxy.Dokodemo {
       address_ = other.address_ != null ? other.address_.Clone() : null;
       port_ = other.port_;
       networkList_ = other.networkList_ != null ? other.networkList_.Clone() : null;
+      networks_ = other.networks_.Clone();
       timeout_ = other.timeout_;
       followRedirect_ = other.followRedirect_;
       userLevel_ = other.userLevel_;
@@ -108,12 +110,30 @@ namespace V2Ray.Core.Proxy.Dokodemo {
     /// <summary>Field number for the "network_list" field.</summary>
     public const int NetworkListFieldNumber = 3;
     private global::V2Ray.Core.Common.Net.NetworkList networkList_;
+    /// <summary>
+    /// List of networks that the Dokodemo accepts.
+    /// Deprecated. Use networks.
+    /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.Common.Net.NetworkList NetworkList {
       get { return networkList_; }
       set {
         networkList_ = value;
       }
+    }
+
+    /// <summary>Field number for the "networks" field.</summary>
+    public const int NetworksFieldNumber = 7;
+    private static readonly pb::FieldCodec<global::V2Ray.Core.Common.Net.Network> _repeated_networks_codec
+        = pb::FieldCodec.ForEnum(58, x => (int) x, x => (global::V2Ray.Core.Common.Net.Network) x);
+    private readonly pbc::RepeatedField<global::V2Ray.Core.Common.Net.Network> networks_ = new pbc::RepeatedField<global::V2Ray.Core.Common.Net.Network>();
+    /// <summary>
+    /// List of networks that the Dokodemo accepts.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::V2Ray.Core.Common.Net.Network> Networks {
+      get { return networks_; }
     }
 
     /// <summary>Field number for the "timeout" field.</summary>
@@ -166,6 +186,7 @@ namespace V2Ray.Core.Proxy.Dokodemo {
       if (!object.Equals(Address, other.Address)) return false;
       if (Port != other.Port) return false;
       if (!object.Equals(NetworkList, other.NetworkList)) return false;
+      if(!networks_.Equals(other.networks_)) return false;
       if (Timeout != other.Timeout) return false;
       if (FollowRedirect != other.FollowRedirect) return false;
       if (UserLevel != other.UserLevel) return false;
@@ -178,6 +199,7 @@ namespace V2Ray.Core.Proxy.Dokodemo {
       if (address_ != null) hash ^= Address.GetHashCode();
       if (Port != 0) hash ^= Port.GetHashCode();
       if (networkList_ != null) hash ^= NetworkList.GetHashCode();
+      hash ^= networks_.GetHashCode();
       if (Timeout != 0) hash ^= Timeout.GetHashCode();
       if (FollowRedirect != false) hash ^= FollowRedirect.GetHashCode();
       if (UserLevel != 0) hash ^= UserLevel.GetHashCode();
@@ -218,6 +240,7 @@ namespace V2Ray.Core.Proxy.Dokodemo {
         output.WriteRawTag(48);
         output.WriteUInt32(UserLevel);
       }
+      networks_.WriteTo(output, _repeated_networks_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -235,6 +258,7 @@ namespace V2Ray.Core.Proxy.Dokodemo {
       if (networkList_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(NetworkList);
       }
+      size += networks_.CalculateSize(_repeated_networks_codec);
       if (Timeout != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Timeout);
       }
@@ -270,6 +294,7 @@ namespace V2Ray.Core.Proxy.Dokodemo {
         }
         NetworkList.MergeFrom(other.NetworkList);
       }
+      networks_.Add(other.networks_);
       if (other.Timeout != 0) {
         Timeout = other.Timeout;
       }
@@ -318,6 +343,11 @@ namespace V2Ray.Core.Proxy.Dokodemo {
           }
           case 48: {
             UserLevel = input.ReadUInt32();
+            break;
+          }
+          case 58:
+          case 56: {
+            networks_.AddEntriesFrom(input, _repeated_networks_codec);
             break;
           }
         }
