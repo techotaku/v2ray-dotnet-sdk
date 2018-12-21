@@ -27,41 +27,44 @@ namespace V2Ray.Core.App.Router {
             "CiZ2MnJheS5jb20vY29yZS9hcHAvcm91dGVyL2NvbmZpZy5wcm90bxIVdjJy",
             "YXkuY29yZS5hcHAucm91dGVyGiR2MnJheS5jb20vY29yZS9jb21tb24vbmV0",
             "L3BvcnQucHJvdG8aJ3YycmF5LmNvbS9jb3JlL2NvbW1vbi9uZXQvbmV0d29y",
-            "ay5wcm90byJ9CgZEb21haW4SMAoEdHlwZRgBIAEoDjIiLnYycmF5LmNvcmUu",
-            "YXBwLnJvdXRlci5Eb21haW4uVHlwZRINCgV2YWx1ZRgCIAEoCSIyCgRUeXBl",
-            "EgkKBVBsYWluEAASCQoFUmVnZXgQARIKCgZEb21haW4QAhIICgRGdWxsEAMi",
-            "IgoEQ0lEUhIKCgJpcBgBIAEoDBIOCgZwcmVmaXgYAiABKA0iSAoFR2VvSVAS",
-            "FAoMY291bnRyeV9jb2RlGAEgASgJEikKBGNpZHIYAiADKAsyGy52MnJheS5j",
-            "b3JlLmFwcC5yb3V0ZXIuQ0lEUiI4CglHZW9JUExpc3QSKwoFZW50cnkYASAD",
-            "KAsyHC52MnJheS5jb3JlLmFwcC5yb3V0ZXIuR2VvSVAiTgoHR2VvU2l0ZRIU",
-            "Cgxjb3VudHJ5X2NvZGUYASABKAkSLQoGZG9tYWluGAIgAygLMh0udjJyYXku",
-            "Y29yZS5hcHAucm91dGVyLkRvbWFpbiI8CgtHZW9TaXRlTGlzdBItCgVlbnRy",
-            "eRgBIAMoCzIeLnYycmF5LmNvcmUuYXBwLnJvdXRlci5HZW9TaXRlIpkECgtS",
-            "b3V0aW5nUnVsZRINCgN0YWcYASABKAlIABIXCg1iYWxhbmNpbmdfdGFnGAwg",
-            "ASgJSAASLQoGZG9tYWluGAIgAygLMh0udjJyYXkuY29yZS5hcHAucm91dGVy",
-            "LkRvbWFpbhItCgRjaWRyGAMgAygLMhsudjJyYXkuY29yZS5hcHAucm91dGVy",
-            "LkNJRFJCAhgBEisKBWdlb2lwGAogAygLMhwudjJyYXkuY29yZS5hcHAucm91",
-            "dGVyLkdlb0lQEjQKCnBvcnRfcmFuZ2UYBCABKAsyIC52MnJheS5jb3JlLmNv",
-            "bW1vbi5uZXQuUG9ydFJhbmdlEjwKDG5ldHdvcmtfbGlzdBgFIAEoCzIiLnYy",
-            "cmF5LmNvcmUuY29tbW9uLm5ldC5OZXR3b3JrTGlzdEICGAESMAoIbmV0d29y",
-            "a3MYDSADKA4yHi52MnJheS5jb3JlLmNvbW1vbi5uZXQuTmV0d29yaxI0Cgtz",
-            "b3VyY2VfY2lkchgGIAMoCzIbLnYycmF5LmNvcmUuYXBwLnJvdXRlci5DSURS",
-            "QgIYARIyCgxzb3VyY2VfZ2VvaXAYCyADKAsyHC52MnJheS5jb3JlLmFwcC5y",
-            "b3V0ZXIuR2VvSVASEgoKdXNlcl9lbWFpbBgHIAMoCRITCgtpbmJvdW5kX3Rh",
-            "ZxgIIAMoCRIQCghwcm90b2NvbBgJIAMoCUIMCgp0YXJnZXRfdGFnIjcKDUJh",
-            "bGFuY2luZ1J1bGUSCwoDdGFnGAEgASgJEhkKEW91dGJvdW5kX3NlbGVjdG9y",
-            "GAIgAygJIogCCgZDb25maWcSRQoPZG9tYWluX3N0cmF0ZWd5GAEgASgOMiwu",
-            "djJyYXkuY29yZS5hcHAucm91dGVyLkNvbmZpZy5Eb21haW5TdHJhdGVneRIw",
-            "CgRydWxlGAIgAygLMiIudjJyYXkuY29yZS5hcHAucm91dGVyLlJvdXRpbmdS",
-            "dWxlEjwKDmJhbGFuY2luZ19ydWxlGAMgAygLMiQudjJyYXkuY29yZS5hcHAu",
-            "cm91dGVyLkJhbGFuY2luZ1J1bGUiRwoORG9tYWluU3RyYXRlZ3kSCAoEQXNJ",
-            "cxAAEgkKBVVzZUlwEAESEAoMSXBJZk5vbk1hdGNoEAISDgoKSXBPbkRlbWFu",
-            "ZBADQj0KGWNvbS52MnJheS5jb3JlLmFwcC5yb3V0ZXJQAVoGcm91dGVyqgIV",
-            "VjJSYXkuQ29yZS5BcHAuUm91dGVyYgZwcm90bzM="));
+            "ay5wcm90byKNAgoGRG9tYWluEjAKBHR5cGUYASABKA4yIi52MnJheS5jb3Jl",
+            "LmFwcC5yb3V0ZXIuRG9tYWluLlR5cGUSDQoFdmFsdWUYAiABKAkSOgoJYXR0",
+            "cmlidXRlGAMgAygLMicudjJyYXkuY29yZS5hcHAucm91dGVyLkRvbWFpbi5B",
+            "dHRyaWJ1dGUaUgoJQXR0cmlidXRlEgsKA2tleRgBIAEoCRIUCgpib29sX3Zh",
+            "bHVlGAIgASgISAASEwoJaW50X3ZhbHVlGAMgASgDSABCDQoLdHlwZWRfdmFs",
+            "dWUiMgoEVHlwZRIJCgVQbGFpbhAAEgkKBVJlZ2V4EAESCgoGRG9tYWluEAIS",
+            "CAoERnVsbBADIiIKBENJRFISCgoCaXAYASABKAwSDgoGcHJlZml4GAIgASgN",
+            "IkgKBUdlb0lQEhQKDGNvdW50cnlfY29kZRgBIAEoCRIpCgRjaWRyGAIgAygL",
+            "MhsudjJyYXkuY29yZS5hcHAucm91dGVyLkNJRFIiOAoJR2VvSVBMaXN0EisK",
+            "BWVudHJ5GAEgAygLMhwudjJyYXkuY29yZS5hcHAucm91dGVyLkdlb0lQIk4K",
+            "B0dlb1NpdGUSFAoMY291bnRyeV9jb2RlGAEgASgJEi0KBmRvbWFpbhgCIAMo",
+            "CzIdLnYycmF5LmNvcmUuYXBwLnJvdXRlci5Eb21haW4iPAoLR2VvU2l0ZUxp",
+            "c3QSLQoFZW50cnkYASADKAsyHi52MnJheS5jb3JlLmFwcC5yb3V0ZXIuR2Vv",
+            "U2l0ZSKZBAoLUm91dGluZ1J1bGUSDQoDdGFnGAEgASgJSAASFwoNYmFsYW5j",
+            "aW5nX3RhZxgMIAEoCUgAEi0KBmRvbWFpbhgCIAMoCzIdLnYycmF5LmNvcmUu",
+            "YXBwLnJvdXRlci5Eb21haW4SLQoEY2lkchgDIAMoCzIbLnYycmF5LmNvcmUu",
+            "YXBwLnJvdXRlci5DSURSQgIYARIrCgVnZW9pcBgKIAMoCzIcLnYycmF5LmNv",
+            "cmUuYXBwLnJvdXRlci5HZW9JUBI0Cgpwb3J0X3JhbmdlGAQgASgLMiAudjJy",
+            "YXkuY29yZS5jb21tb24ubmV0LlBvcnRSYW5nZRI8CgxuZXR3b3JrX2xpc3QY",
+            "BSABKAsyIi52MnJheS5jb3JlLmNvbW1vbi5uZXQuTmV0d29ya0xpc3RCAhgB",
+            "EjAKCG5ldHdvcmtzGA0gAygOMh4udjJyYXkuY29yZS5jb21tb24ubmV0Lk5l",
+            "dHdvcmsSNAoLc291cmNlX2NpZHIYBiADKAsyGy52MnJheS5jb3JlLmFwcC5y",
+            "b3V0ZXIuQ0lEUkICGAESMgoMc291cmNlX2dlb2lwGAsgAygLMhwudjJyYXku",
+            "Y29yZS5hcHAucm91dGVyLkdlb0lQEhIKCnVzZXJfZW1haWwYByADKAkSEwoL",
+            "aW5ib3VuZF90YWcYCCADKAkSEAoIcHJvdG9jb2wYCSADKAlCDAoKdGFyZ2V0",
+            "X3RhZyI3Cg1CYWxhbmNpbmdSdWxlEgsKA3RhZxgBIAEoCRIZChFvdXRib3Vu",
+            "ZF9zZWxlY3RvchgCIAMoCSKIAgoGQ29uZmlnEkUKD2RvbWFpbl9zdHJhdGVn",
+            "eRgBIAEoDjIsLnYycmF5LmNvcmUuYXBwLnJvdXRlci5Db25maWcuRG9tYWlu",
+            "U3RyYXRlZ3kSMAoEcnVsZRgCIAMoCzIiLnYycmF5LmNvcmUuYXBwLnJvdXRl",
+            "ci5Sb3V0aW5nUnVsZRI8Cg5iYWxhbmNpbmdfcnVsZRgDIAMoCzIkLnYycmF5",
+            "LmNvcmUuYXBwLnJvdXRlci5CYWxhbmNpbmdSdWxlIkcKDkRvbWFpblN0cmF0",
+            "ZWd5EggKBEFzSXMQABIJCgVVc2VJcBABEhAKDElwSWZOb25NYXRjaBACEg4K",
+            "CklwT25EZW1hbmQQA0I9Chljb20udjJyYXkuY29yZS5hcHAucm91dGVyUAFa",
+            "BnJvdXRlcqoCFVYyUmF5LkNvcmUuQXBwLlJvdXRlcmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.PortReflection.Descriptor, global::V2Ray.Core.Common.Net.NetworkReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Domain), global::V2Ray.Core.App.Router.Domain.Parser, new[]{ "Type", "Value" }, null, new[]{ typeof(global::V2Ray.Core.App.Router.Domain.Types.Type) }, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Domain), global::V2Ray.Core.App.Router.Domain.Parser, new[]{ "Type", "Value", "Attribute" }, null, new[]{ typeof(global::V2Ray.Core.App.Router.Domain.Types.Type) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Domain.Types.Attribute), global::V2Ray.Core.App.Router.Domain.Types.Attribute.Parser, new[]{ "Key", "BoolValue", "IntValue" }, new[]{ "TypedValue" }, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.CIDR), global::V2Ray.Core.App.Router.CIDR.Parser, new[]{ "Ip", "Prefix" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoIP), global::V2Ray.Core.App.Router.GeoIP.Parser, new[]{ "CountryCode", "Cidr" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoIPList), global::V2Ray.Core.App.Router.GeoIPList.Parser, new[]{ "Entry" }, null, null, null),
@@ -106,6 +109,7 @@ namespace V2Ray.Core.App.Router {
     public Domain(Domain other) : this() {
       type_ = other.type_;
       value_ = other.value_;
+      attribute_ = other.attribute_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -142,6 +146,19 @@ namespace V2Ray.Core.App.Router {
       }
     }
 
+    /// <summary>Field number for the "attribute" field.</summary>
+    public const int AttributeFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::V2Ray.Core.App.Router.Domain.Types.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(26, global::V2Ray.Core.App.Router.Domain.Types.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::V2Ray.Core.App.Router.Domain.Types.Attribute> attribute_ = new pbc::RepeatedField<global::V2Ray.Core.App.Router.Domain.Types.Attribute>();
+    /// <summary>
+    /// Attributes of this domain. May be used for filtering.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::V2Ray.Core.App.Router.Domain.Types.Attribute> Attribute {
+      get { return attribute_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Domain);
@@ -157,6 +174,7 @@ namespace V2Ray.Core.App.Router {
       }
       if (Type != other.Type) return false;
       if (Value != other.Value) return false;
+      if(!attribute_.Equals(other.attribute_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -165,6 +183,7 @@ namespace V2Ray.Core.App.Router {
       int hash = 1;
       if (Type != 0) hash ^= Type.GetHashCode();
       if (Value.Length != 0) hash ^= Value.GetHashCode();
+      hash ^= attribute_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -186,6 +205,7 @@ namespace V2Ray.Core.App.Router {
         output.WriteRawTag(18);
         output.WriteString(Value);
       }
+      attribute_.WriteTo(output, _repeated_attribute_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -200,6 +220,7 @@ namespace V2Ray.Core.App.Router {
       if (Value.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Value);
       }
+      size += attribute_.CalculateSize(_repeated_attribute_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -217,6 +238,7 @@ namespace V2Ray.Core.App.Router {
       if (other.Value.Length != 0) {
         Value = other.Value;
       }
+      attribute_.Add(other.attribute_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -234,6 +256,10 @@ namespace V2Ray.Core.App.Router {
           }
           case 18: {
             Value = input.ReadString();
+            break;
+          }
+          case 26: {
+            attribute_.AddEntriesFrom(input, _repeated_attribute_codec);
             break;
           }
         }
@@ -264,6 +290,222 @@ namespace V2Ray.Core.App.Router {
         /// The value is a domain.
         /// </summary>
         [pbr::OriginalName("Full")] Full = 3,
+      }
+
+      public sealed partial class Attribute : pb::IMessage<Attribute> {
+        private static readonly pb::MessageParser<Attribute> _parser = new pb::MessageParser<Attribute>(() => new Attribute());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<Attribute> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::V2Ray.Core.App.Router.Domain.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Attribute() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Attribute(Attribute other) : this() {
+          key_ = other.key_;
+          switch (other.TypedValueCase) {
+            case TypedValueOneofCase.BoolValue:
+              BoolValue = other.BoolValue;
+              break;
+            case TypedValueOneofCase.IntValue:
+              IntValue = other.IntValue;
+              break;
+          }
+
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Attribute Clone() {
+          return new Attribute(this);
+        }
+
+        /// <summary>Field number for the "key" field.</summary>
+        public const int KeyFieldNumber = 1;
+        private string key_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string Key {
+          get { return key_; }
+          set {
+            key_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        /// <summary>Field number for the "bool_value" field.</summary>
+        public const int BoolValueFieldNumber = 2;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool BoolValue {
+          get { return typedValueCase_ == TypedValueOneofCase.BoolValue ? (bool) typedValue_ : false; }
+          set {
+            typedValue_ = value;
+            typedValueCase_ = TypedValueOneofCase.BoolValue;
+          }
+        }
+
+        /// <summary>Field number for the "int_value" field.</summary>
+        public const int IntValueFieldNumber = 3;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public long IntValue {
+          get { return typedValueCase_ == TypedValueOneofCase.IntValue ? (long) typedValue_ : 0L; }
+          set {
+            typedValue_ = value;
+            typedValueCase_ = TypedValueOneofCase.IntValue;
+          }
+        }
+
+        private object typedValue_;
+        /// <summary>Enum of possible cases for the "typed_value" oneof.</summary>
+        public enum TypedValueOneofCase {
+          None = 0,
+          BoolValue = 2,
+          IntValue = 3,
+        }
+        private TypedValueOneofCase typedValueCase_ = TypedValueOneofCase.None;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TypedValueOneofCase TypedValueCase {
+          get { return typedValueCase_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearTypedValue() {
+          typedValueCase_ = TypedValueOneofCase.None;
+          typedValue_ = null;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as Attribute);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(Attribute other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Key != other.Key) return false;
+          if (BoolValue != other.BoolValue) return false;
+          if (IntValue != other.IntValue) return false;
+          if (TypedValueCase != other.TypedValueCase) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (Key.Length != 0) hash ^= Key.GetHashCode();
+          if (typedValueCase_ == TypedValueOneofCase.BoolValue) hash ^= BoolValue.GetHashCode();
+          if (typedValueCase_ == TypedValueOneofCase.IntValue) hash ^= IntValue.GetHashCode();
+          hash ^= (int) typedValueCase_;
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (Key.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(Key);
+          }
+          if (typedValueCase_ == TypedValueOneofCase.BoolValue) {
+            output.WriteRawTag(16);
+            output.WriteBool(BoolValue);
+          }
+          if (typedValueCase_ == TypedValueOneofCase.IntValue) {
+            output.WriteRawTag(24);
+            output.WriteInt64(IntValue);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (Key.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(Key);
+          }
+          if (typedValueCase_ == TypedValueOneofCase.BoolValue) {
+            size += 1 + 1;
+          }
+          if (typedValueCase_ == TypedValueOneofCase.IntValue) {
+            size += 1 + pb::CodedOutputStream.ComputeInt64Size(IntValue);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(Attribute other) {
+          if (other == null) {
+            return;
+          }
+          if (other.Key.Length != 0) {
+            Key = other.Key;
+          }
+          switch (other.TypedValueCase) {
+            case TypedValueOneofCase.BoolValue:
+              BoolValue = other.BoolValue;
+              break;
+            case TypedValueOneofCase.IntValue:
+              IntValue = other.IntValue;
+              break;
+          }
+
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                Key = input.ReadString();
+                break;
+              }
+              case 16: {
+                BoolValue = input.ReadBool();
+                break;
+              }
+              case 24: {
+                IntValue = input.ReadInt64();
+                break;
+              }
+            }
+          }
+        }
+
       }
 
     }
