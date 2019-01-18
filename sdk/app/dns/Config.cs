@@ -32,24 +32,25 @@ namespace V2Ray.Core.App.Dns {
             "b21haW4YAiADKAsyLS52MnJheS5jb3JlLmFwcC5kbnMuTmFtZVNlcnZlci5Q",
             "cmlvcml0eURvbWFpbhpWCg5Qcmlvcml0eURvbWFpbhI0CgR0eXBlGAEgASgO",
             "MiYudjJyYXkuY29yZS5hcHAuZG5zLkRvbWFpbk1hdGNoaW5nVHlwZRIOCgZk",
-            "b21haW4YAiABKAkitAMKBkNvbmZpZxI4CgtOYW1lU2VydmVycxgBIAMoCzIf",
+            "b21haW4YAiABKAkiwQMKBkNvbmZpZxI4CgtOYW1lU2VydmVycxgBIAMoCzIf",
             "LnYycmF5LmNvcmUuY29tbW9uLm5ldC5FbmRwb2ludEICGAESMwoLbmFtZV9z",
             "ZXJ2ZXIYBSADKAsyHi52MnJheS5jb3JlLmFwcC5kbnMuTmFtZVNlcnZlchI4",
             "CgVIb3N0cxgCIAMoCzIlLnYycmF5LmNvcmUuYXBwLmRucy5Db25maWcuSG9z",
             "dHNFbnRyeUICGAESEQoJY2xpZW50X2lwGAMgASgMEjwKDHN0YXRpY19ob3N0",
             "cxgEIAMoCzImLnYycmF5LmNvcmUuYXBwLmRucy5Db25maWcuSG9zdE1hcHBp",
-            "bmcaTwoKSG9zdHNFbnRyeRILCgNrZXkYASABKAkSMAoFdmFsdWUYAiABKAsy",
-            "IS52MnJheS5jb3JlLmNvbW1vbi5uZXQuSVBPckRvbWFpbjoCOAEaXwoLSG9z",
-            "dE1hcHBpbmcSNAoEdHlwZRgBIAEoDjImLnYycmF5LmNvcmUuYXBwLmRucy5E",
-            "b21haW5NYXRjaGluZ1R5cGUSDgoGZG9tYWluGAIgASgJEgoKAmlwGAMgAygM",
-            "KkUKEkRvbWFpbk1hdGNoaW5nVHlwZRIICgRGdWxsEAASDQoJU3ViZG9tYWlu",
-            "EAESCwoHS2V5d29yZBACEgkKBVJlZ2V4EANCNAoWY29tLnYycmF5LmNvcmUu",
-            "YXBwLmRuc1ABWgNkbnOqAhJWMlJheS5Db3JlLkFwcC5EbnNiBnByb3RvMw=="));
+            "bmcSCwoDdGFnGAYgASgJGk8KCkhvc3RzRW50cnkSCwoDa2V5GAEgASgJEjAK",
+            "BXZhbHVlGAIgASgLMiEudjJyYXkuY29yZS5jb21tb24ubmV0LklQT3JEb21h",
+            "aW46AjgBGl8KC0hvc3RNYXBwaW5nEjQKBHR5cGUYASABKA4yJi52MnJheS5j",
+            "b3JlLmFwcC5kbnMuRG9tYWluTWF0Y2hpbmdUeXBlEg4KBmRvbWFpbhgCIAEo",
+            "CRIKCgJpcBgDIAMoDCpFChJEb21haW5NYXRjaGluZ1R5cGUSCAoERnVsbBAA",
+            "Eg0KCVN1YmRvbWFpbhABEgsKB0tleXdvcmQQAhIJCgVSZWdleBADQjQKFmNv",
+            "bS52MnJheS5jb3JlLmFwcC5kbnNQAVoDZG5zqgISVjJSYXkuQ29yZS5BcHAu",
+            "RG5zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.AddressReflection.Descriptor, global::V2Ray.Core.Common.Net.DestinationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.App.Dns.DomainMatchingType), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer), global::V2Ray.Core.App.Dns.NameServer.Parser, new[]{ "Address", "PrioritizedDomain" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain), global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain.Parser, new[]{ "Type", "Domain" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config), global::V2Ray.Core.App.Dns.Config.Parser, new[]{ "NameServers", "NameServer", "Hosts", "ClientIp", "StaticHosts" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config.Types.HostMapping), global::V2Ray.Core.App.Dns.Config.Types.HostMapping.Parser, new[]{ "Type", "Domain", "Ip" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config), global::V2Ray.Core.App.Dns.Config.Parser, new[]{ "NameServers", "NameServer", "Hosts", "ClientIp", "StaticHosts", "Tag" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config.Types.HostMapping), global::V2Ray.Core.App.Dns.Config.Types.HostMapping.Parser, new[]{ "Type", "Domain", "Ip" }, null, null, null)})
           }));
     }
     #endregion
@@ -415,6 +416,7 @@ namespace V2Ray.Core.App.Dns {
       hosts_ = other.hosts_.Clone();
       clientIp_ = other.clientIp_;
       staticHosts_ = other.staticHosts_.Clone();
+      tag_ = other.tag_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -490,6 +492,20 @@ namespace V2Ray.Core.App.Dns {
       get { return staticHosts_; }
     }
 
+    /// <summary>Field number for the "tag" field.</summary>
+    public const int TagFieldNumber = 6;
+    private string tag_ = "";
+    /// <summary>
+    /// Tag is the inbound tag of DNS client.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Tag {
+      get { return tag_; }
+      set {
+        tag_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Config);
@@ -508,6 +524,7 @@ namespace V2Ray.Core.App.Dns {
       if (!Hosts.Equals(other.Hosts)) return false;
       if (ClientIp != other.ClientIp) return false;
       if(!staticHosts_.Equals(other.staticHosts_)) return false;
+      if (Tag != other.Tag) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -519,6 +536,7 @@ namespace V2Ray.Core.App.Dns {
       hash ^= Hosts.GetHashCode();
       if (ClientIp.Length != 0) hash ^= ClientIp.GetHashCode();
       hash ^= staticHosts_.GetHashCode();
+      if (Tag.Length != 0) hash ^= Tag.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -540,6 +558,10 @@ namespace V2Ray.Core.App.Dns {
       }
       staticHosts_.WriteTo(output, _repeated_staticHosts_codec);
       nameServer_.WriteTo(output, _repeated_nameServer_codec);
+      if (Tag.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Tag);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -555,6 +577,9 @@ namespace V2Ray.Core.App.Dns {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(ClientIp);
       }
       size += staticHosts_.CalculateSize(_repeated_staticHosts_codec);
+      if (Tag.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Tag);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -573,6 +598,9 @@ namespace V2Ray.Core.App.Dns {
         ClientIp = other.ClientIp;
       }
       staticHosts_.Add(other.staticHosts_);
+      if (other.Tag.Length != 0) {
+        Tag = other.Tag;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -602,6 +630,10 @@ namespace V2Ray.Core.App.Dns {
           }
           case 42: {
             nameServer_.AddEntriesFrom(input, _repeated_nameServer_codec);
+            break;
+          }
+          case 50: {
+            Tag = input.ReadString();
             break;
           }
         }

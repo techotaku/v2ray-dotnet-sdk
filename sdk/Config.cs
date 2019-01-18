@@ -26,23 +26,23 @@ namespace V2Ray.Core {
           string.Concat(
             "Cht2MnJheS5jb20vY29yZS9jb25maWcucHJvdG8SCnYycmF5LmNvcmUaMHYy",
             "cmF5LmNvbS9jb3JlL2NvbW1vbi9zZXJpYWwvdHlwZWRfbWVzc2FnZS5wcm90",
-            "bxoldjJyYXkuY29tL2NvcmUvdHJhbnNwb3J0L2NvbmZpZy5wcm90byKXAgoG",
+            "bxoldjJyYXkuY29tL2NvcmUvdHJhbnNwb3J0L2NvbmZpZy5wcm90byKbAgoG",
             "Q29uZmlnEjEKB2luYm91bmQYASADKAsyIC52MnJheS5jb3JlLkluYm91bmRI",
             "YW5kbGVyQ29uZmlnEjMKCG91dGJvdW5kGAIgAygLMiEudjJyYXkuY29yZS5P",
             "dXRib3VuZEhhbmRsZXJDb25maWcSMwoDYXBwGAQgAygLMiYudjJyYXkuY29y",
-            "ZS5jb21tb24uc2VyaWFsLlR5cGVkTWVzc2FnZRIvCgl0cmFuc3BvcnQYBSAB",
-            "KAsyHC52MnJheS5jb3JlLnRyYW5zcG9ydC5Db25maWcSOQoJZXh0ZW5zaW9u",
-            "GAYgAygLMiYudjJyYXkuY29yZS5jb21tb24uc2VyaWFsLlR5cGVkTWVzc2Fn",
-            "ZUoECAMQBCKmAQoUSW5ib3VuZEhhbmRsZXJDb25maWcSCwoDdGFnGAEgASgJ",
-            "EkEKEXJlY2VpdmVyX3NldHRpbmdzGAIgASgLMiYudjJyYXkuY29yZS5jb21t",
-            "b24uc2VyaWFsLlR5cGVkTWVzc2FnZRI+Cg5wcm94eV9zZXR0aW5ncxgDIAEo",
-            "CzImLnYycmF5LmNvcmUuY29tbW9uLnNlcmlhbC5UeXBlZE1lc3NhZ2UixgEK",
-            "FU91dGJvdW5kSGFuZGxlckNvbmZpZxILCgN0YWcYASABKAkSPwoPc2VuZGVy",
-            "X3NldHRpbmdzGAIgASgLMiYudjJyYXkuY29yZS5jb21tb24uc2VyaWFsLlR5",
-            "cGVkTWVzc2FnZRI+Cg5wcm94eV9zZXR0aW5ncxgDIAEoCzImLnYycmF5LmNv",
-            "cmUuY29tbW9uLnNlcmlhbC5UeXBlZE1lc3NhZ2USDgoGZXhwaXJlGAQgASgD",
-            "Eg8KB2NvbW1lbnQYBSABKAlCJQoOY29tLnYycmF5LmNvcmVQAVoEY29yZaoC",
-            "ClYyUmF5LkNvcmViBnByb3RvMw=="));
+            "ZS5jb21tb24uc2VyaWFsLlR5cGVkTWVzc2FnZRIzCgl0cmFuc3BvcnQYBSAB",
+            "KAsyHC52MnJheS5jb3JlLnRyYW5zcG9ydC5Db25maWdCAhgBEjkKCWV4dGVu",
+            "c2lvbhgGIAMoCzImLnYycmF5LmNvcmUuY29tbW9uLnNlcmlhbC5UeXBlZE1l",
+            "c3NhZ2VKBAgDEAQipgEKFEluYm91bmRIYW5kbGVyQ29uZmlnEgsKA3RhZxgB",
+            "IAEoCRJBChFyZWNlaXZlcl9zZXR0aW5ncxgCIAEoCzImLnYycmF5LmNvcmUu",
+            "Y29tbW9uLnNlcmlhbC5UeXBlZE1lc3NhZ2USPgoOcHJveHlfc2V0dGluZ3MY",
+            "AyABKAsyJi52MnJheS5jb3JlLmNvbW1vbi5zZXJpYWwuVHlwZWRNZXNzYWdl",
+            "IsYBChVPdXRib3VuZEhhbmRsZXJDb25maWcSCwoDdGFnGAEgASgJEj8KD3Nl",
+            "bmRlcl9zZXR0aW5ncxgCIAEoCzImLnYycmF5LmNvcmUuY29tbW9uLnNlcmlh",
+            "bC5UeXBlZE1lc3NhZ2USPgoOcHJveHlfc2V0dGluZ3MYAyABKAsyJi52MnJh",
+            "eS5jb3JlLmNvbW1vbi5zZXJpYWwuVHlwZWRNZXNzYWdlEg4KBmV4cGlyZRgE",
+            "IAEoAxIPCgdjb21tZW50GAUgASgJQiUKDmNvbS52MnJheS5jb3JlUAFaBGNv",
+            "cmWqAgpWMlJheS5Db3JlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, global::V2Ray.Core.Transport.ConfigReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -140,7 +140,10 @@ namespace V2Ray.Core {
     private global::V2Ray.Core.Transport.Config transport_;
     /// <summary>
     /// Transport settings.
+    /// Deprecated. Each inbound and outbound should choose their own transport config.
+    /// Date to remove: 2020-01-13 
     /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.Transport.Config Transport {
       get { return transport_; }
