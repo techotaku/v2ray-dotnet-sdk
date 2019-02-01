@@ -9,12 +9,12 @@
     <Company>Project V</Company>
     <Product>Project V</Product>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>4.13.0</Version>
+    <Version>4.14.0</Version>
     <Description>V2Ray .Net Standard SDK</Description>
     <PackageProjectUrl>https://github.com/techotaku/v2ray-dotnet-sdk</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <AssemblyVersion>4.13.0.0</AssemblyVersion>
+    <AssemblyVersion>4.14.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

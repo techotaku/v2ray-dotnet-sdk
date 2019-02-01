@@ -32,7 +32,7 @@ namespace V2Ray.Core.App.Dns {
             "b21haW4YAiADKAsyLS52MnJheS5jb3JlLmFwcC5kbnMuTmFtZVNlcnZlci5Q",
             "cmlvcml0eURvbWFpbhpWCg5Qcmlvcml0eURvbWFpbhI0CgR0eXBlGAEgASgO",
             "MiYudjJyYXkuY29yZS5hcHAuZG5zLkRvbWFpbk1hdGNoaW5nVHlwZRIOCgZk",
-            "b21haW4YAiABKAkiwQMKBkNvbmZpZxI4CgtOYW1lU2VydmVycxgBIAMoCzIf",
+            "b21haW4YAiABKAki2QMKBkNvbmZpZxI4CgtOYW1lU2VydmVycxgBIAMoCzIf",
             "LnYycmF5LmNvcmUuY29tbW9uLm5ldC5FbmRwb2ludEICGAESMwoLbmFtZV9z",
             "ZXJ2ZXIYBSADKAsyHi52MnJheS5jb3JlLmFwcC5kbnMuTmFtZVNlcnZlchI4",
             "CgVIb3N0cxgCIAMoCzIlLnYycmF5LmNvcmUuYXBwLmRucy5Db25maWcuSG9z",
@@ -40,17 +40,17 @@ namespace V2Ray.Core.App.Dns {
             "cxgEIAMoCzImLnYycmF5LmNvcmUuYXBwLmRucy5Db25maWcuSG9zdE1hcHBp",
             "bmcSCwoDdGFnGAYgASgJGk8KCkhvc3RzRW50cnkSCwoDa2V5GAEgASgJEjAK",
             "BXZhbHVlGAIgASgLMiEudjJyYXkuY29yZS5jb21tb24ubmV0LklQT3JEb21h",
-            "aW46AjgBGl8KC0hvc3RNYXBwaW5nEjQKBHR5cGUYASABKA4yJi52MnJheS5j",
+            "aW46AjgBGncKC0hvc3RNYXBwaW5nEjQKBHR5cGUYASABKA4yJi52MnJheS5j",
             "b3JlLmFwcC5kbnMuRG9tYWluTWF0Y2hpbmdUeXBlEg4KBmRvbWFpbhgCIAEo",
-            "CRIKCgJpcBgDIAMoDCpFChJEb21haW5NYXRjaGluZ1R5cGUSCAoERnVsbBAA",
-            "Eg0KCVN1YmRvbWFpbhABEgsKB0tleXdvcmQQAhIJCgVSZWdleBADQjQKFmNv",
-            "bS52MnJheS5jb3JlLmFwcC5kbnNQAVoDZG5zqgISVjJSYXkuQ29yZS5BcHAu",
-            "RG5zYgZwcm90bzM="));
+            "CRIKCgJpcBgDIAMoDBIWCg5wcm94aWVkX2RvbWFpbhgEIAEoCSpFChJEb21h",
+            "aW5NYXRjaGluZ1R5cGUSCAoERnVsbBAAEg0KCVN1YmRvbWFpbhABEgsKB0tl",
+            "eXdvcmQQAhIJCgVSZWdleBADQjQKFmNvbS52MnJheS5jb3JlLmFwcC5kbnNQ",
+            "AVoDZG5zqgISVjJSYXkuQ29yZS5BcHAuRG5zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.AddressReflection.Descriptor, global::V2Ray.Core.Common.Net.DestinationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.App.Dns.DomainMatchingType), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer), global::V2Ray.Core.App.Dns.NameServer.Parser, new[]{ "Address", "PrioritizedDomain" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain), global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain.Parser, new[]{ "Type", "Domain" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config), global::V2Ray.Core.App.Dns.Config.Parser, new[]{ "NameServers", "NameServer", "Hosts", "ClientIp", "StaticHosts", "Tag" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config.Types.HostMapping), global::V2Ray.Core.App.Dns.Config.Types.HostMapping.Parser, new[]{ "Type", "Domain", "Ip" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config), global::V2Ray.Core.App.Dns.Config.Parser, new[]{ "NameServers", "NameServer", "Hosts", "ClientIp", "StaticHosts", "Tag" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config.Types.HostMapping), global::V2Ray.Core.App.Dns.Config.Types.HostMapping.Parser, new[]{ "Type", "Domain", "Ip", "ProxiedDomain" }, null, null, null)})
           }));
     }
     #endregion
@@ -672,6 +672,7 @@ namespace V2Ray.Core.App.Dns {
           type_ = other.type_;
           domain_ = other.domain_;
           ip_ = other.ip_.Clone();
+          proxiedDomain_ = other.proxiedDomain_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -712,6 +713,21 @@ namespace V2Ray.Core.App.Dns {
           get { return ip_; }
         }
 
+        /// <summary>Field number for the "proxied_domain" field.</summary>
+        public const int ProxiedDomainFieldNumber = 4;
+        private string proxiedDomain_ = "";
+        /// <summary>
+        /// ProxiedDomain indicates the mapped domain has the same IP address on this domain. V2Ray will use this domain for IP queries.
+        /// This field is only effective if ip is empty.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string ProxiedDomain {
+          get { return proxiedDomain_; }
+          set {
+            proxiedDomain_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as HostMapping);
@@ -728,6 +744,7 @@ namespace V2Ray.Core.App.Dns {
           if (Type != other.Type) return false;
           if (Domain != other.Domain) return false;
           if(!ip_.Equals(other.ip_)) return false;
+          if (ProxiedDomain != other.ProxiedDomain) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -737,6 +754,7 @@ namespace V2Ray.Core.App.Dns {
           if (Type != 0) hash ^= Type.GetHashCode();
           if (Domain.Length != 0) hash ^= Domain.GetHashCode();
           hash ^= ip_.GetHashCode();
+          if (ProxiedDomain.Length != 0) hash ^= ProxiedDomain.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -759,6 +777,10 @@ namespace V2Ray.Core.App.Dns {
             output.WriteString(Domain);
           }
           ip_.WriteTo(output, _repeated_ip_codec);
+          if (ProxiedDomain.Length != 0) {
+            output.WriteRawTag(34);
+            output.WriteString(ProxiedDomain);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -774,6 +796,9 @@ namespace V2Ray.Core.App.Dns {
             size += 1 + pb::CodedOutputStream.ComputeStringSize(Domain);
           }
           size += ip_.CalculateSize(_repeated_ip_codec);
+          if (ProxiedDomain.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(ProxiedDomain);
+          }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
           }
@@ -792,6 +817,9 @@ namespace V2Ray.Core.App.Dns {
             Domain = other.Domain;
           }
           ip_.Add(other.ip_);
+          if (other.ProxiedDomain.Length != 0) {
+            ProxiedDomain = other.ProxiedDomain;
+          }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
 
@@ -813,6 +841,10 @@ namespace V2Ray.Core.App.Dns {
               }
               case 26: {
                 ip_.AddEntriesFrom(input, _repeated_ip_codec);
+                break;
+              }
+              case 34: {
+                ProxiedDomain = input.ReadString();
                 break;
               }
             }
