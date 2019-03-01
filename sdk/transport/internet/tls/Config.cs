@@ -30,18 +30,19 @@ namespace V2Ray.Core.Transport.Internet.Tls {
             "KAwSQwoFdXNhZ2UYAyABKA4yNC52MnJheS5jb3JlLnRyYW5zcG9ydC5pbnRl",
             "cm5ldC50bHMuQ2VydGlmaWNhdGUuVXNhZ2UiRAoFVXNhZ2USEAoMRU5DSVBI",
             "RVJNRU5UEAASFAoQQVVUSE9SSVRZX1ZFUklGWRABEhMKD0FVVEhPUklUWV9J",
-            "U1NVRRACItUBCgZDb25maWcSFgoOYWxsb3dfaW5zZWN1cmUYASABKAgSHgoW",
+            "U1NVRRACIvIBCgZDb25maWcSFgoOYWxsb3dfaW5zZWN1cmUYASABKAgSHgoW",
             "YWxsb3dfaW5zZWN1cmVfY2lwaGVycxgFIAEoCBJDCgtjZXJ0aWZpY2F0ZRgC",
             "IAMoCzIuLnYycmF5LmNvcmUudHJhbnNwb3J0LmludGVybmV0LnRscy5DZXJ0",
             "aWZpY2F0ZRITCgtzZXJ2ZXJfbmFtZRgDIAEoCRIVCg1uZXh0X3Byb3RvY29s",
-            "GAQgAygJEiIKGmRpc2FibGVfc2Vzc2lvbl9yZXN1bXB0aW9uGAYgASgIQlIK",
-            "JWNvbS52MnJheS5jb3JlLnRyYW5zcG9ydC5pbnRlcm5ldC50bHNQAVoDdGxz",
-            "qgIhVjJSYXkuQ29yZS5UcmFuc3BvcnQuSW50ZXJuZXQuVGxzYgZwcm90bzM="));
+            "GAQgAygJEiIKGmRpc2FibGVfc2Vzc2lvbl9yZXN1bXB0aW9uGAYgASgIEhsK",
+            "E2Rpc2FibGVfc3lzdGVtX3Jvb3QYByABKAhCUgolY29tLnYycmF5LmNvcmUu",
+            "dHJhbnNwb3J0LmludGVybmV0LnRsc1ABWgN0bHOqAiFWMlJheS5Db3JlLlRy",
+            "YW5zcG9ydC5JbnRlcm5ldC5UbHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Tls.Certificate), global::V2Ray.Core.Transport.Internet.Tls.Certificate.Parser, new[]{ "Certificate_", "Key", "Usage" }, null, new[]{ typeof(global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage) }, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Tls.Config), global::V2Ray.Core.Transport.Internet.Tls.Config.Parser, new[]{ "AllowInsecure", "AllowInsecureCiphers", "Certificate", "ServerName", "NextProtocol", "DisableSessionResumption" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Tls.Config), global::V2Ray.Core.Transport.Internet.Tls.Config.Parser, new[]{ "AllowInsecure", "AllowInsecureCiphers", "Certificate", "ServerName", "NextProtocol", "DisableSessionResumption", "DisableSystemRoot" }, null, null, null)
           }));
     }
     #endregion
@@ -283,6 +284,7 @@ namespace V2Ray.Core.Transport.Internet.Tls {
       serverName_ = other.serverName_;
       nextProtocol_ = other.nextProtocol_.Clone();
       disableSessionResumption_ = other.disableSessionResumption_;
+      disableSystemRoot_ = other.disableSystemRoot_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -373,6 +375,20 @@ namespace V2Ray.Core.Transport.Internet.Tls {
       }
     }
 
+    /// <summary>Field number for the "disable_system_root" field.</summary>
+    public const int DisableSystemRootFieldNumber = 7;
+    private bool disableSystemRoot_;
+    /// <summary>
+    /// If true, root certificates on the system will not be loaded for verification.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool DisableSystemRoot {
+      get { return disableSystemRoot_; }
+      set {
+        disableSystemRoot_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Config);
@@ -392,6 +408,7 @@ namespace V2Ray.Core.Transport.Internet.Tls {
       if (ServerName != other.ServerName) return false;
       if(!nextProtocol_.Equals(other.nextProtocol_)) return false;
       if (DisableSessionResumption != other.DisableSessionResumption) return false;
+      if (DisableSystemRoot != other.DisableSystemRoot) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -404,6 +421,7 @@ namespace V2Ray.Core.Transport.Internet.Tls {
       if (ServerName.Length != 0) hash ^= ServerName.GetHashCode();
       hash ^= nextProtocol_.GetHashCode();
       if (DisableSessionResumption != false) hash ^= DisableSessionResumption.GetHashCode();
+      if (DisableSystemRoot != false) hash ^= DisableSystemRoot.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -435,6 +453,10 @@ namespace V2Ray.Core.Transport.Internet.Tls {
         output.WriteRawTag(48);
         output.WriteBool(DisableSessionResumption);
       }
+      if (DisableSystemRoot != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(DisableSystemRoot);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -455,6 +477,9 @@ namespace V2Ray.Core.Transport.Internet.Tls {
       }
       size += nextProtocol_.CalculateSize(_repeated_nextProtocol_codec);
       if (DisableSessionResumption != false) {
+        size += 1 + 1;
+      }
+      if (DisableSystemRoot != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -481,6 +506,9 @@ namespace V2Ray.Core.Transport.Internet.Tls {
       nextProtocol_.Add(other.nextProtocol_);
       if (other.DisableSessionResumption != false) {
         DisableSessionResumption = other.DisableSessionResumption;
+      }
+      if (other.DisableSystemRoot != false) {
+        DisableSystemRoot = other.DisableSystemRoot;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -515,6 +543,10 @@ namespace V2Ray.Core.Transport.Internet.Tls {
           }
           case 48: {
             DisableSessionResumption = input.ReadBool();
+            break;
+          }
+          case 56: {
+            DisableSystemRoot = input.ReadBool();
             break;
           }
         }

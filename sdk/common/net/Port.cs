@@ -26,12 +26,15 @@ namespace V2Ray.Core.Common.Net {
           string.Concat(
             "CiR2MnJheS5jb20vY29yZS9jb21tb24vbmV0L3BvcnQucHJvdG8SFXYycmF5",
             "LmNvcmUuY29tbW9uLm5ldCIlCglQb3J0UmFuZ2USDAoERnJvbRgBIAEoDRIK",
-            "CgJUbxgCIAEoDUI6Chljb20udjJyYXkuY29yZS5jb21tb24ubmV0UAFaA25l",
-            "dKoCFVYyUmF5LkNvcmUuQ29tbW9uLk5ldGIGcHJvdG8z"));
+            "CgJUbxgCIAEoDSI7CghQb3J0TGlzdBIvCgVyYW5nZRgBIAMoCzIgLnYycmF5",
+            "LmNvcmUuY29tbW9uLm5ldC5Qb3J0UmFuZ2VCOgoZY29tLnYycmF5LmNvcmUu",
+            "Y29tbW9uLm5ldFABWgNuZXSqAhVWMlJheS5Db3JlLkNvbW1vbi5OZXRiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.PortRange), global::V2Ray.Core.Common.Net.PortRange.Parser, new[]{ "From", "To" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.PortRange), global::V2Ray.Core.Common.Net.PortRange.Parser, new[]{ "From", "To" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.PortList), global::V2Ray.Core.Common.Net.PortList.Parser, new[]{ "Range" }, null, null, null)
           }));
     }
     #endregion
@@ -196,6 +199,130 @@ namespace V2Ray.Core.Common.Net {
           }
           case 16: {
             To = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// PortList is a list of ports.
+  /// </summary>
+  public sealed partial class PortList : pb::IMessage<PortList> {
+    private static readonly pb::MessageParser<PortList> _parser = new pb::MessageParser<PortList>(() => new PortList());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PortList> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::V2Ray.Core.Common.Net.PortReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PortList() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PortList(PortList other) : this() {
+      range_ = other.range_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PortList Clone() {
+      return new PortList(this);
+    }
+
+    /// <summary>Field number for the "range" field.</summary>
+    public const int RangeFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::V2Ray.Core.Common.Net.PortRange> _repeated_range_codec
+        = pb::FieldCodec.ForMessage(10, global::V2Ray.Core.Common.Net.PortRange.Parser);
+    private readonly pbc::RepeatedField<global::V2Ray.Core.Common.Net.PortRange> range_ = new pbc::RepeatedField<global::V2Ray.Core.Common.Net.PortRange>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::V2Ray.Core.Common.Net.PortRange> Range {
+      get { return range_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PortList);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PortList other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!range_.Equals(other.range_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= range_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      range_.WriteTo(output, _repeated_range_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += range_.CalculateSize(_repeated_range_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PortList other) {
+      if (other == null) {
+        return;
+      }
+      range_.Add(other.range_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            range_.AddEntriesFrom(input, _repeated_range_codec);
             break;
           }
         }
