@@ -66,22 +66,22 @@ namespace V2Ray.Core.App.Proxyman.Command {
             "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Protocol.UserReflection.Descriptor, global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, global::V2Ray.Core.ConfigReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AddUserOperation), global::V2Ray.Core.App.Proxyman.Command.AddUserOperation.Parser, new[]{ "User" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.RemoveUserOperation), global::V2Ray.Core.App.Proxyman.Command.RemoveUserOperation.Parser, new[]{ "Email" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AddInboundRequest), global::V2Ray.Core.App.Proxyman.Command.AddInboundRequest.Parser, new[]{ "Inbound" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AddInboundResponse), global::V2Ray.Core.App.Proxyman.Command.AddInboundResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.RemoveInboundRequest), global::V2Ray.Core.App.Proxyman.Command.RemoveInboundRequest.Parser, new[]{ "Tag" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.RemoveInboundResponse), global::V2Ray.Core.App.Proxyman.Command.RemoveInboundResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AlterInboundRequest), global::V2Ray.Core.App.Proxyman.Command.AlterInboundRequest.Parser, new[]{ "Tag", "Operation" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AlterInboundResponse), global::V2Ray.Core.App.Proxyman.Command.AlterInboundResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AddOutboundRequest), global::V2Ray.Core.App.Proxyman.Command.AddOutboundRequest.Parser, new[]{ "Outbound" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AddOutboundResponse), global::V2Ray.Core.App.Proxyman.Command.AddOutboundResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.RemoveOutboundRequest), global::V2Ray.Core.App.Proxyman.Command.RemoveOutboundRequest.Parser, new[]{ "Tag" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.RemoveOutboundResponse), global::V2Ray.Core.App.Proxyman.Command.RemoveOutboundResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AlterOutboundRequest), global::V2Ray.Core.App.Proxyman.Command.AlterOutboundRequest.Parser, new[]{ "Tag", "Operation" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AlterOutboundResponse), global::V2Ray.Core.App.Proxyman.Command.AlterOutboundResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.Config), global::V2Ray.Core.App.Proxyman.Command.Config.Parser, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AddUserOperation), global::V2Ray.Core.App.Proxyman.Command.AddUserOperation.Parser, new[]{ "User" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.RemoveUserOperation), global::V2Ray.Core.App.Proxyman.Command.RemoveUserOperation.Parser, new[]{ "Email" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AddInboundRequest), global::V2Ray.Core.App.Proxyman.Command.AddInboundRequest.Parser, new[]{ "Inbound" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AddInboundResponse), global::V2Ray.Core.App.Proxyman.Command.AddInboundResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.RemoveInboundRequest), global::V2Ray.Core.App.Proxyman.Command.RemoveInboundRequest.Parser, new[]{ "Tag" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.RemoveInboundResponse), global::V2Ray.Core.App.Proxyman.Command.RemoveInboundResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AlterInboundRequest), global::V2Ray.Core.App.Proxyman.Command.AlterInboundRequest.Parser, new[]{ "Tag", "Operation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AlterInboundResponse), global::V2Ray.Core.App.Proxyman.Command.AlterInboundResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AddOutboundRequest), global::V2Ray.Core.App.Proxyman.Command.AddOutboundRequest.Parser, new[]{ "Outbound" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AddOutboundResponse), global::V2Ray.Core.App.Proxyman.Command.AddOutboundResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.RemoveOutboundRequest), global::V2Ray.Core.App.Proxyman.Command.RemoveOutboundRequest.Parser, new[]{ "Tag" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.RemoveOutboundResponse), global::V2Ray.Core.App.Proxyman.Command.RemoveOutboundResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AlterOutboundRequest), global::V2Ray.Core.App.Proxyman.Command.AlterOutboundRequest.Parser, new[]{ "Tag", "Operation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.AlterOutboundResponse), global::V2Ray.Core.App.Proxyman.Command.AlterOutboundResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.Command.Config), global::V2Ray.Core.App.Proxyman.Command.Config.Parser, null, null, null, null, null)
           }));
     }
     #endregion
@@ -195,7 +195,7 @@ namespace V2Ray.Core.App.Proxyman.Command {
       }
       if (other.user_ != null) {
         if (user_ == null) {
-          user_ = new global::V2Ray.Core.Common.Protocol.User();
+          User = new global::V2Ray.Core.Common.Protocol.User();
         }
         User.MergeFrom(other.User);
       }
@@ -212,9 +212,9 @@ namespace V2Ray.Core.App.Proxyman.Command {
             break;
           case 10: {
             if (user_ == null) {
-              user_ = new global::V2Ray.Core.Common.Protocol.User();
+              User = new global::V2Ray.Core.Common.Protocol.User();
             }
-            input.ReadMessage(user_);
+            input.ReadMessage(User);
             break;
           }
         }
@@ -459,7 +459,7 @@ namespace V2Ray.Core.App.Proxyman.Command {
       }
       if (other.inbound_ != null) {
         if (inbound_ == null) {
-          inbound_ = new global::V2Ray.Core.InboundHandlerConfig();
+          Inbound = new global::V2Ray.Core.InboundHandlerConfig();
         }
         Inbound.MergeFrom(other.Inbound);
       }
@@ -476,9 +476,9 @@ namespace V2Ray.Core.App.Proxyman.Command {
             break;
           case 10: {
             if (inbound_ == null) {
-              inbound_ = new global::V2Ray.Core.InboundHandlerConfig();
+              Inbound = new global::V2Ray.Core.InboundHandlerConfig();
             }
-            input.ReadMessage(inbound_);
+            input.ReadMessage(Inbound);
             break;
           }
         }
@@ -949,7 +949,7 @@ namespace V2Ray.Core.App.Proxyman.Command {
       }
       if (other.operation_ != null) {
         if (operation_ == null) {
-          operation_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          Operation = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         Operation.MergeFrom(other.Operation);
       }
@@ -970,9 +970,9 @@ namespace V2Ray.Core.App.Proxyman.Command {
           }
           case 18: {
             if (operation_ == null) {
-              operation_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              Operation = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(operation_);
+            input.ReadMessage(Operation);
             break;
           }
         }
@@ -1189,7 +1189,7 @@ namespace V2Ray.Core.App.Proxyman.Command {
       }
       if (other.outbound_ != null) {
         if (outbound_ == null) {
-          outbound_ = new global::V2Ray.Core.OutboundHandlerConfig();
+          Outbound = new global::V2Ray.Core.OutboundHandlerConfig();
         }
         Outbound.MergeFrom(other.Outbound);
       }
@@ -1206,9 +1206,9 @@ namespace V2Ray.Core.App.Proxyman.Command {
             break;
           case 10: {
             if (outbound_ == null) {
-              outbound_ = new global::V2Ray.Core.OutboundHandlerConfig();
+              Outbound = new global::V2Ray.Core.OutboundHandlerConfig();
             }
-            input.ReadMessage(outbound_);
+            input.ReadMessage(Outbound);
             break;
           }
         }
@@ -1679,7 +1679,7 @@ namespace V2Ray.Core.App.Proxyman.Command {
       }
       if (other.operation_ != null) {
         if (operation_ == null) {
-          operation_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          Operation = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         Operation.MergeFrom(other.Operation);
       }
@@ -1700,9 +1700,9 @@ namespace V2Ray.Core.App.Proxyman.Command {
           }
           case 18: {
             if (operation_ == null) {
-              operation_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              Operation = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(operation_);
+            input.ReadMessage(Operation);
             break;
           }
         }

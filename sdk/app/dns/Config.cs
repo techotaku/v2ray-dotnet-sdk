@@ -48,9 +48,9 @@ namespace V2Ray.Core.App.Dns {
             "AVoDZG5zqgISVjJSYXkuQ29yZS5BcHAuRG5zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.AddressReflection.Descriptor, global::V2Ray.Core.Common.Net.DestinationReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.App.Dns.DomainMatchingType), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer), global::V2Ray.Core.App.Dns.NameServer.Parser, new[]{ "Address", "PrioritizedDomain" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain), global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain.Parser, new[]{ "Type", "Domain" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config), global::V2Ray.Core.App.Dns.Config.Parser, new[]{ "NameServers", "NameServer", "Hosts", "ClientIp", "StaticHosts", "Tag" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config.Types.HostMapping), global::V2Ray.Core.App.Dns.Config.Types.HostMapping.Parser, new[]{ "Type", "Domain", "Ip", "ProxiedDomain" }, null, null, null)})
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.App.Dns.DomainMatchingType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer), global::V2Ray.Core.App.Dns.NameServer.Parser, new[]{ "Address", "PrioritizedDomain" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain), global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain.Parser, new[]{ "Type", "Domain" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config), global::V2Ray.Core.App.Dns.Config.Parser, new[]{ "NameServers", "NameServer", "Hosts", "ClientIp", "StaticHosts", "Tag" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config.Types.HostMapping), global::V2Ray.Core.App.Dns.Config.Types.HostMapping.Parser, new[]{ "Type", "Domain", "Ip", "ProxiedDomain" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -189,7 +189,7 @@ namespace V2Ray.Core.App.Dns {
       }
       if (other.address_ != null) {
         if (address_ == null) {
-          address_ = new global::V2Ray.Core.Common.Net.Endpoint();
+          Address = new global::V2Ray.Core.Common.Net.Endpoint();
         }
         Address.MergeFrom(other.Address);
       }
@@ -207,9 +207,9 @@ namespace V2Ray.Core.App.Dns {
             break;
           case 10: {
             if (address_ == null) {
-              address_ = new global::V2Ray.Core.Common.Net.Endpoint();
+              Address = new global::V2Ray.Core.Common.Net.Endpoint();
             }
-            input.ReadMessage(address_);
+            input.ReadMessage(Address);
             break;
           }
           case 18: {
@@ -261,7 +261,7 @@ namespace V2Ray.Core.App.Dns {
 
         /// <summary>Field number for the "type" field.</summary>
         public const int TypeFieldNumber = 1;
-        private global::V2Ray.Core.App.Dns.DomainMatchingType type_ = 0;
+        private global::V2Ray.Core.App.Dns.DomainMatchingType type_ = global::V2Ray.Core.App.Dns.DomainMatchingType.Full;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public global::V2Ray.Core.App.Dns.DomainMatchingType Type {
           get { return type_; }
@@ -302,7 +302,7 @@ namespace V2Ray.Core.App.Dns {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
-          if (Type != 0) hash ^= Type.GetHashCode();
+          if (Type != global::V2Ray.Core.App.Dns.DomainMatchingType.Full) hash ^= Type.GetHashCode();
           if (Domain.Length != 0) hash ^= Domain.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
@@ -317,7 +317,7 @@ namespace V2Ray.Core.App.Dns {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
-          if (Type != 0) {
+          if (Type != global::V2Ray.Core.App.Dns.DomainMatchingType.Full) {
             output.WriteRawTag(8);
             output.WriteEnum((int) Type);
           }
@@ -333,7 +333,7 @@ namespace V2Ray.Core.App.Dns {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
-          if (Type != 0) {
+          if (Type != global::V2Ray.Core.App.Dns.DomainMatchingType.Full) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
           }
           if (Domain.Length != 0) {
@@ -350,7 +350,7 @@ namespace V2Ray.Core.App.Dns {
           if (other == null) {
             return;
           }
-          if (other.Type != 0) {
+          if (other.Type != global::V2Ray.Core.App.Dns.DomainMatchingType.Full) {
             Type = other.Type;
           }
           if (other.Domain.Length != 0) {
@@ -368,7 +368,7 @@ namespace V2Ray.Core.App.Dns {
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
               case 8: {
-                type_ = (global::V2Ray.Core.App.Dns.DomainMatchingType) input.ReadEnum();
+                Type = (global::V2Ray.Core.App.Dns.DomainMatchingType) input.ReadEnum();
                 break;
               }
               case 18: {
@@ -456,7 +456,7 @@ namespace V2Ray.Core.App.Dns {
     /// <summary>Field number for the "Hosts" field.</summary>
     public const int HostsFieldNumber = 2;
     private static readonly pbc::MapField<string, global::V2Ray.Core.Common.Net.IPOrDomain>.Codec _map_hosts_codec
-        = new pbc::MapField<string, global::V2Ray.Core.Common.Net.IPOrDomain>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForMessage(18, global::V2Ray.Core.Common.Net.IPOrDomain.Parser), 18);
+        = new pbc::MapField<string, global::V2Ray.Core.Common.Net.IPOrDomain>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::V2Ray.Core.Common.Net.IPOrDomain.Parser), 18);
     private readonly pbc::MapField<string, global::V2Ray.Core.Common.Net.IPOrDomain> hosts_ = new pbc::MapField<string, global::V2Ray.Core.Common.Net.IPOrDomain>();
     /// <summary>
     /// Static hosts. Domain to IP.
@@ -683,7 +683,7 @@ namespace V2Ray.Core.App.Dns {
 
         /// <summary>Field number for the "type" field.</summary>
         public const int TypeFieldNumber = 1;
-        private global::V2Ray.Core.App.Dns.DomainMatchingType type_ = 0;
+        private global::V2Ray.Core.App.Dns.DomainMatchingType type_ = global::V2Ray.Core.App.Dns.DomainMatchingType.Full;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public global::V2Ray.Core.App.Dns.DomainMatchingType Type {
           get { return type_; }
@@ -751,7 +751,7 @@ namespace V2Ray.Core.App.Dns {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override int GetHashCode() {
           int hash = 1;
-          if (Type != 0) hash ^= Type.GetHashCode();
+          if (Type != global::V2Ray.Core.App.Dns.DomainMatchingType.Full) hash ^= Type.GetHashCode();
           if (Domain.Length != 0) hash ^= Domain.GetHashCode();
           hash ^= ip_.GetHashCode();
           if (ProxiedDomain.Length != 0) hash ^= ProxiedDomain.GetHashCode();
@@ -768,7 +768,7 @@ namespace V2Ray.Core.App.Dns {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public void WriteTo(pb::CodedOutputStream output) {
-          if (Type != 0) {
+          if (Type != global::V2Ray.Core.App.Dns.DomainMatchingType.Full) {
             output.WriteRawTag(8);
             output.WriteEnum((int) Type);
           }
@@ -789,7 +789,7 @@ namespace V2Ray.Core.App.Dns {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public int CalculateSize() {
           int size = 0;
-          if (Type != 0) {
+          if (Type != global::V2Ray.Core.App.Dns.DomainMatchingType.Full) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
           }
           if (Domain.Length != 0) {
@@ -810,7 +810,7 @@ namespace V2Ray.Core.App.Dns {
           if (other == null) {
             return;
           }
-          if (other.Type != 0) {
+          if (other.Type != global::V2Ray.Core.App.Dns.DomainMatchingType.Full) {
             Type = other.Type;
           }
           if (other.Domain.Length != 0) {
@@ -832,7 +832,7 @@ namespace V2Ray.Core.App.Dns {
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
               case 8: {
-                type_ = (global::V2Ray.Core.App.Dns.DomainMatchingType) input.ReadEnum();
+                Type = (global::V2Ray.Core.App.Dns.DomainMatchingType) input.ReadEnum();
                 break;
               }
               case 18: {

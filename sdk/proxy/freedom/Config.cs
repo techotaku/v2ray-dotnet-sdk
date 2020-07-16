@@ -39,9 +39,9 @@ namespace V2Ray.Core.Proxy.Freedom {
             "b21iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Protocol.ServerSpecReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Freedom.DestinationOverride), global::V2Ray.Core.Proxy.Freedom.DestinationOverride.Parser, new[]{ "Server" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Freedom.Config), global::V2Ray.Core.Proxy.Freedom.Config.Parser, new[]{ "DomainStrategy", "Timeout", "DestinationOverride", "UserLevel" }, null, new[]{ typeof(global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Freedom.DestinationOverride), global::V2Ray.Core.Proxy.Freedom.DestinationOverride.Parser, new[]{ "Server" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Freedom.Config), global::V2Ray.Core.Proxy.Freedom.Config.Parser, new[]{ "DomainStrategy", "Timeout", "DestinationOverride", "UserLevel" }, null, new[]{ typeof(global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy) }, null, null)
           }));
     }
     #endregion
@@ -155,7 +155,7 @@ namespace V2Ray.Core.Proxy.Freedom {
       }
       if (other.server_ != null) {
         if (server_ == null) {
-          server_ = new global::V2Ray.Core.Common.Protocol.ServerEndpoint();
+          Server = new global::V2Ray.Core.Common.Protocol.ServerEndpoint();
         }
         Server.MergeFrom(other.Server);
       }
@@ -172,9 +172,9 @@ namespace V2Ray.Core.Proxy.Freedom {
             break;
           case 10: {
             if (server_ == null) {
-              server_ = new global::V2Ray.Core.Common.Protocol.ServerEndpoint();
+              Server = new global::V2Ray.Core.Common.Protocol.ServerEndpoint();
             }
-            input.ReadMessage(server_);
+            input.ReadMessage(Server);
             break;
           }
         }
@@ -222,7 +222,7 @@ namespace V2Ray.Core.Proxy.Freedom {
 
     /// <summary>Field number for the "domain_strategy" field.</summary>
     public const int DomainStrategyFieldNumber = 1;
-    private global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy domainStrategy_ = 0;
+    private global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy domainStrategy_ = global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy.AsIs;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy DomainStrategy {
       get { return domainStrategy_; }
@@ -288,7 +288,7 @@ namespace V2Ray.Core.Proxy.Freedom {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (DomainStrategy != 0) hash ^= DomainStrategy.GetHashCode();
+      if (DomainStrategy != global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy.AsIs) hash ^= DomainStrategy.GetHashCode();
       if (Timeout != 0) hash ^= Timeout.GetHashCode();
       if (destinationOverride_ != null) hash ^= DestinationOverride.GetHashCode();
       if (UserLevel != 0) hash ^= UserLevel.GetHashCode();
@@ -305,7 +305,7 @@ namespace V2Ray.Core.Proxy.Freedom {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (DomainStrategy != 0) {
+      if (DomainStrategy != global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy.AsIs) {
         output.WriteRawTag(8);
         output.WriteEnum((int) DomainStrategy);
       }
@@ -329,7 +329,7 @@ namespace V2Ray.Core.Proxy.Freedom {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (DomainStrategy != 0) {
+      if (DomainStrategy != global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy.AsIs) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DomainStrategy);
       }
       if (Timeout != 0) {
@@ -352,7 +352,7 @@ namespace V2Ray.Core.Proxy.Freedom {
       if (other == null) {
         return;
       }
-      if (other.DomainStrategy != 0) {
+      if (other.DomainStrategy != global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy.AsIs) {
         DomainStrategy = other.DomainStrategy;
       }
       if (other.Timeout != 0) {
@@ -360,7 +360,7 @@ namespace V2Ray.Core.Proxy.Freedom {
       }
       if (other.destinationOverride_ != null) {
         if (destinationOverride_ == null) {
-          destinationOverride_ = new global::V2Ray.Core.Proxy.Freedom.DestinationOverride();
+          DestinationOverride = new global::V2Ray.Core.Proxy.Freedom.DestinationOverride();
         }
         DestinationOverride.MergeFrom(other.DestinationOverride);
       }
@@ -379,7 +379,7 @@ namespace V2Ray.Core.Proxy.Freedom {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            domainStrategy_ = (global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy) input.ReadEnum();
+            DomainStrategy = (global::V2Ray.Core.Proxy.Freedom.Config.Types.DomainStrategy) input.ReadEnum();
             break;
           }
           case 16: {
@@ -388,9 +388,9 @@ namespace V2Ray.Core.Proxy.Freedom {
           }
           case 26: {
             if (destinationOverride_ == null) {
-              destinationOverride_ = new global::V2Ray.Core.Proxy.Freedom.DestinationOverride();
+              DestinationOverride = new global::V2Ray.Core.Proxy.Freedom.DestinationOverride();
             }
-            input.ReadMessage(destinationOverride_);
+            input.ReadMessage(DestinationOverride);
             break;
           }
           case 32: {

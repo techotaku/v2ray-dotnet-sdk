@@ -31,8 +31,8 @@ namespace V2Ray.Core.Transport.Internet.Udp {
             "cGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Udp.Config), global::V2Ray.Core.Transport.Internet.Udp.Config.Parser, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Udp.Config), global::V2Ray.Core.Transport.Internet.Udp.Config.Parser, null, null, null, null, null)
           }));
     }
     #endregion

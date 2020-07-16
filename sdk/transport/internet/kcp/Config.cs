@@ -47,15 +47,15 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
             "cmUuVHJhbnNwb3J0LkludGVybmV0LktjcGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.MTU), global::V2Ray.Core.Transport.Internet.Kcp.MTU.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.TTI), global::V2Ray.Core.Transport.Internet.Kcp.TTI.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.UplinkCapacity), global::V2Ray.Core.Transport.Internet.Kcp.UplinkCapacity.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.DownlinkCapacity), global::V2Ray.Core.Transport.Internet.Kcp.DownlinkCapacity.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.WriteBuffer), global::V2Ray.Core.Transport.Internet.Kcp.WriteBuffer.Parser, new[]{ "Size" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.ReadBuffer), global::V2Ray.Core.Transport.Internet.Kcp.ReadBuffer.Parser, new[]{ "Size" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.ConnectionReuse), global::V2Ray.Core.Transport.Internet.Kcp.ConnectionReuse.Parser, new[]{ "Enable" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.Config), global::V2Ray.Core.Transport.Internet.Kcp.Config.Parser, new[]{ "Mtu", "Tti", "UplinkCapacity", "DownlinkCapacity", "Congestion", "WriteBuffer", "ReadBuffer", "HeaderConfig" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.MTU), global::V2Ray.Core.Transport.Internet.Kcp.MTU.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.TTI), global::V2Ray.Core.Transport.Internet.Kcp.TTI.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.UplinkCapacity), global::V2Ray.Core.Transport.Internet.Kcp.UplinkCapacity.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.DownlinkCapacity), global::V2Ray.Core.Transport.Internet.Kcp.DownlinkCapacity.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.WriteBuffer), global::V2Ray.Core.Transport.Internet.Kcp.WriteBuffer.Parser, new[]{ "Size" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.ReadBuffer), global::V2Ray.Core.Transport.Internet.Kcp.ReadBuffer.Parser, new[]{ "Size" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.ConnectionReuse), global::V2Ray.Core.Transport.Internet.Kcp.ConnectionReuse.Parser, new[]{ "Enable" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.Config), global::V2Ray.Core.Transport.Internet.Kcp.Config.Parser, new[]{ "Mtu", "Tti", "UplinkCapacity", "DownlinkCapacity", "Congestion", "WriteBuffer", "ReadBuffer", "HeaderConfig" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1237,25 +1237,25 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
       }
       if (other.mtu_ != null) {
         if (mtu_ == null) {
-          mtu_ = new global::V2Ray.Core.Transport.Internet.Kcp.MTU();
+          Mtu = new global::V2Ray.Core.Transport.Internet.Kcp.MTU();
         }
         Mtu.MergeFrom(other.Mtu);
       }
       if (other.tti_ != null) {
         if (tti_ == null) {
-          tti_ = new global::V2Ray.Core.Transport.Internet.Kcp.TTI();
+          Tti = new global::V2Ray.Core.Transport.Internet.Kcp.TTI();
         }
         Tti.MergeFrom(other.Tti);
       }
       if (other.uplinkCapacity_ != null) {
         if (uplinkCapacity_ == null) {
-          uplinkCapacity_ = new global::V2Ray.Core.Transport.Internet.Kcp.UplinkCapacity();
+          UplinkCapacity = new global::V2Ray.Core.Transport.Internet.Kcp.UplinkCapacity();
         }
         UplinkCapacity.MergeFrom(other.UplinkCapacity);
       }
       if (other.downlinkCapacity_ != null) {
         if (downlinkCapacity_ == null) {
-          downlinkCapacity_ = new global::V2Ray.Core.Transport.Internet.Kcp.DownlinkCapacity();
+          DownlinkCapacity = new global::V2Ray.Core.Transport.Internet.Kcp.DownlinkCapacity();
         }
         DownlinkCapacity.MergeFrom(other.DownlinkCapacity);
       }
@@ -1264,19 +1264,19 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
       }
       if (other.writeBuffer_ != null) {
         if (writeBuffer_ == null) {
-          writeBuffer_ = new global::V2Ray.Core.Transport.Internet.Kcp.WriteBuffer();
+          WriteBuffer = new global::V2Ray.Core.Transport.Internet.Kcp.WriteBuffer();
         }
         WriteBuffer.MergeFrom(other.WriteBuffer);
       }
       if (other.readBuffer_ != null) {
         if (readBuffer_ == null) {
-          readBuffer_ = new global::V2Ray.Core.Transport.Internet.Kcp.ReadBuffer();
+          ReadBuffer = new global::V2Ray.Core.Transport.Internet.Kcp.ReadBuffer();
         }
         ReadBuffer.MergeFrom(other.ReadBuffer);
       }
       if (other.headerConfig_ != null) {
         if (headerConfig_ == null) {
-          headerConfig_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          HeaderConfig = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         HeaderConfig.MergeFrom(other.HeaderConfig);
       }
@@ -1293,30 +1293,30 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
             break;
           case 10: {
             if (mtu_ == null) {
-              mtu_ = new global::V2Ray.Core.Transport.Internet.Kcp.MTU();
+              Mtu = new global::V2Ray.Core.Transport.Internet.Kcp.MTU();
             }
-            input.ReadMessage(mtu_);
+            input.ReadMessage(Mtu);
             break;
           }
           case 18: {
             if (tti_ == null) {
-              tti_ = new global::V2Ray.Core.Transport.Internet.Kcp.TTI();
+              Tti = new global::V2Ray.Core.Transport.Internet.Kcp.TTI();
             }
-            input.ReadMessage(tti_);
+            input.ReadMessage(Tti);
             break;
           }
           case 26: {
             if (uplinkCapacity_ == null) {
-              uplinkCapacity_ = new global::V2Ray.Core.Transport.Internet.Kcp.UplinkCapacity();
+              UplinkCapacity = new global::V2Ray.Core.Transport.Internet.Kcp.UplinkCapacity();
             }
-            input.ReadMessage(uplinkCapacity_);
+            input.ReadMessage(UplinkCapacity);
             break;
           }
           case 34: {
             if (downlinkCapacity_ == null) {
-              downlinkCapacity_ = new global::V2Ray.Core.Transport.Internet.Kcp.DownlinkCapacity();
+              DownlinkCapacity = new global::V2Ray.Core.Transport.Internet.Kcp.DownlinkCapacity();
             }
-            input.ReadMessage(downlinkCapacity_);
+            input.ReadMessage(DownlinkCapacity);
             break;
           }
           case 40: {
@@ -1325,23 +1325,23 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
           }
           case 50: {
             if (writeBuffer_ == null) {
-              writeBuffer_ = new global::V2Ray.Core.Transport.Internet.Kcp.WriteBuffer();
+              WriteBuffer = new global::V2Ray.Core.Transport.Internet.Kcp.WriteBuffer();
             }
-            input.ReadMessage(writeBuffer_);
+            input.ReadMessage(WriteBuffer);
             break;
           }
           case 58: {
             if (readBuffer_ == null) {
-              readBuffer_ = new global::V2Ray.Core.Transport.Internet.Kcp.ReadBuffer();
+              ReadBuffer = new global::V2Ray.Core.Transport.Internet.Kcp.ReadBuffer();
             }
-            input.ReadMessage(readBuffer_);
+            input.ReadMessage(ReadBuffer);
             break;
           }
           case 66: {
             if (headerConfig_ == null) {
-              headerConfig_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              HeaderConfig = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(headerConfig_);
+            input.ReadMessage(HeaderConfig);
             break;
           }
         }

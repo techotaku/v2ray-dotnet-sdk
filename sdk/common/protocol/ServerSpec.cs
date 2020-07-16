@@ -35,8 +35,8 @@ namespace V2Ray.Core.Common.Protocol {
             "bi5Qcm90b2NvbGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.AddressReflection.Descriptor, global::V2Ray.Core.Common.Protocol.UserReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Protocol.ServerEndpoint), global::V2Ray.Core.Common.Protocol.ServerEndpoint.Parser, new[]{ "Address", "Port", "User" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Protocol.ServerEndpoint), global::V2Ray.Core.Common.Protocol.ServerEndpoint.Parser, new[]{ "Address", "Port", "User" }, null, null, null, null)
           }));
     }
     #endregion
@@ -186,7 +186,7 @@ namespace V2Ray.Core.Common.Protocol {
       }
       if (other.address_ != null) {
         if (address_ == null) {
-          address_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+          Address = new global::V2Ray.Core.Common.Net.IPOrDomain();
         }
         Address.MergeFrom(other.Address);
       }
@@ -207,9 +207,9 @@ namespace V2Ray.Core.Common.Protocol {
             break;
           case 10: {
             if (address_ == null) {
-              address_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+              Address = new global::V2Ray.Core.Common.Net.IPOrDomain();
             }
-            input.ReadMessage(address_);
+            input.ReadMessage(Address);
             break;
           }
           case 16: {

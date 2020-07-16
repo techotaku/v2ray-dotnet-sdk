@@ -34,9 +34,9 @@ namespace V2Ray.Core.Transport.Internet.Websocket {
             "LkludGVybmV0LldlYnNvY2tldGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Websocket.Header), global::V2Ray.Core.Transport.Internet.Websocket.Header.Parser, new[]{ "Key", "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Websocket.Config), global::V2Ray.Core.Transport.Internet.Websocket.Config.Parser, new[]{ "Path", "Header" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Websocket.Header), global::V2Ray.Core.Transport.Internet.Websocket.Header.Parser, new[]{ "Key", "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Websocket.Config), global::V2Ray.Core.Transport.Internet.Websocket.Config.Parser, new[]{ "Path", "Header" }, null, null, null, null)
           }));
     }
     #endregion

@@ -38,6 +38,7 @@ namespace V2Ray.Core.App.Stats.Command {
     }
 
     /// <summary>Base class for server-side implementations of StatsService</summary>
+    [grpc::BindServiceMethod(typeof(StatsService), "BindService")]
     public abstract partial class StatsServiceBase
     {
       public virtual global::System.Threading.Tasks.Task<global::V2Ray.Core.App.Stats.Command.GetStatsResponse> GetStats(global::V2Ray.Core.App.Stats.Command.GetStatsRequest request, grpc::ServerCallContext context)
@@ -57,7 +58,7 @@ namespace V2Ray.Core.App.Stats.Command {
     {
       /// <summary>Creates a new client for StatsService</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public StatsServiceClient(grpc::Channel channel) : base(channel)
+      public StatsServiceClient(grpc::ChannelBase channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for StatsService that uses a custom <c>CallInvoker</c>.</summary>
@@ -121,6 +122,16 @@ namespace V2Ray.Core.App.Stats.Command {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetStats, serviceImpl.GetStats)
           .AddMethod(__Method_QueryStats, serviceImpl.QueryStats).Build();
+    }
+
+    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+    /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+    /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, StatsServiceBase serviceImpl)
+    {
+      serviceBinder.AddMethod(__Method_GetStats, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::V2Ray.Core.App.Stats.Command.GetStatsRequest, global::V2Ray.Core.App.Stats.Command.GetStatsResponse>(serviceImpl.GetStats));
+      serviceBinder.AddMethod(__Method_QueryStats, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::V2Ray.Core.App.Stats.Command.QueryStatsRequest, global::V2Ray.Core.App.Stats.Command.QueryStatsResponse>(serviceImpl.QueryStats));
     }
 
   }

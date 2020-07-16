@@ -67,16 +67,16 @@ namespace V2Ray.Core.App.Proxyman {
             "ZS5BcHAuUHJveHltYW5iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.AddressReflection.Descriptor, global::V2Ray.Core.Common.Net.PortReflection.Descriptor, global::V2Ray.Core.Transport.Internet.ConfigReflection.Descriptor, global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.App.Proxyman.KnownProtocols), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.InboundConfig), global::V2Ray.Core.App.Proxyman.InboundConfig.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.AllocationStrategy), global::V2Ray.Core.App.Proxyman.AllocationStrategy.Parser, new[]{ "Type", "Concurrency", "Refresh" }, null, new[]{ typeof(global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyConcurrency), global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyConcurrency.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyRefresh), global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyRefresh.Parser, new[]{ "Value" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.SniffingConfig), global::V2Ray.Core.App.Proxyman.SniffingConfig.Parser, new[]{ "Enabled", "DestinationOverride" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.ReceiverConfig), global::V2Ray.Core.App.Proxyman.ReceiverConfig.Parser, new[]{ "PortRange", "Listen", "AllocationStrategy", "StreamSettings", "ReceiveOriginalDestination", "DomainOverride", "SniffingSettings" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.InboundHandlerConfig), global::V2Ray.Core.App.Proxyman.InboundHandlerConfig.Parser, new[]{ "Tag", "ReceiverSettings", "ProxySettings" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.OutboundConfig), global::V2Ray.Core.App.Proxyman.OutboundConfig.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.SenderConfig), global::V2Ray.Core.App.Proxyman.SenderConfig.Parser, new[]{ "Via", "StreamSettings", "ProxySettings", "MultiplexSettings" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.MultiplexingConfig), global::V2Ray.Core.App.Proxyman.MultiplexingConfig.Parser, new[]{ "Enabled", "Concurrency" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.App.Proxyman.KnownProtocols), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.InboundConfig), global::V2Ray.Core.App.Proxyman.InboundConfig.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.AllocationStrategy), global::V2Ray.Core.App.Proxyman.AllocationStrategy.Parser, new[]{ "Type", "Concurrency", "Refresh" }, null, new[]{ typeof(global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyConcurrency), global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyConcurrency.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyRefresh), global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyRefresh.Parser, new[]{ "Value" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.SniffingConfig), global::V2Ray.Core.App.Proxyman.SniffingConfig.Parser, new[]{ "Enabled", "DestinationOverride" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.ReceiverConfig), global::V2Ray.Core.App.Proxyman.ReceiverConfig.Parser, new[]{ "PortRange", "Listen", "AllocationStrategy", "StreamSettings", "ReceiveOriginalDestination", "DomainOverride", "SniffingSettings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.InboundHandlerConfig), global::V2Ray.Core.App.Proxyman.InboundHandlerConfig.Parser, new[]{ "Tag", "ReceiverSettings", "ProxySettings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.OutboundConfig), global::V2Ray.Core.App.Proxyman.OutboundConfig.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.SenderConfig), global::V2Ray.Core.App.Proxyman.SenderConfig.Parser, new[]{ "Via", "StreamSettings", "ProxySettings", "MultiplexSettings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Proxyman.MultiplexingConfig), global::V2Ray.Core.App.Proxyman.MultiplexingConfig.Parser, new[]{ "Enabled", "Concurrency" }, null, null, null, null)
           }));
     }
     #endregion
@@ -230,7 +230,7 @@ namespace V2Ray.Core.App.Proxyman {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type type_ = 0;
+    private global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type type_ = global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type.Always;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type Type {
       get { return type_; }
@@ -291,7 +291,7 @@ namespace V2Ray.Core.App.Proxyman {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type.Always) hash ^= Type.GetHashCode();
       if (concurrency_ != null) hash ^= Concurrency.GetHashCode();
       if (refresh_ != null) hash ^= Refresh.GetHashCode();
       if (_unknownFields != null) {
@@ -307,7 +307,7 @@ namespace V2Ray.Core.App.Proxyman {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type.Always) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -327,7 +327,7 @@ namespace V2Ray.Core.App.Proxyman {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type.Always) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (concurrency_ != null) {
@@ -347,18 +347,18 @@ namespace V2Ray.Core.App.Proxyman {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type.Always) {
         Type = other.Type;
       }
       if (other.concurrency_ != null) {
         if (concurrency_ == null) {
-          concurrency_ = new global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyConcurrency();
+          Concurrency = new global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyConcurrency();
         }
         Concurrency.MergeFrom(other.Concurrency);
       }
       if (other.refresh_ != null) {
         if (refresh_ == null) {
-          refresh_ = new global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyRefresh();
+          Refresh = new global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyRefresh();
         }
         Refresh.MergeFrom(other.Refresh);
       }
@@ -374,21 +374,21 @@ namespace V2Ray.Core.App.Proxyman {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            type_ = (global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type) input.ReadEnum();
+            Type = (global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.Type) input.ReadEnum();
             break;
           }
           case 18: {
             if (concurrency_ == null) {
-              concurrency_ = new global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyConcurrency();
+              Concurrency = new global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyConcurrency();
             }
-            input.ReadMessage(concurrency_);
+            input.ReadMessage(Concurrency);
             break;
           }
           case 26: {
             if (refresh_ == null) {
-              refresh_ = new global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyRefresh();
+              Refresh = new global::V2Ray.Core.App.Proxyman.AllocationStrategy.Types.AllocationStrategyRefresh();
             }
-            input.ReadMessage(refresh_);
+            input.ReadMessage(Refresh);
             break;
           }
         }
@@ -1071,25 +1071,25 @@ namespace V2Ray.Core.App.Proxyman {
       }
       if (other.portRange_ != null) {
         if (portRange_ == null) {
-          portRange_ = new global::V2Ray.Core.Common.Net.PortRange();
+          PortRange = new global::V2Ray.Core.Common.Net.PortRange();
         }
         PortRange.MergeFrom(other.PortRange);
       }
       if (other.listen_ != null) {
         if (listen_ == null) {
-          listen_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+          Listen = new global::V2Ray.Core.Common.Net.IPOrDomain();
         }
         Listen.MergeFrom(other.Listen);
       }
       if (other.allocationStrategy_ != null) {
         if (allocationStrategy_ == null) {
-          allocationStrategy_ = new global::V2Ray.Core.App.Proxyman.AllocationStrategy();
+          AllocationStrategy = new global::V2Ray.Core.App.Proxyman.AllocationStrategy();
         }
         AllocationStrategy.MergeFrom(other.AllocationStrategy);
       }
       if (other.streamSettings_ != null) {
         if (streamSettings_ == null) {
-          streamSettings_ = new global::V2Ray.Core.Transport.Internet.StreamConfig();
+          StreamSettings = new global::V2Ray.Core.Transport.Internet.StreamConfig();
         }
         StreamSettings.MergeFrom(other.StreamSettings);
       }
@@ -1099,7 +1099,7 @@ namespace V2Ray.Core.App.Proxyman {
       domainOverride_.Add(other.domainOverride_);
       if (other.sniffingSettings_ != null) {
         if (sniffingSettings_ == null) {
-          sniffingSettings_ = new global::V2Ray.Core.App.Proxyman.SniffingConfig();
+          SniffingSettings = new global::V2Ray.Core.App.Proxyman.SniffingConfig();
         }
         SniffingSettings.MergeFrom(other.SniffingSettings);
       }
@@ -1116,30 +1116,30 @@ namespace V2Ray.Core.App.Proxyman {
             break;
           case 10: {
             if (portRange_ == null) {
-              portRange_ = new global::V2Ray.Core.Common.Net.PortRange();
+              PortRange = new global::V2Ray.Core.Common.Net.PortRange();
             }
-            input.ReadMessage(portRange_);
+            input.ReadMessage(PortRange);
             break;
           }
           case 18: {
             if (listen_ == null) {
-              listen_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+              Listen = new global::V2Ray.Core.Common.Net.IPOrDomain();
             }
-            input.ReadMessage(listen_);
+            input.ReadMessage(Listen);
             break;
           }
           case 26: {
             if (allocationStrategy_ == null) {
-              allocationStrategy_ = new global::V2Ray.Core.App.Proxyman.AllocationStrategy();
+              AllocationStrategy = new global::V2Ray.Core.App.Proxyman.AllocationStrategy();
             }
-            input.ReadMessage(allocationStrategy_);
+            input.ReadMessage(AllocationStrategy);
             break;
           }
           case 34: {
             if (streamSettings_ == null) {
-              streamSettings_ = new global::V2Ray.Core.Transport.Internet.StreamConfig();
+              StreamSettings = new global::V2Ray.Core.Transport.Internet.StreamConfig();
             }
-            input.ReadMessage(streamSettings_);
+            input.ReadMessage(StreamSettings);
             break;
           }
           case 40: {
@@ -1153,9 +1153,9 @@ namespace V2Ray.Core.App.Proxyman {
           }
           case 66: {
             if (sniffingSettings_ == null) {
-              sniffingSettings_ = new global::V2Ray.Core.App.Proxyman.SniffingConfig();
+              SniffingSettings = new global::V2Ray.Core.App.Proxyman.SniffingConfig();
             }
-            input.ReadMessage(sniffingSettings_);
+            input.ReadMessage(SniffingSettings);
             break;
           }
         }
@@ -1316,13 +1316,13 @@ namespace V2Ray.Core.App.Proxyman {
       }
       if (other.receiverSettings_ != null) {
         if (receiverSettings_ == null) {
-          receiverSettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          ReceiverSettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         ReceiverSettings.MergeFrom(other.ReceiverSettings);
       }
       if (other.proxySettings_ != null) {
         if (proxySettings_ == null) {
-          proxySettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          ProxySettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         ProxySettings.MergeFrom(other.ProxySettings);
       }
@@ -1343,16 +1343,16 @@ namespace V2Ray.Core.App.Proxyman {
           }
           case 18: {
             if (receiverSettings_ == null) {
-              receiverSettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              ReceiverSettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(receiverSettings_);
+            input.ReadMessage(ReceiverSettings);
             break;
           }
           case 26: {
             if (proxySettings_ == null) {
-              proxySettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              ProxySettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(proxySettings_);
+            input.ReadMessage(ProxySettings);
             break;
           }
         }
@@ -1635,25 +1635,25 @@ namespace V2Ray.Core.App.Proxyman {
       }
       if (other.via_ != null) {
         if (via_ == null) {
-          via_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+          Via = new global::V2Ray.Core.Common.Net.IPOrDomain();
         }
         Via.MergeFrom(other.Via);
       }
       if (other.streamSettings_ != null) {
         if (streamSettings_ == null) {
-          streamSettings_ = new global::V2Ray.Core.Transport.Internet.StreamConfig();
+          StreamSettings = new global::V2Ray.Core.Transport.Internet.StreamConfig();
         }
         StreamSettings.MergeFrom(other.StreamSettings);
       }
       if (other.proxySettings_ != null) {
         if (proxySettings_ == null) {
-          proxySettings_ = new global::V2Ray.Core.Transport.Internet.ProxyConfig();
+          ProxySettings = new global::V2Ray.Core.Transport.Internet.ProxyConfig();
         }
         ProxySettings.MergeFrom(other.ProxySettings);
       }
       if (other.multiplexSettings_ != null) {
         if (multiplexSettings_ == null) {
-          multiplexSettings_ = new global::V2Ray.Core.App.Proxyman.MultiplexingConfig();
+          MultiplexSettings = new global::V2Ray.Core.App.Proxyman.MultiplexingConfig();
         }
         MultiplexSettings.MergeFrom(other.MultiplexSettings);
       }
@@ -1670,30 +1670,30 @@ namespace V2Ray.Core.App.Proxyman {
             break;
           case 10: {
             if (via_ == null) {
-              via_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+              Via = new global::V2Ray.Core.Common.Net.IPOrDomain();
             }
-            input.ReadMessage(via_);
+            input.ReadMessage(Via);
             break;
           }
           case 18: {
             if (streamSettings_ == null) {
-              streamSettings_ = new global::V2Ray.Core.Transport.Internet.StreamConfig();
+              StreamSettings = new global::V2Ray.Core.Transport.Internet.StreamConfig();
             }
-            input.ReadMessage(streamSettings_);
+            input.ReadMessage(StreamSettings);
             break;
           }
           case 26: {
             if (proxySettings_ == null) {
-              proxySettings_ = new global::V2Ray.Core.Transport.Internet.ProxyConfig();
+              ProxySettings = new global::V2Ray.Core.Transport.Internet.ProxyConfig();
             }
-            input.ReadMessage(proxySettings_);
+            input.ReadMessage(ProxySettings);
             break;
           }
           case 34: {
             if (multiplexSettings_ == null) {
-              multiplexSettings_ = new global::V2Ray.Core.App.Proxyman.MultiplexingConfig();
+              MultiplexSettings = new global::V2Ray.Core.App.Proxyman.MultiplexingConfig();
             }
-            input.ReadMessage(multiplexSettings_);
+            input.ReadMessage(MultiplexSettings);
             break;
           }
         }

@@ -45,10 +45,10 @@ namespace V2Ray.Core {
             "cmWqAgpWMlJheS5Db3JlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, global::V2Ray.Core.Transport.ConfigReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Config), global::V2Ray.Core.Config.Parser, new[]{ "Inbound", "Outbound", "App", "Transport", "Extension" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.InboundHandlerConfig), global::V2Ray.Core.InboundHandlerConfig.Parser, new[]{ "Tag", "ReceiverSettings", "ProxySettings" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.OutboundHandlerConfig), global::V2Ray.Core.OutboundHandlerConfig.Parser, new[]{ "Tag", "SenderSettings", "ProxySettings", "Expire", "Comment" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Config), global::V2Ray.Core.Config.Parser, new[]{ "Inbound", "Outbound", "App", "Transport", "Extension" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.InboundHandlerConfig), global::V2Ray.Core.InboundHandlerConfig.Parser, new[]{ "Tag", "ReceiverSettings", "ProxySettings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.OutboundHandlerConfig), global::V2Ray.Core.OutboundHandlerConfig.Parser, new[]{ "Tag", "SenderSettings", "ProxySettings", "Expire", "Comment" }, null, null, null, null)
           }));
     }
     #endregion
@@ -247,7 +247,7 @@ namespace V2Ray.Core {
       app_.Add(other.app_);
       if (other.transport_ != null) {
         if (transport_ == null) {
-          transport_ = new global::V2Ray.Core.Transport.Config();
+          Transport = new global::V2Ray.Core.Transport.Config();
         }
         Transport.MergeFrom(other.Transport);
       }
@@ -277,9 +277,9 @@ namespace V2Ray.Core {
           }
           case 42: {
             if (transport_ == null) {
-              transport_ = new global::V2Ray.Core.Transport.Config();
+              Transport = new global::V2Ray.Core.Transport.Config();
             }
-            input.ReadMessage(transport_);
+            input.ReadMessage(Transport);
             break;
           }
           case 50: {
@@ -456,13 +456,13 @@ namespace V2Ray.Core {
       }
       if (other.receiverSettings_ != null) {
         if (receiverSettings_ == null) {
-          receiverSettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          ReceiverSettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         ReceiverSettings.MergeFrom(other.ReceiverSettings);
       }
       if (other.proxySettings_ != null) {
         if (proxySettings_ == null) {
-          proxySettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          ProxySettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         ProxySettings.MergeFrom(other.ProxySettings);
       }
@@ -483,16 +483,16 @@ namespace V2Ray.Core {
           }
           case 18: {
             if (receiverSettings_ == null) {
-              receiverSettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              ReceiverSettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(receiverSettings_);
+            input.ReadMessage(ReceiverSettings);
             break;
           }
           case 26: {
             if (proxySettings_ == null) {
-              proxySettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              ProxySettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(proxySettings_);
+            input.ReadMessage(ProxySettings);
             break;
           }
         }
@@ -713,13 +713,13 @@ namespace V2Ray.Core {
       }
       if (other.senderSettings_ != null) {
         if (senderSettings_ == null) {
-          senderSettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          SenderSettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         SenderSettings.MergeFrom(other.SenderSettings);
       }
       if (other.proxySettings_ != null) {
         if (proxySettings_ == null) {
-          proxySettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          ProxySettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         ProxySettings.MergeFrom(other.ProxySettings);
       }
@@ -746,16 +746,16 @@ namespace V2Ray.Core {
           }
           case 18: {
             if (senderSettings_ == null) {
-              senderSettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              SenderSettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(senderSettings_);
+            input.ReadMessage(SenderSettings);
             break;
           }
           case 26: {
             if (proxySettings_ == null) {
-              proxySettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              ProxySettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(proxySettings_);
+            input.ReadMessage(ProxySettings);
             break;
           }
           case 32: {

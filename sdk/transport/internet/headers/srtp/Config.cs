@@ -34,8 +34,8 @@ namespace V2Ray.Core.Transport.Internet.Headers.Srtp {
             "dC5IZWFkZXJzLlNydHBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Srtp.Config), global::V2Ray.Core.Transport.Internet.Headers.Srtp.Config.Parser, new[]{ "Version", "Padding", "Extension", "CsrcCount", "Marker", "PayloadType" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Srtp.Config), global::V2Ray.Core.Transport.Internet.Headers.Srtp.Config.Parser, new[]{ "Version", "Padding", "Extension", "CsrcCount", "Marker", "PayloadType" }, null, null, null, null)
           }));
     }
     #endregion

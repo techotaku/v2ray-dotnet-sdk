@@ -32,8 +32,8 @@ namespace V2Ray.Core.Common.Net {
             "VjJSYXkuQ29yZS5Db21tb24uTmV0YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.Common.Net.Network), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.NetworkList), global::V2Ray.Core.Common.Net.NetworkList.Parser, new[]{ "Network" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.Common.Net.Network), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.NetworkList), global::V2Ray.Core.Common.Net.NetworkList.Parser, new[]{ "Network" }, null, null, null, null)
           }));
     }
     #endregion

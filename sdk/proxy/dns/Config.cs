@@ -32,8 +32,8 @@ namespace V2Ray.Core.Proxy.Dns {
             "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.DestinationReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Dns.Config), global::V2Ray.Core.Proxy.Dns.Config.Parser, new[]{ "Server" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Dns.Config), global::V2Ray.Core.Proxy.Dns.Config.Parser, new[]{ "Server" }, null, null, null, null)
           }));
     }
     #endregion
@@ -150,7 +150,7 @@ namespace V2Ray.Core.Proxy.Dns {
       }
       if (other.server_ != null) {
         if (server_ == null) {
-          server_ = new global::V2Ray.Core.Common.Net.Endpoint();
+          Server = new global::V2Ray.Core.Common.Net.Endpoint();
         }
         Server.MergeFrom(other.Server);
       }
@@ -167,9 +167,9 @@ namespace V2Ray.Core.Proxy.Dns {
             break;
           case 10: {
             if (server_ == null) {
-              server_ = new global::V2Ray.Core.Common.Net.Endpoint();
+              Server = new global::V2Ray.Core.Common.Net.Endpoint();
             }
-            input.ReadMessage(server_);
+            input.ReadMessage(Server);
             break;
           }
         }

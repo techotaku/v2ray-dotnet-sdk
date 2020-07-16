@@ -33,8 +33,8 @@ namespace V2Ray.Core.App.Commander {
             "cmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Commander.Config), global::V2Ray.Core.App.Commander.Config.Parser, new[]{ "Tag", "Service" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Commander.Config), global::V2Ray.Core.App.Commander.Config.Parser, new[]{ "Tag", "Service" }, null, null, null, null)
           }));
     }
     #endregion

@@ -31,8 +31,8 @@ namespace V2Ray.Core.Common.Net {
             "dGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.IPOrDomain), global::V2Ray.Core.Common.Net.IPOrDomain.Parser, new[]{ "Ip", "Domain" }, new[]{ "Address" }, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.IPOrDomain), global::V2Ray.Core.Common.Net.IPOrDomain.Parser, new[]{ "Ip", "Domain" }, new[]{ "Address" }, null, null, null)
           }));
     }
     #endregion

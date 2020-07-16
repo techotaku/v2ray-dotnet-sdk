@@ -33,8 +33,8 @@ namespace V2Ray.Core.Common.Protocol {
             "LkNvcmUuQ29tbW9uLlByb3RvY29sYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Protocol.User), global::V2Ray.Core.Common.Protocol.User.Parser, new[]{ "Level", "Email", "Account" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Protocol.User), global::V2Ray.Core.Common.Protocol.User.Parser, new[]{ "Level", "Email", "Account" }, null, null, null, null)
           }));
     }
     #endregion
@@ -202,7 +202,7 @@ namespace V2Ray.Core.Common.Protocol {
       }
       if (other.account_ != null) {
         if (account_ == null) {
-          account_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          Account = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         Account.MergeFrom(other.Account);
       }
@@ -227,9 +227,9 @@ namespace V2Ray.Core.Common.Protocol {
           }
           case 26: {
             if (account_ == null) {
-              account_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              Account = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(account_);
+            input.ReadMessage(Account);
             break;
           }
         }

@@ -48,14 +48,14 @@ namespace V2Ray.Core.Transport.Internet.Headers.Http {
             "bnRlcm5ldC5IZWFkZXJzLkh0dHBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.Header), global::V2Ray.Core.Transport.Internet.Headers.Http.Header.Parser, new[]{ "Name", "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.Version), global::V2Ray.Core.Transport.Internet.Headers.Http.Version.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.Method), global::V2Ray.Core.Transport.Internet.Headers.Http.Method.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.RequestConfig), global::V2Ray.Core.Transport.Internet.Headers.Http.RequestConfig.Parser, new[]{ "Version", "Method", "Uri", "Header" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.Status), global::V2Ray.Core.Transport.Internet.Headers.Http.Status.Parser, new[]{ "Code", "Reason" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.ResponseConfig), global::V2Ray.Core.Transport.Internet.Headers.Http.ResponseConfig.Parser, new[]{ "Version", "Status", "Header" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.Config), global::V2Ray.Core.Transport.Internet.Headers.Http.Config.Parser, new[]{ "Request", "Response" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.Header), global::V2Ray.Core.Transport.Internet.Headers.Http.Header.Parser, new[]{ "Name", "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.Version), global::V2Ray.Core.Transport.Internet.Headers.Http.Version.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.Method), global::V2Ray.Core.Transport.Internet.Headers.Http.Method.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.RequestConfig), global::V2Ray.Core.Transport.Internet.Headers.Http.RequestConfig.Parser, new[]{ "Version", "Method", "Uri", "Header" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.Status), global::V2Ray.Core.Transport.Internet.Headers.Http.Status.Parser, new[]{ "Code", "Reason" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.ResponseConfig), global::V2Ray.Core.Transport.Internet.Headers.Http.ResponseConfig.Parser, new[]{ "Version", "Status", "Header" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Http.Config), global::V2Ray.Core.Transport.Internet.Headers.Http.Config.Parser, new[]{ "Request", "Response" }, null, null, null, null)
           }));
     }
     #endregion
@@ -648,13 +648,13 @@ namespace V2Ray.Core.Transport.Internet.Headers.Http {
       }
       if (other.version_ != null) {
         if (version_ == null) {
-          version_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.Version();
+          Version = new global::V2Ray.Core.Transport.Internet.Headers.Http.Version();
         }
         Version.MergeFrom(other.Version);
       }
       if (other.method_ != null) {
         if (method_ == null) {
-          method_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.Method();
+          Method = new global::V2Ray.Core.Transport.Internet.Headers.Http.Method();
         }
         Method.MergeFrom(other.Method);
       }
@@ -673,16 +673,16 @@ namespace V2Ray.Core.Transport.Internet.Headers.Http {
             break;
           case 10: {
             if (version_ == null) {
-              version_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.Version();
+              Version = new global::V2Ray.Core.Transport.Internet.Headers.Http.Version();
             }
-            input.ReadMessage(version_);
+            input.ReadMessage(Version);
             break;
           }
           case 18: {
             if (method_ == null) {
-              method_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.Method();
+              Method = new global::V2Ray.Core.Transport.Internet.Headers.Http.Method();
             }
-            input.ReadMessage(method_);
+            input.ReadMessage(Method);
             break;
           }
           case 26: {
@@ -1005,13 +1005,13 @@ namespace V2Ray.Core.Transport.Internet.Headers.Http {
       }
       if (other.version_ != null) {
         if (version_ == null) {
-          version_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.Version();
+          Version = new global::V2Ray.Core.Transport.Internet.Headers.Http.Version();
         }
         Version.MergeFrom(other.Version);
       }
       if (other.status_ != null) {
         if (status_ == null) {
-          status_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.Status();
+          Status = new global::V2Ray.Core.Transport.Internet.Headers.Http.Status();
         }
         Status.MergeFrom(other.Status);
       }
@@ -1029,16 +1029,16 @@ namespace V2Ray.Core.Transport.Internet.Headers.Http {
             break;
           case 10: {
             if (version_ == null) {
-              version_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.Version();
+              Version = new global::V2Ray.Core.Transport.Internet.Headers.Http.Version();
             }
-            input.ReadMessage(version_);
+            input.ReadMessage(Version);
             break;
           }
           case 18: {
             if (status_ == null) {
-              status_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.Status();
+              Status = new global::V2Ray.Core.Transport.Internet.Headers.Http.Status();
             }
-            input.ReadMessage(status_);
+            input.ReadMessage(Status);
             break;
           }
           case 26: {
@@ -1185,13 +1185,13 @@ namespace V2Ray.Core.Transport.Internet.Headers.Http {
       }
       if (other.request_ != null) {
         if (request_ == null) {
-          request_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.RequestConfig();
+          Request = new global::V2Ray.Core.Transport.Internet.Headers.Http.RequestConfig();
         }
         Request.MergeFrom(other.Request);
       }
       if (other.response_ != null) {
         if (response_ == null) {
-          response_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.ResponseConfig();
+          Response = new global::V2Ray.Core.Transport.Internet.Headers.Http.ResponseConfig();
         }
         Response.MergeFrom(other.Response);
       }
@@ -1208,16 +1208,16 @@ namespace V2Ray.Core.Transport.Internet.Headers.Http {
             break;
           case 10: {
             if (request_ == null) {
-              request_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.RequestConfig();
+              Request = new global::V2Ray.Core.Transport.Internet.Headers.Http.RequestConfig();
             }
-            input.ReadMessage(request_);
+            input.ReadMessage(Request);
             break;
           }
           case 18: {
             if (response_ == null) {
-              response_ = new global::V2Ray.Core.Transport.Internet.Headers.Http.ResponseConfig();
+              Response = new global::V2Ray.Core.Transport.Internet.Headers.Http.ResponseConfig();
             }
-            input.ReadMessage(response_);
+            input.ReadMessage(Response);
             break;
           }
         }

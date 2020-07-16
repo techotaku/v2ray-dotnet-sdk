@@ -31,8 +31,8 @@ namespace V2Ray.Core.Common.Serial {
             "bW9uLlNlcmlhbGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Serial.TypedMessage), global::V2Ray.Core.Common.Serial.TypedMessage.Parser, new[]{ "Type", "Value" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Serial.TypedMessage), global::V2Ray.Core.Common.Serial.TypedMessage.Parser, new[]{ "Type", "Value" }, null, null, null, null)
           }));
     }
     #endregion

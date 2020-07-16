@@ -33,8 +33,8 @@ namespace V2Ray.Core.Proxy.Vmess.Outbound {
             "UHJveHkuVm1lc3MuT3V0Ym91bmRiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Protocol.ServerSpecReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Outbound.Config), global::V2Ray.Core.Proxy.Vmess.Outbound.Config.Parser, new[]{ "Receiver" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Outbound.Config), global::V2Ray.Core.Proxy.Vmess.Outbound.Config.Parser, new[]{ "Receiver" }, null, null, null, null)
           }));
     }
     #endregion

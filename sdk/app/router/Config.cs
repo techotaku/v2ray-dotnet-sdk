@@ -65,16 +65,16 @@ namespace V2Ray.Core.App.Router {
             "eS5Db3JlLkFwcC5Sb3V0ZXJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.PortReflection.Descriptor, global::V2Ray.Core.Common.Net.NetworkReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Domain), global::V2Ray.Core.App.Router.Domain.Parser, new[]{ "Type", "Value", "Attribute" }, null, new[]{ typeof(global::V2Ray.Core.App.Router.Domain.Types.Type) }, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Domain.Types.Attribute), global::V2Ray.Core.App.Router.Domain.Types.Attribute.Parser, new[]{ "Key", "BoolValue", "IntValue" }, new[]{ "TypedValue" }, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.CIDR), global::V2Ray.Core.App.Router.CIDR.Parser, new[]{ "Ip", "Prefix" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoIP), global::V2Ray.Core.App.Router.GeoIP.Parser, new[]{ "CountryCode", "Cidr" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoIPList), global::V2Ray.Core.App.Router.GeoIPList.Parser, new[]{ "Entry" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoSite), global::V2Ray.Core.App.Router.GeoSite.Parser, new[]{ "CountryCode", "Domain" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoSiteList), global::V2Ray.Core.App.Router.GeoSiteList.Parser, new[]{ "Entry" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.RoutingRule), global::V2Ray.Core.App.Router.RoutingRule.Parser, new[]{ "Tag", "BalancingTag", "Domain", "Cidr", "Geoip", "PortRange", "PortList", "NetworkList", "Networks", "SourceCidr", "SourceGeoip", "UserEmail", "InboundTag", "Protocol", "Attributes" }, new[]{ "TargetTag" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.BalancingRule), global::V2Ray.Core.App.Router.BalancingRule.Parser, new[]{ "Tag", "OutboundSelector" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Config), global::V2Ray.Core.App.Router.Config.Parser, new[]{ "DomainStrategy", "Rule", "BalancingRule" }, null, new[]{ typeof(global::V2Ray.Core.App.Router.Config.Types.DomainStrategy) }, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Domain), global::V2Ray.Core.App.Router.Domain.Parser, new[]{ "Type", "Value", "Attribute" }, null, new[]{ typeof(global::V2Ray.Core.App.Router.Domain.Types.Type) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Domain.Types.Attribute), global::V2Ray.Core.App.Router.Domain.Types.Attribute.Parser, new[]{ "Key", "BoolValue", "IntValue" }, new[]{ "TypedValue" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.CIDR), global::V2Ray.Core.App.Router.CIDR.Parser, new[]{ "Ip", "Prefix" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoIP), global::V2Ray.Core.App.Router.GeoIP.Parser, new[]{ "CountryCode", "Cidr" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoIPList), global::V2Ray.Core.App.Router.GeoIPList.Parser, new[]{ "Entry" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoSite), global::V2Ray.Core.App.Router.GeoSite.Parser, new[]{ "CountryCode", "Domain" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.GeoSiteList), global::V2Ray.Core.App.Router.GeoSiteList.Parser, new[]{ "Entry" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.RoutingRule), global::V2Ray.Core.App.Router.RoutingRule.Parser, new[]{ "Tag", "BalancingTag", "Domain", "Cidr", "Geoip", "PortRange", "PortList", "NetworkList", "Networks", "SourceCidr", "SourceGeoip", "UserEmail", "InboundTag", "Protocol", "Attributes" }, new[]{ "TargetTag" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.BalancingRule), global::V2Ray.Core.App.Router.BalancingRule.Parser, new[]{ "Tag", "OutboundSelector" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Router.Config), global::V2Ray.Core.App.Router.Config.Parser, new[]{ "DomainStrategy", "Rule", "BalancingRule" }, null, new[]{ typeof(global::V2Ray.Core.App.Router.Config.Types.DomainStrategy) }, null, null)
           }));
     }
     #endregion
@@ -122,7 +122,7 @@ namespace V2Ray.Core.App.Router {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::V2Ray.Core.App.Router.Domain.Types.Type type_ = 0;
+    private global::V2Ray.Core.App.Router.Domain.Types.Type type_ = global::V2Ray.Core.App.Router.Domain.Types.Type.Plain;
     /// <summary>
     /// Domain matching type.
     /// </summary>
@@ -183,7 +183,7 @@ namespace V2Ray.Core.App.Router {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::V2Ray.Core.App.Router.Domain.Types.Type.Plain) hash ^= Type.GetHashCode();
       if (Value.Length != 0) hash ^= Value.GetHashCode();
       hash ^= attribute_.GetHashCode();
       if (_unknownFields != null) {
@@ -199,7 +199,7 @@ namespace V2Ray.Core.App.Router {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::V2Ray.Core.App.Router.Domain.Types.Type.Plain) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -216,7 +216,7 @@ namespace V2Ray.Core.App.Router {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::V2Ray.Core.App.Router.Domain.Types.Type.Plain) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (Value.Length != 0) {
@@ -234,7 +234,7 @@ namespace V2Ray.Core.App.Router {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::V2Ray.Core.App.Router.Domain.Types.Type.Plain) {
         Type = other.Type;
       }
       if (other.Value.Length != 0) {
@@ -253,7 +253,7 @@ namespace V2Ray.Core.App.Router {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            type_ = (global::V2Ray.Core.App.Router.Domain.Types.Type) input.ReadEnum();
+            Type = (global::V2Ray.Core.App.Router.Domain.Types.Type) input.ReadEnum();
             break;
           }
           case 18: {
@@ -1640,19 +1640,19 @@ namespace V2Ray.Core.App.Router {
       geoip_.Add(other.geoip_);
       if (other.portRange_ != null) {
         if (portRange_ == null) {
-          portRange_ = new global::V2Ray.Core.Common.Net.PortRange();
+          PortRange = new global::V2Ray.Core.Common.Net.PortRange();
         }
         PortRange.MergeFrom(other.PortRange);
       }
       if (other.portList_ != null) {
         if (portList_ == null) {
-          portList_ = new global::V2Ray.Core.Common.Net.PortList();
+          PortList = new global::V2Ray.Core.Common.Net.PortList();
         }
         PortList.MergeFrom(other.PortList);
       }
       if (other.networkList_ != null) {
         if (networkList_ == null) {
-          networkList_ = new global::V2Ray.Core.Common.Net.NetworkList();
+          NetworkList = new global::V2Ray.Core.Common.Net.NetworkList();
         }
         NetworkList.MergeFrom(other.NetworkList);
       }
@@ -1699,16 +1699,16 @@ namespace V2Ray.Core.App.Router {
           }
           case 34: {
             if (portRange_ == null) {
-              portRange_ = new global::V2Ray.Core.Common.Net.PortRange();
+              PortRange = new global::V2Ray.Core.Common.Net.PortRange();
             }
-            input.ReadMessage(portRange_);
+            input.ReadMessage(PortRange);
             break;
           }
           case 42: {
             if (networkList_ == null) {
-              networkList_ = new global::V2Ray.Core.Common.Net.NetworkList();
+              NetworkList = new global::V2Ray.Core.Common.Net.NetworkList();
             }
-            input.ReadMessage(networkList_);
+            input.ReadMessage(NetworkList);
             break;
           }
           case 50: {
@@ -1746,9 +1746,9 @@ namespace V2Ray.Core.App.Router {
           }
           case 114: {
             if (portList_ == null) {
-              portList_ = new global::V2Ray.Core.Common.Net.PortList();
+              PortList = new global::V2Ray.Core.Common.Net.PortList();
             }
-            input.ReadMessage(portList_);
+            input.ReadMessage(PortList);
             break;
           }
           case 122: {
@@ -1948,7 +1948,7 @@ namespace V2Ray.Core.App.Router {
 
     /// <summary>Field number for the "domain_strategy" field.</summary>
     public const int DomainStrategyFieldNumber = 1;
-    private global::V2Ray.Core.App.Router.Config.Types.DomainStrategy domainStrategy_ = 0;
+    private global::V2Ray.Core.App.Router.Config.Types.DomainStrategy domainStrategy_ = global::V2Ray.Core.App.Router.Config.Types.DomainStrategy.AsIs;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.App.Router.Config.Types.DomainStrategy DomainStrategy {
       get { return domainStrategy_; }
@@ -1999,7 +1999,7 @@ namespace V2Ray.Core.App.Router {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (DomainStrategy != 0) hash ^= DomainStrategy.GetHashCode();
+      if (DomainStrategy != global::V2Ray.Core.App.Router.Config.Types.DomainStrategy.AsIs) hash ^= DomainStrategy.GetHashCode();
       hash ^= rule_.GetHashCode();
       hash ^= balancingRule_.GetHashCode();
       if (_unknownFields != null) {
@@ -2015,7 +2015,7 @@ namespace V2Ray.Core.App.Router {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (DomainStrategy != 0) {
+      if (DomainStrategy != global::V2Ray.Core.App.Router.Config.Types.DomainStrategy.AsIs) {
         output.WriteRawTag(8);
         output.WriteEnum((int) DomainStrategy);
       }
@@ -2029,7 +2029,7 @@ namespace V2Ray.Core.App.Router {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (DomainStrategy != 0) {
+      if (DomainStrategy != global::V2Ray.Core.App.Router.Config.Types.DomainStrategy.AsIs) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DomainStrategy);
       }
       size += rule_.CalculateSize(_repeated_rule_codec);
@@ -2045,7 +2045,7 @@ namespace V2Ray.Core.App.Router {
       if (other == null) {
         return;
       }
-      if (other.DomainStrategy != 0) {
+      if (other.DomainStrategy != global::V2Ray.Core.App.Router.Config.Types.DomainStrategy.AsIs) {
         DomainStrategy = other.DomainStrategy;
       }
       rule_.Add(other.rule_);
@@ -2062,7 +2062,7 @@ namespace V2Ray.Core.App.Router {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            domainStrategy_ = (global::V2Ray.Core.App.Router.Config.Types.DomainStrategy) input.ReadEnum();
+            DomainStrategy = (global::V2Ray.Core.App.Router.Config.Types.DomainStrategy) input.ReadEnum();
             break;
           }
           case 18: {

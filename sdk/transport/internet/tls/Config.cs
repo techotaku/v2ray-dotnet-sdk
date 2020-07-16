@@ -40,9 +40,9 @@ namespace V2Ray.Core.Transport.Internet.Tls {
             "YW5zcG9ydC5JbnRlcm5ldC5UbHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Tls.Certificate), global::V2Ray.Core.Transport.Internet.Tls.Certificate.Parser, new[]{ "Certificate_", "Key", "Usage" }, null, new[]{ typeof(global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage) }, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Tls.Config), global::V2Ray.Core.Transport.Internet.Tls.Config.Parser, new[]{ "AllowInsecure", "AllowInsecureCiphers", "Certificate", "ServerName", "NextProtocol", "DisableSessionResumption", "DisableSystemRoot" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Tls.Certificate), global::V2Ray.Core.Transport.Internet.Tls.Certificate.Parser, new[]{ "Certificate_", "Key", "Usage" }, null, new[]{ typeof(global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Tls.Config), global::V2Ray.Core.Transport.Internet.Tls.Config.Parser, new[]{ "AllowInsecure", "AllowInsecureCiphers", "Certificate", "ServerName", "NextProtocol", "DisableSessionResumption", "DisableSystemRoot" }, null, null, null, null)
           }));
     }
     #endregion
@@ -115,7 +115,7 @@ namespace V2Ray.Core.Transport.Internet.Tls {
 
     /// <summary>Field number for the "usage" field.</summary>
     public const int UsageFieldNumber = 3;
-    private global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage usage_ = 0;
+    private global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage usage_ = global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage.Encipherment;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage Usage {
       get { return usage_; }
@@ -148,7 +148,7 @@ namespace V2Ray.Core.Transport.Internet.Tls {
       int hash = 1;
       if (Certificate_.Length != 0) hash ^= Certificate_.GetHashCode();
       if (Key.Length != 0) hash ^= Key.GetHashCode();
-      if (Usage != 0) hash ^= Usage.GetHashCode();
+      if (Usage != global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage.Encipherment) hash ^= Usage.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -170,7 +170,7 @@ namespace V2Ray.Core.Transport.Internet.Tls {
         output.WriteRawTag(18);
         output.WriteBytes(Key);
       }
-      if (Usage != 0) {
+      if (Usage != global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage.Encipherment) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Usage);
       }
@@ -188,7 +188,7 @@ namespace V2Ray.Core.Transport.Internet.Tls {
       if (Key.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(Key);
       }
-      if (Usage != 0) {
+      if (Usage != global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage.Encipherment) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Usage);
       }
       if (_unknownFields != null) {
@@ -208,7 +208,7 @@ namespace V2Ray.Core.Transport.Internet.Tls {
       if (other.Key.Length != 0) {
         Key = other.Key;
       }
-      if (other.Usage != 0) {
+      if (other.Usage != global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage.Encipherment) {
         Usage = other.Usage;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -231,7 +231,7 @@ namespace V2Ray.Core.Transport.Internet.Tls {
             break;
           }
           case 24: {
-            usage_ = (global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage) input.ReadEnum();
+            Usage = (global::V2Ray.Core.Transport.Internet.Tls.Certificate.Types.Usage) input.ReadEnum();
             break;
           }
         }

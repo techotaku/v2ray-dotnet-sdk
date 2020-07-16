@@ -32,9 +32,9 @@ namespace V2Ray.Core.App.Dispatcher {
             "QXBwLkRpc3BhdGNoZXJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dispatcher.SessionConfig), global::V2Ray.Core.App.Dispatcher.SessionConfig.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dispatcher.Config), global::V2Ray.Core.App.Dispatcher.Config.Parser, new[]{ "Settings" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dispatcher.SessionConfig), global::V2Ray.Core.App.Dispatcher.SessionConfig.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dispatcher.Config), global::V2Ray.Core.App.Dispatcher.Config.Parser, new[]{ "Settings" }, null, null, null, null)
           }));
     }
     #endregion
@@ -249,7 +249,7 @@ namespace V2Ray.Core.App.Dispatcher {
       }
       if (other.settings_ != null) {
         if (settings_ == null) {
-          settings_ = new global::V2Ray.Core.App.Dispatcher.SessionConfig();
+          Settings = new global::V2Ray.Core.App.Dispatcher.SessionConfig();
         }
         Settings.MergeFrom(other.Settings);
       }
@@ -266,9 +266,9 @@ namespace V2Ray.Core.App.Dispatcher {
             break;
           case 10: {
             if (settings_ == null) {
-              settings_ = new global::V2Ray.Core.App.Dispatcher.SessionConfig();
+              Settings = new global::V2Ray.Core.App.Dispatcher.SessionConfig();
             }
-            input.ReadMessage(settings_);
+            input.ReadMessage(Settings);
             break;
           }
         }

@@ -12,8 +12,8 @@ namespace V2Ray.SDK.Tool
         public static void Init()
         {
             var userProfile = Environment.GetEnvironmentVariable("UserProfile");
-            var protoc = Path.Combine(userProfile, ".nuget", "packages", "Google.Protobuf.Tools", "3.6.1", "tools", "windows_x64", "protoc.exe");
-            var plugin = Path.Combine(userProfile, ".nuget", "packages", "Grpc.Tools", "1.14.2", "tools", "windows_x64", "grpc_csharp_plugin.exe");
+            var protoc = Path.Combine(userProfile, ".nuget", "packages", "Google.Protobuf.Tools", "3.12.3", "tools", "windows_x64", "protoc.exe");
+            var plugin = Path.Combine(userProfile, ".nuget", "packages", "Grpc.Tools", "2.30.0", "tools", "windows_x64", "grpc_csharp_plugin.exe");
             if (File.Exists(protoc))
             {
                 _Protoc = protoc;

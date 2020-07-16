@@ -54,11 +54,11 @@ namespace V2Ray.Core.Transport.Internet {
             "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.Transport.Internet.TransportProtocol), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.TransportConfig), global::V2Ray.Core.Transport.Internet.TransportConfig.Parser, new[]{ "Protocol", "ProtocolName", "Settings" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.StreamConfig), global::V2Ray.Core.Transport.Internet.StreamConfig.Parser, new[]{ "Protocol", "ProtocolName", "TransportSettings", "SecurityType", "SecuritySettings", "SocketSettings" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.ProxyConfig), global::V2Ray.Core.Transport.Internet.ProxyConfig.Parser, new[]{ "Tag" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.SocketConfig), global::V2Ray.Core.Transport.Internet.SocketConfig.Parser, new[]{ "Mark", "Tfo", "Tproxy", "ReceiveOriginalDestAddress", "BindAddress", "BindPort" }, null, new[]{ typeof(global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState), typeof(global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode) }, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.Transport.Internet.TransportProtocol), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.TransportConfig), global::V2Ray.Core.Transport.Internet.TransportConfig.Parser, new[]{ "Protocol", "ProtocolName", "Settings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.StreamConfig), global::V2Ray.Core.Transport.Internet.StreamConfig.Parser, new[]{ "Protocol", "ProtocolName", "TransportSettings", "SecurityType", "SecuritySettings", "SocketSettings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.ProxyConfig), global::V2Ray.Core.Transport.Internet.ProxyConfig.Parser, new[]{ "Tag" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.SocketConfig), global::V2Ray.Core.Transport.Internet.SocketConfig.Parser, new[]{ "Mark", "Tfo", "Tproxy", "ReceiveOriginalDestAddress", "BindAddress", "BindPort" }, null, new[]{ typeof(global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState), typeof(global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode) }, null, null)
           }));
     }
     #endregion
@@ -115,7 +115,7 @@ namespace V2Ray.Core.Transport.Internet {
 
     /// <summary>Field number for the "protocol" field.</summary>
     public const int ProtocolFieldNumber = 1;
-    private global::V2Ray.Core.Transport.Internet.TransportProtocol protocol_ = 0;
+    private global::V2Ray.Core.Transport.Internet.TransportProtocol protocol_ = global::V2Ray.Core.Transport.Internet.TransportProtocol.Tcp;
     /// <summary>
     /// Type of network that this settings supports.
     /// Deprecated. Use the string form below.
@@ -178,7 +178,7 @@ namespace V2Ray.Core.Transport.Internet {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Protocol != 0) hash ^= Protocol.GetHashCode();
+      if (Protocol != global::V2Ray.Core.Transport.Internet.TransportProtocol.Tcp) hash ^= Protocol.GetHashCode();
       if (ProtocolName.Length != 0) hash ^= ProtocolName.GetHashCode();
       if (settings_ != null) hash ^= Settings.GetHashCode();
       if (_unknownFields != null) {
@@ -194,7 +194,7 @@ namespace V2Ray.Core.Transport.Internet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Protocol != 0) {
+      if (Protocol != global::V2Ray.Core.Transport.Internet.TransportProtocol.Tcp) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Protocol);
       }
@@ -214,7 +214,7 @@ namespace V2Ray.Core.Transport.Internet {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Protocol != 0) {
+      if (Protocol != global::V2Ray.Core.Transport.Internet.TransportProtocol.Tcp) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Protocol);
       }
       if (ProtocolName.Length != 0) {
@@ -234,7 +234,7 @@ namespace V2Ray.Core.Transport.Internet {
       if (other == null) {
         return;
       }
-      if (other.Protocol != 0) {
+      if (other.Protocol != global::V2Ray.Core.Transport.Internet.TransportProtocol.Tcp) {
         Protocol = other.Protocol;
       }
       if (other.ProtocolName.Length != 0) {
@@ -242,7 +242,7 @@ namespace V2Ray.Core.Transport.Internet {
       }
       if (other.settings_ != null) {
         if (settings_ == null) {
-          settings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          Settings = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         Settings.MergeFrom(other.Settings);
       }
@@ -258,14 +258,14 @@ namespace V2Ray.Core.Transport.Internet {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            protocol_ = (global::V2Ray.Core.Transport.Internet.TransportProtocol) input.ReadEnum();
+            Protocol = (global::V2Ray.Core.Transport.Internet.TransportProtocol) input.ReadEnum();
             break;
           }
           case 18: {
             if (settings_ == null) {
-              settings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              Settings = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(settings_);
+            input.ReadMessage(Settings);
             break;
           }
           case 26: {
@@ -319,7 +319,7 @@ namespace V2Ray.Core.Transport.Internet {
 
     /// <summary>Field number for the "protocol" field.</summary>
     public const int ProtocolFieldNumber = 1;
-    private global::V2Ray.Core.Transport.Internet.TransportProtocol protocol_ = 0;
+    private global::V2Ray.Core.Transport.Internet.TransportProtocol protocol_ = global::V2Ray.Core.Transport.Internet.TransportProtocol.Tcp;
     /// <summary>
     /// Effective network. Deprecated. Use the string form below.
     /// </summary>
@@ -419,7 +419,7 @@ namespace V2Ray.Core.Transport.Internet {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Protocol != 0) hash ^= Protocol.GetHashCode();
+      if (Protocol != global::V2Ray.Core.Transport.Internet.TransportProtocol.Tcp) hash ^= Protocol.GetHashCode();
       if (ProtocolName.Length != 0) hash ^= ProtocolName.GetHashCode();
       hash ^= transportSettings_.GetHashCode();
       if (SecurityType.Length != 0) hash ^= SecurityType.GetHashCode();
@@ -438,7 +438,7 @@ namespace V2Ray.Core.Transport.Internet {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Protocol != 0) {
+      if (Protocol != global::V2Ray.Core.Transport.Internet.TransportProtocol.Tcp) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Protocol);
       }
@@ -464,7 +464,7 @@ namespace V2Ray.Core.Transport.Internet {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Protocol != 0) {
+      if (Protocol != global::V2Ray.Core.Transport.Internet.TransportProtocol.Tcp) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Protocol);
       }
       if (ProtocolName.Length != 0) {
@@ -489,7 +489,7 @@ namespace V2Ray.Core.Transport.Internet {
       if (other == null) {
         return;
       }
-      if (other.Protocol != 0) {
+      if (other.Protocol != global::V2Ray.Core.Transport.Internet.TransportProtocol.Tcp) {
         Protocol = other.Protocol;
       }
       if (other.ProtocolName.Length != 0) {
@@ -502,7 +502,7 @@ namespace V2Ray.Core.Transport.Internet {
       securitySettings_.Add(other.securitySettings_);
       if (other.socketSettings_ != null) {
         if (socketSettings_ == null) {
-          socketSettings_ = new global::V2Ray.Core.Transport.Internet.SocketConfig();
+          SocketSettings = new global::V2Ray.Core.Transport.Internet.SocketConfig();
         }
         SocketSettings.MergeFrom(other.SocketSettings);
       }
@@ -518,7 +518,7 @@ namespace V2Ray.Core.Transport.Internet {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            protocol_ = (global::V2Ray.Core.Transport.Internet.TransportProtocol) input.ReadEnum();
+            Protocol = (global::V2Ray.Core.Transport.Internet.TransportProtocol) input.ReadEnum();
             break;
           }
           case 18: {
@@ -539,9 +539,9 @@ namespace V2Ray.Core.Transport.Internet {
           }
           case 50: {
             if (socketSettings_ == null) {
-              socketSettings_ = new global::V2Ray.Core.Transport.Internet.SocketConfig();
+              SocketSettings = new global::V2Ray.Core.Transport.Internet.SocketConfig();
             }
-            input.ReadMessage(socketSettings_);
+            input.ReadMessage(SocketSettings);
             break;
           }
         }
@@ -737,7 +737,7 @@ namespace V2Ray.Core.Transport.Internet {
 
     /// <summary>Field number for the "tfo" field.</summary>
     public const int TfoFieldNumber = 2;
-    private global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState tfo_ = 0;
+    private global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState tfo_ = global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState.AsIs;
     /// <summary>
     /// TFO is the state of TFO settings.
     /// </summary>
@@ -751,7 +751,7 @@ namespace V2Ray.Core.Transport.Internet {
 
     /// <summary>Field number for the "tproxy" field.</summary>
     public const int TproxyFieldNumber = 3;
-    private global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode tproxy_ = 0;
+    private global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode tproxy_ = global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode.Off;
     /// <summary>
     /// TProxy is for enabling TProxy socket option.
     /// </summary>
@@ -826,8 +826,8 @@ namespace V2Ray.Core.Transport.Internet {
     public override int GetHashCode() {
       int hash = 1;
       if (Mark != 0) hash ^= Mark.GetHashCode();
-      if (Tfo != 0) hash ^= Tfo.GetHashCode();
-      if (Tproxy != 0) hash ^= Tproxy.GetHashCode();
+      if (Tfo != global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState.AsIs) hash ^= Tfo.GetHashCode();
+      if (Tproxy != global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode.Off) hash ^= Tproxy.GetHashCode();
       if (ReceiveOriginalDestAddress != false) hash ^= ReceiveOriginalDestAddress.GetHashCode();
       if (BindAddress.Length != 0) hash ^= BindAddress.GetHashCode();
       if (BindPort != 0) hash ^= BindPort.GetHashCode();
@@ -848,11 +848,11 @@ namespace V2Ray.Core.Transport.Internet {
         output.WriteRawTag(8);
         output.WriteInt32(Mark);
       }
-      if (Tfo != 0) {
+      if (Tfo != global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState.AsIs) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Tfo);
       }
-      if (Tproxy != 0) {
+      if (Tproxy != global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode.Off) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Tproxy);
       }
@@ -879,10 +879,10 @@ namespace V2Ray.Core.Transport.Internet {
       if (Mark != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Mark);
       }
-      if (Tfo != 0) {
+      if (Tfo != global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState.AsIs) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Tfo);
       }
-      if (Tproxy != 0) {
+      if (Tproxy != global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode.Off) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Tproxy);
       }
       if (ReceiveOriginalDestAddress != false) {
@@ -908,10 +908,10 @@ namespace V2Ray.Core.Transport.Internet {
       if (other.Mark != 0) {
         Mark = other.Mark;
       }
-      if (other.Tfo != 0) {
+      if (other.Tfo != global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState.AsIs) {
         Tfo = other.Tfo;
       }
-      if (other.Tproxy != 0) {
+      if (other.Tproxy != global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode.Off) {
         Tproxy = other.Tproxy;
       }
       if (other.ReceiveOriginalDestAddress != false) {
@@ -939,11 +939,11 @@ namespace V2Ray.Core.Transport.Internet {
             break;
           }
           case 16: {
-            tfo_ = (global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState) input.ReadEnum();
+            Tfo = (global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TCPFastOpenState) input.ReadEnum();
             break;
           }
           case 24: {
-            tproxy_ = (global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode) input.ReadEnum();
+            Tproxy = (global::V2Ray.Core.Transport.Internet.SocketConfig.Types.TProxyMode) input.ReadEnum();
             break;
           }
           case 32: {

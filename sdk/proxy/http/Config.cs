@@ -34,9 +34,9 @@ namespace V2Ray.Core.Proxy.Http {
             "aHR0cKoCFVYyUmF5LkNvcmUuUHJveHkuSHR0cGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Http.ServerConfig), global::V2Ray.Core.Proxy.Http.ServerConfig.Parser, new[]{ "Timeout", "Accounts", "AllowTransparent", "UserLevel" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Http.ClientConfig), global::V2Ray.Core.Proxy.Http.ClientConfig.Parser, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Http.ServerConfig), global::V2Ray.Core.Proxy.Http.ServerConfig.Parser, new[]{ "Timeout", "Accounts", "AllowTransparent", "UserLevel" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Http.ClientConfig), global::V2Ray.Core.Proxy.Http.ClientConfig.Parser, null, null, null, null, null)
           }));
     }
     #endregion
@@ -98,7 +98,7 @@ namespace V2Ray.Core.Proxy.Http {
     /// <summary>Field number for the "accounts" field.</summary>
     public const int AccountsFieldNumber = 2;
     private static readonly pbc::MapField<string, string>.Codec _map_accounts_codec
-        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForString(18), 18);
+        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 18);
     private readonly pbc::MapField<string, string> accounts_ = new pbc::MapField<string, string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<string, string> Accounts {

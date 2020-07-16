@@ -42,13 +42,13 @@ namespace V2Ray.Core.App.Stats.Command {
             "dGF0cy5Db21tYW5kYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.GetStatsRequest), global::V2Ray.Core.App.Stats.Command.GetStatsRequest.Parser, new[]{ "Name", "Reset" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.Stat), global::V2Ray.Core.App.Stats.Command.Stat.Parser, new[]{ "Name", "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.GetStatsResponse), global::V2Ray.Core.App.Stats.Command.GetStatsResponse.Parser, new[]{ "Stat" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.QueryStatsRequest), global::V2Ray.Core.App.Stats.Command.QueryStatsRequest.Parser, new[]{ "Pattern", "Reset" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.QueryStatsResponse), global::V2Ray.Core.App.Stats.Command.QueryStatsResponse.Parser, new[]{ "Stat" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.Config), global::V2Ray.Core.App.Stats.Command.Config.Parser, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.GetStatsRequest), global::V2Ray.Core.App.Stats.Command.GetStatsRequest.Parser, new[]{ "Name", "Reset" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.Stat), global::V2Ray.Core.App.Stats.Command.Stat.Parser, new[]{ "Name", "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.GetStatsResponse), global::V2Ray.Core.App.Stats.Command.GetStatsResponse.Parser, new[]{ "Stat" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.QueryStatsRequest), global::V2Ray.Core.App.Stats.Command.QueryStatsRequest.Parser, new[]{ "Pattern", "Reset" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.QueryStatsResponse), global::V2Ray.Core.App.Stats.Command.QueryStatsResponse.Parser, new[]{ "Stat" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.Config), global::V2Ray.Core.App.Stats.Command.Config.Parser, null, null, null, null, null)
           }));
     }
     #endregion
@@ -482,7 +482,7 @@ namespace V2Ray.Core.App.Stats.Command {
       }
       if (other.stat_ != null) {
         if (stat_ == null) {
-          stat_ = new global::V2Ray.Core.App.Stats.Command.Stat();
+          Stat = new global::V2Ray.Core.App.Stats.Command.Stat();
         }
         Stat.MergeFrom(other.Stat);
       }
@@ -499,9 +499,9 @@ namespace V2Ray.Core.App.Stats.Command {
             break;
           case 10: {
             if (stat_ == null) {
-              stat_ = new global::V2Ray.Core.App.Stats.Command.Stat();
+              Stat = new global::V2Ray.Core.App.Stats.Command.Stat();
             }
-            input.ReadMessage(stat_);
+            input.ReadMessage(Stat);
             break;
           }
         }

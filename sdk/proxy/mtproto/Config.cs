@@ -33,10 +33,10 @@ namespace V2Ray.Core.Proxy.Mtproto {
             "LkNvcmUuUHJveHkuTXRwcm90b2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Protocol.UserReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Mtproto.Account), global::V2Ray.Core.Proxy.Mtproto.Account.Parser, new[]{ "Secret" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Mtproto.ServerConfig), global::V2Ray.Core.Proxy.Mtproto.ServerConfig.Parser, new[]{ "User" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Mtproto.ClientConfig), global::V2Ray.Core.Proxy.Mtproto.ClientConfig.Parser, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Mtproto.Account), global::V2Ray.Core.Proxy.Mtproto.Account.Parser, new[]{ "Secret" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Mtproto.ServerConfig), global::V2Ray.Core.Proxy.Mtproto.ServerConfig.Parser, new[]{ "User" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Mtproto.ClientConfig), global::V2Ray.Core.Proxy.Mtproto.ClientConfig.Parser, null, null, null, null, null)
           }));
     }
     #endregion

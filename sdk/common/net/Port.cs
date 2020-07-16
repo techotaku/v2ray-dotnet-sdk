@@ -32,9 +32,9 @@ namespace V2Ray.Core.Common.Net {
             "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.PortRange), global::V2Ray.Core.Common.Net.PortRange.Parser, new[]{ "From", "To" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.PortList), global::V2Ray.Core.Common.Net.PortList.Parser, new[]{ "Range" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.PortRange), global::V2Ray.Core.Common.Net.PortRange.Parser, new[]{ "From", "To" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.PortList), global::V2Ray.Core.Common.Net.PortList.Parser, new[]{ "Range" }, null, null, null, null)
           }));
     }
     #endregion

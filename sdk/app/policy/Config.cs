@@ -48,13 +48,13 @@ namespace V2Ray.Core.App.Policy {
             "YXkuQ29yZS5BcHAuUG9saWN5YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Second), global::V2Ray.Core.App.Policy.Second.Parser, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy), global::V2Ray.Core.App.Policy.Policy.Parser, new[]{ "Timeout", "Stats", "Buffer" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy.Types.Timeout), global::V2Ray.Core.App.Policy.Policy.Types.Timeout.Parser, new[]{ "Handshake", "ConnectionIdle", "UplinkOnly", "DownlinkOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy.Types.Stats), global::V2Ray.Core.App.Policy.Policy.Types.Stats.Parser, new[]{ "UserUplink", "UserDownlink" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy.Types.Buffer), global::V2Ray.Core.App.Policy.Policy.Types.Buffer.Parser, new[]{ "Connection" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.SystemPolicy), global::V2Ray.Core.App.Policy.SystemPolicy.Parser, new[]{ "Stats" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats), global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats.Parser, new[]{ "InboundUplink", "InboundDownlink" }, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Config), global::V2Ray.Core.App.Policy.Config.Parser, new[]{ "Level", "System" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Second), global::V2Ray.Core.App.Policy.Second.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy), global::V2Ray.Core.App.Policy.Policy.Parser, new[]{ "Timeout", "Stats", "Buffer" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy.Types.Timeout), global::V2Ray.Core.App.Policy.Policy.Types.Timeout.Parser, new[]{ "Handshake", "ConnectionIdle", "UplinkOnly", "DownlinkOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy.Types.Stats), global::V2Ray.Core.App.Policy.Policy.Types.Stats.Parser, new[]{ "UserUplink", "UserDownlink" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy.Types.Buffer), global::V2Ray.Core.App.Policy.Policy.Types.Buffer.Parser, new[]{ "Connection" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.SystemPolicy), global::V2Ray.Core.App.Policy.SystemPolicy.Parser, new[]{ "Stats" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats), global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats.Parser, new[]{ "InboundUplink", "InboundDownlink" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Config), global::V2Ray.Core.App.Policy.Config.Parser, new[]{ "Level", "System" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
     #endregion
@@ -339,19 +339,19 @@ namespace V2Ray.Core.App.Policy {
       }
       if (other.timeout_ != null) {
         if (timeout_ == null) {
-          timeout_ = new global::V2Ray.Core.App.Policy.Policy.Types.Timeout();
+          Timeout = new global::V2Ray.Core.App.Policy.Policy.Types.Timeout();
         }
         Timeout.MergeFrom(other.Timeout);
       }
       if (other.stats_ != null) {
         if (stats_ == null) {
-          stats_ = new global::V2Ray.Core.App.Policy.Policy.Types.Stats();
+          Stats = new global::V2Ray.Core.App.Policy.Policy.Types.Stats();
         }
         Stats.MergeFrom(other.Stats);
       }
       if (other.buffer_ != null) {
         if (buffer_ == null) {
-          buffer_ = new global::V2Ray.Core.App.Policy.Policy.Types.Buffer();
+          Buffer = new global::V2Ray.Core.App.Policy.Policy.Types.Buffer();
         }
         Buffer.MergeFrom(other.Buffer);
       }
@@ -368,23 +368,23 @@ namespace V2Ray.Core.App.Policy {
             break;
           case 10: {
             if (timeout_ == null) {
-              timeout_ = new global::V2Ray.Core.App.Policy.Policy.Types.Timeout();
+              Timeout = new global::V2Ray.Core.App.Policy.Policy.Types.Timeout();
             }
-            input.ReadMessage(timeout_);
+            input.ReadMessage(Timeout);
             break;
           }
           case 18: {
             if (stats_ == null) {
-              stats_ = new global::V2Ray.Core.App.Policy.Policy.Types.Stats();
+              Stats = new global::V2Ray.Core.App.Policy.Policy.Types.Stats();
             }
-            input.ReadMessage(stats_);
+            input.ReadMessage(Stats);
             break;
           }
           case 26: {
             if (buffer_ == null) {
-              buffer_ = new global::V2Ray.Core.App.Policy.Policy.Types.Buffer();
+              Buffer = new global::V2Ray.Core.App.Policy.Policy.Types.Buffer();
             }
-            input.ReadMessage(buffer_);
+            input.ReadMessage(Buffer);
             break;
           }
         }
@@ -568,25 +568,25 @@ namespace V2Ray.Core.App.Policy {
           }
           if (other.handshake_ != null) {
             if (handshake_ == null) {
-              handshake_ = new global::V2Ray.Core.App.Policy.Second();
+              Handshake = new global::V2Ray.Core.App.Policy.Second();
             }
             Handshake.MergeFrom(other.Handshake);
           }
           if (other.connectionIdle_ != null) {
             if (connectionIdle_ == null) {
-              connectionIdle_ = new global::V2Ray.Core.App.Policy.Second();
+              ConnectionIdle = new global::V2Ray.Core.App.Policy.Second();
             }
             ConnectionIdle.MergeFrom(other.ConnectionIdle);
           }
           if (other.uplinkOnly_ != null) {
             if (uplinkOnly_ == null) {
-              uplinkOnly_ = new global::V2Ray.Core.App.Policy.Second();
+              UplinkOnly = new global::V2Ray.Core.App.Policy.Second();
             }
             UplinkOnly.MergeFrom(other.UplinkOnly);
           }
           if (other.downlinkOnly_ != null) {
             if (downlinkOnly_ == null) {
-              downlinkOnly_ = new global::V2Ray.Core.App.Policy.Second();
+              DownlinkOnly = new global::V2Ray.Core.App.Policy.Second();
             }
             DownlinkOnly.MergeFrom(other.DownlinkOnly);
           }
@@ -603,30 +603,30 @@ namespace V2Ray.Core.App.Policy {
                 break;
               case 10: {
                 if (handshake_ == null) {
-                  handshake_ = new global::V2Ray.Core.App.Policy.Second();
+                  Handshake = new global::V2Ray.Core.App.Policy.Second();
                 }
-                input.ReadMessage(handshake_);
+                input.ReadMessage(Handshake);
                 break;
               }
               case 18: {
                 if (connectionIdle_ == null) {
-                  connectionIdle_ = new global::V2Ray.Core.App.Policy.Second();
+                  ConnectionIdle = new global::V2Ray.Core.App.Policy.Second();
                 }
-                input.ReadMessage(connectionIdle_);
+                input.ReadMessage(ConnectionIdle);
                 break;
               }
               case 26: {
                 if (uplinkOnly_ == null) {
-                  uplinkOnly_ = new global::V2Ray.Core.App.Policy.Second();
+                  UplinkOnly = new global::V2Ray.Core.App.Policy.Second();
                 }
-                input.ReadMessage(uplinkOnly_);
+                input.ReadMessage(UplinkOnly);
                 break;
               }
               case 34: {
                 if (downlinkOnly_ == null) {
-                  downlinkOnly_ = new global::V2Ray.Core.App.Policy.Second();
+                  DownlinkOnly = new global::V2Ray.Core.App.Policy.Second();
                 }
-                input.ReadMessage(downlinkOnly_);
+                input.ReadMessage(DownlinkOnly);
                 break;
               }
             }
@@ -1036,7 +1036,7 @@ namespace V2Ray.Core.App.Policy {
       }
       if (other.stats_ != null) {
         if (stats_ == null) {
-          stats_ = new global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats();
+          Stats = new global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats();
         }
         Stats.MergeFrom(other.Stats);
       }
@@ -1053,9 +1053,9 @@ namespace V2Ray.Core.App.Policy {
             break;
           case 10: {
             if (stats_ == null) {
-              stats_ = new global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats();
+              Stats = new global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats();
             }
-            input.ReadMessage(stats_);
+            input.ReadMessage(Stats);
             break;
           }
         }
@@ -1266,7 +1266,7 @@ namespace V2Ray.Core.App.Policy {
     /// <summary>Field number for the "level" field.</summary>
     public const int LevelFieldNumber = 1;
     private static readonly pbc::MapField<uint, global::V2Ray.Core.App.Policy.Policy>.Codec _map_level_codec
-        = new pbc::MapField<uint, global::V2Ray.Core.App.Policy.Policy>.Codec(pb::FieldCodec.ForUInt32(8), pb::FieldCodec.ForMessage(18, global::V2Ray.Core.App.Policy.Policy.Parser), 10);
+        = new pbc::MapField<uint, global::V2Ray.Core.App.Policy.Policy>.Codec(pb::FieldCodec.ForUInt32(8, 0), pb::FieldCodec.ForMessage(18, global::V2Ray.Core.App.Policy.Policy.Parser), 10);
     private readonly pbc::MapField<uint, global::V2Ray.Core.App.Policy.Policy> level_ = new pbc::MapField<uint, global::V2Ray.Core.App.Policy.Policy>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<uint, global::V2Ray.Core.App.Policy.Policy> Level {
@@ -1351,7 +1351,7 @@ namespace V2Ray.Core.App.Policy {
       level_.Add(other.level_);
       if (other.system_ != null) {
         if (system_ == null) {
-          system_ = new global::V2Ray.Core.App.Policy.SystemPolicy();
+          System = new global::V2Ray.Core.App.Policy.SystemPolicy();
         }
         System.MergeFrom(other.System);
       }
@@ -1372,9 +1372,9 @@ namespace V2Ray.Core.App.Policy {
           }
           case 18: {
             if (system_ == null) {
-              system_ = new global::V2Ray.Core.App.Policy.SystemPolicy();
+              System = new global::V2Ray.Core.App.Policy.SystemPolicy();
             }
-            input.ReadMessage(system_);
+            input.ReadMessage(System);
             break;
           }
         }

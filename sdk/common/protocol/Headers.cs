@@ -34,8 +34,8 @@ namespace V2Ray.Core.Common.Protocol {
             "UHJvdG9jb2xiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.Common.Protocol.SecurityType), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Protocol.SecurityConfig), global::V2Ray.Core.Common.Protocol.SecurityConfig.Parser, new[]{ "Type" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.Common.Protocol.SecurityType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Protocol.SecurityConfig), global::V2Ray.Core.Common.Protocol.SecurityConfig.Parser, new[]{ "Type" }, null, null, null, null)
           }));
     }
     #endregion
@@ -90,7 +90,7 @@ namespace V2Ray.Core.Common.Protocol {
 
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 1;
-    private global::V2Ray.Core.Common.Protocol.SecurityType type_ = 0;
+    private global::V2Ray.Core.Common.Protocol.SecurityType type_ = global::V2Ray.Core.Common.Protocol.SecurityType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.Common.Protocol.SecurityType Type {
       get { return type_; }
@@ -119,7 +119,7 @@ namespace V2Ray.Core.Common.Protocol {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Type != 0) hash ^= Type.GetHashCode();
+      if (Type != global::V2Ray.Core.Common.Protocol.SecurityType.Unknown) hash ^= Type.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -133,7 +133,7 @@ namespace V2Ray.Core.Common.Protocol {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Type != 0) {
+      if (Type != global::V2Ray.Core.Common.Protocol.SecurityType.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Type);
       }
@@ -145,7 +145,7 @@ namespace V2Ray.Core.Common.Protocol {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Type != 0) {
+      if (Type != global::V2Ray.Core.Common.Protocol.SecurityType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
       }
       if (_unknownFields != null) {
@@ -159,7 +159,7 @@ namespace V2Ray.Core.Common.Protocol {
       if (other == null) {
         return;
       }
-      if (other.Type != 0) {
+      if (other.Type != global::V2Ray.Core.Common.Protocol.SecurityType.Unknown) {
         Type = other.Type;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -174,7 +174,7 @@ namespace V2Ray.Core.Common.Protocol {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            type_ = (global::V2Ray.Core.Common.Protocol.SecurityType) input.ReadEnum();
+            Type = (global::V2Ray.Core.Common.Protocol.SecurityType) input.ReadEnum();
             break;
           }
         }

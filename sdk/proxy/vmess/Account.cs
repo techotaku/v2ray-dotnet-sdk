@@ -33,8 +33,8 @@ namespace V2Ray.Core.Proxy.Vmess {
             "eS5Db3JlLlByb3h5LlZtZXNzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Protocol.HeadersReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Account), global::V2Ray.Core.Proxy.Vmess.Account.Parser, new[]{ "Id", "AlterId", "SecuritySettings" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Account), global::V2Ray.Core.Proxy.Vmess.Account.Parser, new[]{ "Id", "AlterId", "SecuritySettings" }, null, null, null, null)
           }));
     }
     #endregion
@@ -205,7 +205,7 @@ namespace V2Ray.Core.Proxy.Vmess {
       }
       if (other.securitySettings_ != null) {
         if (securitySettings_ == null) {
-          securitySettings_ = new global::V2Ray.Core.Common.Protocol.SecurityConfig();
+          SecuritySettings = new global::V2Ray.Core.Common.Protocol.SecurityConfig();
         }
         SecuritySettings.MergeFrom(other.SecuritySettings);
       }
@@ -230,9 +230,9 @@ namespace V2Ray.Core.Proxy.Vmess {
           }
           case 26: {
             if (securitySettings_ == null) {
-              securitySettings_ = new global::V2Ray.Core.Common.Protocol.SecurityConfig();
+              SecuritySettings = new global::V2Ray.Core.Common.Protocol.SecurityConfig();
             }
-            input.ReadMessage(securitySettings_);
+            input.ReadMessage(SecuritySettings);
             break;
           }
         }

@@ -32,9 +32,9 @@ namespace V2Ray.Core.Transport.Internet.Headers.Noop {
             "LkhlYWRlcnMuTm9vcGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Noop.Config), global::V2Ray.Core.Transport.Internet.Headers.Noop.Config.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Noop.ConnectionConfig), global::V2Ray.Core.Transport.Internet.Headers.Noop.ConnectionConfig.Parser, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Noop.Config), global::V2Ray.Core.Transport.Internet.Headers.Noop.Config.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Noop.ConnectionConfig), global::V2Ray.Core.Transport.Internet.Headers.Noop.ConnectionConfig.Parser, null, null, null, null, null)
           }));
     }
     #endregion

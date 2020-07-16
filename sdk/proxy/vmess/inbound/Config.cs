@@ -38,10 +38,10 @@ namespace V2Ray.Core.Proxy.Vmess.Inbound {
             "bmJvdW5kYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Protocol.UserReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Inbound.DetourConfig), global::V2Ray.Core.Proxy.Vmess.Inbound.DetourConfig.Parser, new[]{ "To" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Inbound.DefaultConfig), global::V2Ray.Core.Proxy.Vmess.Inbound.DefaultConfig.Parser, new[]{ "AlterId", "Level" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Inbound.Config), global::V2Ray.Core.Proxy.Vmess.Inbound.Config.Parser, new[]{ "User", "Default", "Detour", "SecureEncryptionOnly" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Inbound.DetourConfig), global::V2Ray.Core.Proxy.Vmess.Inbound.DetourConfig.Parser, new[]{ "To" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Inbound.DefaultConfig), global::V2Ray.Core.Proxy.Vmess.Inbound.DefaultConfig.Parser, new[]{ "AlterId", "Level" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Inbound.Config), global::V2Ray.Core.Proxy.Vmess.Inbound.Config.Parser, new[]{ "User", "Default", "Detour", "SecureEncryptionOnly" }, null, null, null, null)
           }));
     }
     #endregion
@@ -499,13 +499,13 @@ namespace V2Ray.Core.Proxy.Vmess.Inbound {
       user_.Add(other.user_);
       if (other.default_ != null) {
         if (default_ == null) {
-          default_ = new global::V2Ray.Core.Proxy.Vmess.Inbound.DefaultConfig();
+          Default = new global::V2Ray.Core.Proxy.Vmess.Inbound.DefaultConfig();
         }
         Default.MergeFrom(other.Default);
       }
       if (other.detour_ != null) {
         if (detour_ == null) {
-          detour_ = new global::V2Ray.Core.Proxy.Vmess.Inbound.DetourConfig();
+          Detour = new global::V2Ray.Core.Proxy.Vmess.Inbound.DetourConfig();
         }
         Detour.MergeFrom(other.Detour);
       }
@@ -529,16 +529,16 @@ namespace V2Ray.Core.Proxy.Vmess.Inbound {
           }
           case 18: {
             if (default_ == null) {
-              default_ = new global::V2Ray.Core.Proxy.Vmess.Inbound.DefaultConfig();
+              Default = new global::V2Ray.Core.Proxy.Vmess.Inbound.DefaultConfig();
             }
-            input.ReadMessage(default_);
+            input.ReadMessage(Default);
             break;
           }
           case 26: {
             if (detour_ == null) {
-              detour_ = new global::V2Ray.Core.Proxy.Vmess.Inbound.DetourConfig();
+              Detour = new global::V2Ray.Core.Proxy.Vmess.Inbound.DetourConfig();
             }
-            input.ReadMessage(detour_);
+            input.ReadMessage(Detour);
             break;
           }
           case 32: {

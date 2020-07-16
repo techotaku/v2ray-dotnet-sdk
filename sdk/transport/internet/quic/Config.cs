@@ -36,8 +36,8 @@ namespace V2Ray.Core.Transport.Internet.Quic {
             "cm5ldC5RdWljYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, global::V2Ray.Core.Common.Protocol.HeadersReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Quic.Config), global::V2Ray.Core.Transport.Internet.Quic.Config.Parser, new[]{ "Key", "Security", "Header" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Quic.Config), global::V2Ray.Core.Transport.Internet.Quic.Config.Parser, new[]{ "Key", "Security", "Header" }, null, null, null, null)
           }));
     }
     #endregion
@@ -196,13 +196,13 @@ namespace V2Ray.Core.Transport.Internet.Quic {
       }
       if (other.security_ != null) {
         if (security_ == null) {
-          security_ = new global::V2Ray.Core.Common.Protocol.SecurityConfig();
+          Security = new global::V2Ray.Core.Common.Protocol.SecurityConfig();
         }
         Security.MergeFrom(other.Security);
       }
       if (other.header_ != null) {
         if (header_ == null) {
-          header_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          Header = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         Header.MergeFrom(other.Header);
       }
@@ -223,16 +223,16 @@ namespace V2Ray.Core.Transport.Internet.Quic {
           }
           case 18: {
             if (security_ == null) {
-              security_ = new global::V2Ray.Core.Common.Protocol.SecurityConfig();
+              Security = new global::V2Ray.Core.Common.Protocol.SecurityConfig();
             }
-            input.ReadMessage(security_);
+            input.ReadMessage(Security);
             break;
           }
           case 26: {
             if (header_ == null) {
-              header_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              Header = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(header_);
+            input.ReadMessage(Header);
             break;
           }
         }

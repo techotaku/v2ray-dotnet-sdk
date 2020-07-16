@@ -46,10 +46,10 @@ namespace V2Ray.Core.Proxy.Shadowsocks {
             "eS5Db3JlLlByb3h5LlNoYWRvd3NvY2tzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.NetworkReflection.Descriptor, global::V2Ray.Core.Common.Protocol.UserReflection.Descriptor, global::V2Ray.Core.Common.Protocol.ServerSpecReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.Proxy.Shadowsocks.CipherType), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Shadowsocks.Account), global::V2Ray.Core.Proxy.Shadowsocks.Account.Parser, new[]{ "Password", "CipherType", "Ota" }, null, new[]{ typeof(global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth) }, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Shadowsocks.ServerConfig), global::V2Ray.Core.Proxy.Shadowsocks.ServerConfig.Parser, new[]{ "UdpEnabled", "User", "Network" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Shadowsocks.ClientConfig), global::V2Ray.Core.Proxy.Shadowsocks.ClientConfig.Parser, new[]{ "Server" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.Proxy.Shadowsocks.CipherType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Shadowsocks.Account), global::V2Ray.Core.Proxy.Shadowsocks.Account.Parser, new[]{ "Password", "CipherType", "Ota" }, null, new[]{ typeof(global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Shadowsocks.ServerConfig), global::V2Ray.Core.Proxy.Shadowsocks.ServerConfig.Parser, new[]{ "UdpEnabled", "User", "Network" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Shadowsocks.ClientConfig), global::V2Ray.Core.Proxy.Shadowsocks.ClientConfig.Parser, new[]{ "Server" }, null, null, null, null)
           }));
     }
     #endregion
@@ -120,7 +120,7 @@ namespace V2Ray.Core.Proxy.Shadowsocks {
 
     /// <summary>Field number for the "cipher_type" field.</summary>
     public const int CipherTypeFieldNumber = 2;
-    private global::V2Ray.Core.Proxy.Shadowsocks.CipherType cipherType_ = 0;
+    private global::V2Ray.Core.Proxy.Shadowsocks.CipherType cipherType_ = global::V2Ray.Core.Proxy.Shadowsocks.CipherType.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.Proxy.Shadowsocks.CipherType CipherType {
       get { return cipherType_; }
@@ -131,7 +131,7 @@ namespace V2Ray.Core.Proxy.Shadowsocks {
 
     /// <summary>Field number for the "ota" field.</summary>
     public const int OtaFieldNumber = 3;
-    private global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth ota_ = 0;
+    private global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth ota_ = global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth.Auto;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth Ota {
       get { return ota_; }
@@ -163,8 +163,8 @@ namespace V2Ray.Core.Proxy.Shadowsocks {
     public override int GetHashCode() {
       int hash = 1;
       if (Password.Length != 0) hash ^= Password.GetHashCode();
-      if (CipherType != 0) hash ^= CipherType.GetHashCode();
-      if (Ota != 0) hash ^= Ota.GetHashCode();
+      if (CipherType != global::V2Ray.Core.Proxy.Shadowsocks.CipherType.Unknown) hash ^= CipherType.GetHashCode();
+      if (Ota != global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth.Auto) hash ^= Ota.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -182,11 +182,11 @@ namespace V2Ray.Core.Proxy.Shadowsocks {
         output.WriteRawTag(10);
         output.WriteString(Password);
       }
-      if (CipherType != 0) {
+      if (CipherType != global::V2Ray.Core.Proxy.Shadowsocks.CipherType.Unknown) {
         output.WriteRawTag(16);
         output.WriteEnum((int) CipherType);
       }
-      if (Ota != 0) {
+      if (Ota != global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth.Auto) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Ota);
       }
@@ -201,10 +201,10 @@ namespace V2Ray.Core.Proxy.Shadowsocks {
       if (Password.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
       }
-      if (CipherType != 0) {
+      if (CipherType != global::V2Ray.Core.Proxy.Shadowsocks.CipherType.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CipherType);
       }
-      if (Ota != 0) {
+      if (Ota != global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth.Auto) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Ota);
       }
       if (_unknownFields != null) {
@@ -221,10 +221,10 @@ namespace V2Ray.Core.Proxy.Shadowsocks {
       if (other.Password.Length != 0) {
         Password = other.Password;
       }
-      if (other.CipherType != 0) {
+      if (other.CipherType != global::V2Ray.Core.Proxy.Shadowsocks.CipherType.Unknown) {
         CipherType = other.CipherType;
       }
-      if (other.Ota != 0) {
+      if (other.Ota != global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth.Auto) {
         Ota = other.Ota;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -243,11 +243,11 @@ namespace V2Ray.Core.Proxy.Shadowsocks {
             break;
           }
           case 16: {
-            cipherType_ = (global::V2Ray.Core.Proxy.Shadowsocks.CipherType) input.ReadEnum();
+            CipherType = (global::V2Ray.Core.Proxy.Shadowsocks.CipherType) input.ReadEnum();
             break;
           }
           case 24: {
-            ota_ = (global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth) input.ReadEnum();
+            Ota = (global::V2Ray.Core.Proxy.Shadowsocks.Account.Types.OneTimeAuth) input.ReadEnum();
             break;
           }
         }
@@ -420,7 +420,7 @@ namespace V2Ray.Core.Proxy.Shadowsocks {
       }
       if (other.user_ != null) {
         if (user_ == null) {
-          user_ = new global::V2Ray.Core.Common.Protocol.User();
+          User = new global::V2Ray.Core.Common.Protocol.User();
         }
         User.MergeFrom(other.User);
       }
@@ -442,9 +442,9 @@ namespace V2Ray.Core.Proxy.Shadowsocks {
           }
           case 18: {
             if (user_ == null) {
-              user_ = new global::V2Ray.Core.Common.Protocol.User();
+              User = new global::V2Ray.Core.Common.Protocol.User();
             }
-            input.ReadMessage(user_);
+            input.ReadMessage(User);
             break;
           }
           case 26:

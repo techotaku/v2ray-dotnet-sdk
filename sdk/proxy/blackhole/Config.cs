@@ -33,10 +33,10 @@ namespace V2Ray.Core.Proxy.Blackhole {
             "qgIaVjJSYXkuQ29yZS5Qcm94eS5CbGFja2hvbGViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Blackhole.NoneResponse), global::V2Ray.Core.Proxy.Blackhole.NoneResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Blackhole.HTTPResponse), global::V2Ray.Core.Proxy.Blackhole.HTTPResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Blackhole.Config), global::V2Ray.Core.Proxy.Blackhole.Config.Parser, new[]{ "Response" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Blackhole.NoneResponse), global::V2Ray.Core.Proxy.Blackhole.NoneResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Blackhole.HTTPResponse), global::V2Ray.Core.Proxy.Blackhole.HTTPResponse.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Blackhole.Config), global::V2Ray.Core.Proxy.Blackhole.Config.Parser, new[]{ "Response" }, null, null, null, null)
           }));
     }
     #endregion
@@ -352,7 +352,7 @@ namespace V2Ray.Core.Proxy.Blackhole {
       }
       if (other.response_ != null) {
         if (response_ == null) {
-          response_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          Response = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         Response.MergeFrom(other.Response);
       }
@@ -369,9 +369,9 @@ namespace V2Ray.Core.Proxy.Blackhole {
             break;
           case 10: {
             if (response_ == null) {
-              response_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              Response = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(response_);
+            input.ReadMessage(Response);
             break;
           }
         }

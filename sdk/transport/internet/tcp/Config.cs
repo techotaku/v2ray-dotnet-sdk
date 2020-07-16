@@ -33,8 +33,8 @@ namespace V2Ray.Core.Transport.Internet.Tcp {
             "MlJheS5Db3JlLlRyYW5zcG9ydC5JbnRlcm5ldC5UY3BiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Tcp.Config), global::V2Ray.Core.Transport.Internet.Tcp.Config.Parser, new[]{ "HeaderSettings" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Tcp.Config), global::V2Ray.Core.Transport.Internet.Tcp.Config.Parser, new[]{ "HeaderSettings" }, null, null, null, null)
           }));
     }
     #endregion
@@ -148,7 +148,7 @@ namespace V2Ray.Core.Transport.Internet.Tcp {
       }
       if (other.headerSettings_ != null) {
         if (headerSettings_ == null) {
-          headerSettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+          HeaderSettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         HeaderSettings.MergeFrom(other.HeaderSettings);
       }
@@ -165,9 +165,9 @@ namespace V2Ray.Core.Transport.Internet.Tcp {
             break;
           case 18: {
             if (headerSettings_ == null) {
-              headerSettings_ = new global::V2Ray.Core.Common.Serial.TypedMessage();
+              HeaderSettings = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
-            input.ReadMessage(headerSettings_);
+            input.ReadMessage(HeaderSettings);
             break;
           }
         }

@@ -34,8 +34,8 @@ namespace V2Ray.Core.Common.Net {
             "FVYyUmF5LkNvcmUuQ29tbW9uLk5ldGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.NetworkReflection.Descriptor, global::V2Ray.Core.Common.Net.AddressReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.Endpoint), global::V2Ray.Core.Common.Net.Endpoint.Parser, new[]{ "Network", "Address", "Port" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Common.Net.Endpoint), global::V2Ray.Core.Common.Net.Endpoint.Parser, new[]{ "Network", "Address", "Port" }, null, null, null, null)
           }));
     }
     #endregion
@@ -83,7 +83,7 @@ namespace V2Ray.Core.Common.Net {
 
     /// <summary>Field number for the "network" field.</summary>
     public const int NetworkFieldNumber = 1;
-    private global::V2Ray.Core.Common.Net.Network network_ = 0;
+    private global::V2Ray.Core.Common.Net.Network network_ = global::V2Ray.Core.Common.Net.Network.Unknown;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.Common.Net.Network Network {
       get { return network_; }
@@ -136,7 +136,7 @@ namespace V2Ray.Core.Common.Net {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Network != 0) hash ^= Network.GetHashCode();
+      if (Network != global::V2Ray.Core.Common.Net.Network.Unknown) hash ^= Network.GetHashCode();
       if (address_ != null) hash ^= Address.GetHashCode();
       if (Port != 0) hash ^= Port.GetHashCode();
       if (_unknownFields != null) {
@@ -152,7 +152,7 @@ namespace V2Ray.Core.Common.Net {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Network != 0) {
+      if (Network != global::V2Ray.Core.Common.Net.Network.Unknown) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Network);
       }
@@ -172,7 +172,7 @@ namespace V2Ray.Core.Common.Net {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Network != 0) {
+      if (Network != global::V2Ray.Core.Common.Net.Network.Unknown) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Network);
       }
       if (address_ != null) {
@@ -192,12 +192,12 @@ namespace V2Ray.Core.Common.Net {
       if (other == null) {
         return;
       }
-      if (other.Network != 0) {
+      if (other.Network != global::V2Ray.Core.Common.Net.Network.Unknown) {
         Network = other.Network;
       }
       if (other.address_ != null) {
         if (address_ == null) {
-          address_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+          Address = new global::V2Ray.Core.Common.Net.IPOrDomain();
         }
         Address.MergeFrom(other.Address);
       }
@@ -216,14 +216,14 @@ namespace V2Ray.Core.Common.Net {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            network_ = (global::V2Ray.Core.Common.Net.Network) input.ReadEnum();
+            Network = (global::V2Ray.Core.Common.Net.Network) input.ReadEnum();
             break;
           }
           case 18: {
             if (address_ == null) {
-              address_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+              Address = new global::V2Ray.Core.Common.Net.IPOrDomain();
             }
-            input.ReadMessage(address_);
+            input.ReadMessage(Address);
             break;
           }
           case 24: {

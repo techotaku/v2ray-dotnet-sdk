@@ -37,11 +37,11 @@ namespace V2Ray.Core.Proxy.Reverse {
             "YXkuQ29yZS5Qcm94eS5SZXZlcnNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Reverse.Control), global::V2Ray.Core.Proxy.Reverse.Control.Parser, new[]{ "State", "Random" }, null, new[]{ typeof(global::V2Ray.Core.Proxy.Reverse.Control.Types.State) }, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Reverse.BridgeConfig), global::V2Ray.Core.Proxy.Reverse.BridgeConfig.Parser, new[]{ "Tag", "Domain" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Reverse.PortalConfig), global::V2Ray.Core.Proxy.Reverse.PortalConfig.Parser, new[]{ "Tag", "Domain" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Reverse.Config), global::V2Ray.Core.Proxy.Reverse.Config.Parser, new[]{ "BridgeConfig", "PortalConfig" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Reverse.Control), global::V2Ray.Core.Proxy.Reverse.Control.Parser, new[]{ "State", "Random" }, null, new[]{ typeof(global::V2Ray.Core.Proxy.Reverse.Control.Types.State) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Reverse.BridgeConfig), global::V2Ray.Core.Proxy.Reverse.BridgeConfig.Parser, new[]{ "Tag", "Domain" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Reverse.PortalConfig), global::V2Ray.Core.Proxy.Reverse.PortalConfig.Parser, new[]{ "Tag", "Domain" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Reverse.Config), global::V2Ray.Core.Proxy.Reverse.Config.Parser, new[]{ "BridgeConfig", "PortalConfig" }, null, null, null, null)
           }));
     }
     #endregion
@@ -85,7 +85,7 @@ namespace V2Ray.Core.Proxy.Reverse {
 
     /// <summary>Field number for the "state" field.</summary>
     public const int StateFieldNumber = 1;
-    private global::V2Ray.Core.Proxy.Reverse.Control.Types.State state_ = 0;
+    private global::V2Ray.Core.Proxy.Reverse.Control.Types.State state_ = global::V2Ray.Core.Proxy.Reverse.Control.Types.State.Active;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.Proxy.Reverse.Control.Types.State State {
       get { return state_; }
@@ -126,7 +126,7 @@ namespace V2Ray.Core.Proxy.Reverse {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (State != 0) hash ^= State.GetHashCode();
+      if (State != global::V2Ray.Core.Proxy.Reverse.Control.Types.State.Active) hash ^= State.GetHashCode();
       if (Random.Length != 0) hash ^= Random.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -141,7 +141,7 @@ namespace V2Ray.Core.Proxy.Reverse {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (State != 0) {
+      if (State != global::V2Ray.Core.Proxy.Reverse.Control.Types.State.Active) {
         output.WriteRawTag(8);
         output.WriteEnum((int) State);
       }
@@ -157,7 +157,7 @@ namespace V2Ray.Core.Proxy.Reverse {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (State != 0) {
+      if (State != global::V2Ray.Core.Proxy.Reverse.Control.Types.State.Active) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) State);
       }
       if (Random.Length != 0) {
@@ -174,7 +174,7 @@ namespace V2Ray.Core.Proxy.Reverse {
       if (other == null) {
         return;
       }
-      if (other.State != 0) {
+      if (other.State != global::V2Ray.Core.Proxy.Reverse.Control.Types.State.Active) {
         State = other.State;
       }
       if (other.Random.Length != 0) {
@@ -192,7 +192,7 @@ namespace V2Ray.Core.Proxy.Reverse {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            state_ = (global::V2Ray.Core.Proxy.Reverse.Control.Types.State) input.ReadEnum();
+            State = (global::V2Ray.Core.Proxy.Reverse.Control.Types.State) input.ReadEnum();
             break;
           }
           case 794: {

@@ -32,8 +32,8 @@ namespace V2Ray.Core.Transport.Internet.Headers.Wechat {
             "cy5XZWNoYXRiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Wechat.VideoConfig), global::V2Ray.Core.Transport.Internet.Headers.Wechat.VideoConfig.Parser, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Headers.Wechat.VideoConfig), global::V2Ray.Core.Transport.Internet.Headers.Wechat.VideoConfig.Parser, null, null, null, null, null)
           }));
     }
     #endregion

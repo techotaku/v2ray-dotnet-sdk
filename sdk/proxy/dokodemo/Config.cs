@@ -37,8 +37,8 @@ namespace V2Ray.Core.Proxy.Dokodemo {
             "ZW1vqgIZVjJSYXkuQ29yZS5Qcm94eS5Eb2tvZGVtb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.AddressReflection.Descriptor, global::V2Ray.Core.Common.Net.NetworkReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Dokodemo.Config), global::V2Ray.Core.Proxy.Dokodemo.Config.Parser, new[]{ "Address", "Port", "NetworkList", "Networks", "Timeout", "FollowRedirect", "UserLevel" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Dokodemo.Config), global::V2Ray.Core.Proxy.Dokodemo.Config.Parser, new[]{ "Address", "Port", "NetworkList", "Networks", "Timeout", "FollowRedirect", "UserLevel" }, null, null, null, null)
           }));
     }
     #endregion
@@ -281,7 +281,7 @@ namespace V2Ray.Core.Proxy.Dokodemo {
       }
       if (other.address_ != null) {
         if (address_ == null) {
-          address_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+          Address = new global::V2Ray.Core.Common.Net.IPOrDomain();
         }
         Address.MergeFrom(other.Address);
       }
@@ -290,7 +290,7 @@ namespace V2Ray.Core.Proxy.Dokodemo {
       }
       if (other.networkList_ != null) {
         if (networkList_ == null) {
-          networkList_ = new global::V2Ray.Core.Common.Net.NetworkList();
+          NetworkList = new global::V2Ray.Core.Common.Net.NetworkList();
         }
         NetworkList.MergeFrom(other.NetworkList);
       }
@@ -317,9 +317,9 @@ namespace V2Ray.Core.Proxy.Dokodemo {
             break;
           case 10: {
             if (address_ == null) {
-              address_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+              Address = new global::V2Ray.Core.Common.Net.IPOrDomain();
             }
-            input.ReadMessage(address_);
+            input.ReadMessage(Address);
             break;
           }
           case 16: {
@@ -328,9 +328,9 @@ namespace V2Ray.Core.Proxy.Dokodemo {
           }
           case 26: {
             if (networkList_ == null) {
-              networkList_ = new global::V2Ray.Core.Common.Net.NetworkList();
+              NetworkList = new global::V2Ray.Core.Common.Net.NetworkList();
             }
-            input.ReadMessage(networkList_);
+            input.ReadMessage(NetworkList);
             break;
           }
           case 32: {

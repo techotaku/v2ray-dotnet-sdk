@@ -74,6 +74,7 @@ namespace V2Ray.Core.App.Proxyman.Command {
     }
 
     /// <summary>Base class for server-side implementations of HandlerService</summary>
+    [grpc::BindServiceMethod(typeof(HandlerService), "BindService")]
     public abstract partial class HandlerServiceBase
     {
       public virtual global::System.Threading.Tasks.Task<global::V2Ray.Core.App.Proxyman.Command.AddInboundResponse> AddInbound(global::V2Ray.Core.App.Proxyman.Command.AddInboundRequest request, grpc::ServerCallContext context)
@@ -113,7 +114,7 @@ namespace V2Ray.Core.App.Proxyman.Command {
     {
       /// <summary>Creates a new client for HandlerService</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public HandlerServiceClient(grpc::Channel channel) : base(channel)
+      public HandlerServiceClient(grpc::ChannelBase channel) : base(channel)
       {
       }
       /// <summary>Creates a new client for HandlerService that uses a custom <c>CallInvoker</c>.</summary>
@@ -245,6 +246,20 @@ namespace V2Ray.Core.App.Proxyman.Command {
           .AddMethod(__Method_AddOutbound, serviceImpl.AddOutbound)
           .AddMethod(__Method_RemoveOutbound, serviceImpl.RemoveOutbound)
           .AddMethod(__Method_AlterOutbound, serviceImpl.AlterOutbound).Build();
+    }
+
+    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+    /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+    /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, HandlerServiceBase serviceImpl)
+    {
+      serviceBinder.AddMethod(__Method_AddInbound, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::V2Ray.Core.App.Proxyman.Command.AddInboundRequest, global::V2Ray.Core.App.Proxyman.Command.AddInboundResponse>(serviceImpl.AddInbound));
+      serviceBinder.AddMethod(__Method_RemoveInbound, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::V2Ray.Core.App.Proxyman.Command.RemoveInboundRequest, global::V2Ray.Core.App.Proxyman.Command.RemoveInboundResponse>(serviceImpl.RemoveInbound));
+      serviceBinder.AddMethod(__Method_AlterInbound, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::V2Ray.Core.App.Proxyman.Command.AlterInboundRequest, global::V2Ray.Core.App.Proxyman.Command.AlterInboundResponse>(serviceImpl.AlterInbound));
+      serviceBinder.AddMethod(__Method_AddOutbound, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::V2Ray.Core.App.Proxyman.Command.AddOutboundRequest, global::V2Ray.Core.App.Proxyman.Command.AddOutboundResponse>(serviceImpl.AddOutbound));
+      serviceBinder.AddMethod(__Method_RemoveOutbound, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::V2Ray.Core.App.Proxyman.Command.RemoveOutboundRequest, global::V2Ray.Core.App.Proxyman.Command.RemoveOutboundResponse>(serviceImpl.RemoveOutbound));
+      serviceBinder.AddMethod(__Method_AlterOutbound, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::V2Ray.Core.App.Proxyman.Command.AlterOutboundRequest, global::V2Ray.Core.App.Proxyman.Command.AlterOutboundResponse>(serviceImpl.AlterOutbound));
     }
 
   }

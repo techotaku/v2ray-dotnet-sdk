@@ -32,8 +32,8 @@ namespace V2Ray.Core.Transport.Internet.DomainSocket {
             "ZS5UcmFuc3BvcnQuSW50ZXJuZXQuRG9tYWluU29ja2V0YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.DomainSocket.Config), global::V2Ray.Core.Transport.Internet.DomainSocket.Config.Parser, new[]{ "Path", "Abstract" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.DomainSocket.Config), global::V2Ray.Core.Transport.Internet.DomainSocket.Config.Parser, new[]{ "Path", "Abstract" }, null, null, null, null)
           }));
     }
     #endregion

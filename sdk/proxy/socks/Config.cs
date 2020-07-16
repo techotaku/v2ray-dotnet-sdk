@@ -42,10 +42,10 @@ namespace V2Ray.Core.Proxy.Socks {
             "cm94eS5Tb2Nrc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.AddressReflection.Descriptor, global::V2Ray.Core.Common.Protocol.ServerSpecReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.Proxy.Socks.AuthType), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Socks.Account), global::V2Ray.Core.Proxy.Socks.Account.Parser, new[]{ "Username", "Password" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Socks.ServerConfig), global::V2Ray.Core.Proxy.Socks.ServerConfig.Parser, new[]{ "AuthType", "Accounts", "Address", "UdpEnabled", "Timeout", "UserLevel" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Socks.ClientConfig), global::V2Ray.Core.Proxy.Socks.ClientConfig.Parser, new[]{ "Server" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.Proxy.Socks.AuthType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Socks.Account), global::V2Ray.Core.Proxy.Socks.Account.Parser, new[]{ "Username", "Password" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Socks.ServerConfig), global::V2Ray.Core.Proxy.Socks.ServerConfig.Parser, new[]{ "AuthType", "Accounts", "Address", "UdpEnabled", "Timeout", "UserLevel" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Socks.ClientConfig), global::V2Ray.Core.Proxy.Socks.ClientConfig.Parser, new[]{ "Server" }, null, null, null, null)
           }));
     }
     #endregion
@@ -273,7 +273,7 @@ namespace V2Ray.Core.Proxy.Socks {
 
     /// <summary>Field number for the "auth_type" field.</summary>
     public const int AuthTypeFieldNumber = 1;
-    private global::V2Ray.Core.Proxy.Socks.AuthType authType_ = 0;
+    private global::V2Ray.Core.Proxy.Socks.AuthType authType_ = global::V2Ray.Core.Proxy.Socks.AuthType.NoAuth;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::V2Ray.Core.Proxy.Socks.AuthType AuthType {
       get { return authType_; }
@@ -285,7 +285,7 @@ namespace V2Ray.Core.Proxy.Socks {
     /// <summary>Field number for the "accounts" field.</summary>
     public const int AccountsFieldNumber = 2;
     private static readonly pbc::MapField<string, string>.Codec _map_accounts_codec
-        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10), pb::FieldCodec.ForString(18), 18);
+        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 18);
     private readonly pbc::MapField<string, string> accounts_ = new pbc::MapField<string, string>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::MapField<string, string> Accounts {
@@ -362,7 +362,7 @@ namespace V2Ray.Core.Proxy.Socks {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (AuthType != 0) hash ^= AuthType.GetHashCode();
+      if (AuthType != global::V2Ray.Core.Proxy.Socks.AuthType.NoAuth) hash ^= AuthType.GetHashCode();
       hash ^= Accounts.GetHashCode();
       if (address_ != null) hash ^= Address.GetHashCode();
       if (UdpEnabled != false) hash ^= UdpEnabled.GetHashCode();
@@ -381,7 +381,7 @@ namespace V2Ray.Core.Proxy.Socks {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (AuthType != 0) {
+      if (AuthType != global::V2Ray.Core.Proxy.Socks.AuthType.NoAuth) {
         output.WriteRawTag(8);
         output.WriteEnum((int) AuthType);
       }
@@ -410,7 +410,7 @@ namespace V2Ray.Core.Proxy.Socks {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (AuthType != 0) {
+      if (AuthType != global::V2Ray.Core.Proxy.Socks.AuthType.NoAuth) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AuthType);
       }
       size += accounts_.CalculateSize(_map_accounts_codec);
@@ -437,13 +437,13 @@ namespace V2Ray.Core.Proxy.Socks {
       if (other == null) {
         return;
       }
-      if (other.AuthType != 0) {
+      if (other.AuthType != global::V2Ray.Core.Proxy.Socks.AuthType.NoAuth) {
         AuthType = other.AuthType;
       }
       accounts_.Add(other.accounts_);
       if (other.address_ != null) {
         if (address_ == null) {
-          address_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+          Address = new global::V2Ray.Core.Common.Net.IPOrDomain();
         }
         Address.MergeFrom(other.Address);
       }
@@ -468,7 +468,7 @@ namespace V2Ray.Core.Proxy.Socks {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            authType_ = (global::V2Ray.Core.Proxy.Socks.AuthType) input.ReadEnum();
+            AuthType = (global::V2Ray.Core.Proxy.Socks.AuthType) input.ReadEnum();
             break;
           }
           case 18: {
@@ -477,9 +477,9 @@ namespace V2Ray.Core.Proxy.Socks {
           }
           case 26: {
             if (address_ == null) {
-              address_ = new global::V2Ray.Core.Common.Net.IPOrDomain();
+              Address = new global::V2Ray.Core.Common.Net.IPOrDomain();
             }
-            input.ReadMessage(address_);
+            input.ReadMessage(Address);
             break;
           }
           case 32: {
