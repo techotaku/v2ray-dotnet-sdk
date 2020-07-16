@@ -36,16 +36,17 @@ namespace V2Ray.Core.App.Policy {
             "cmF5LmNvcmUuYXBwLnBvbGljeS5TZWNvbmQSNAoNZG93bmxpbmtfb25seRgE",
             "IAEoCzIdLnYycmF5LmNvcmUuYXBwLnBvbGljeS5TZWNvbmQaMwoFU3RhdHMS",
             "EwoLdXNlcl91cGxpbmsYASABKAgSFQoNdXNlcl9kb3dubGluaxgCIAEoCBoc",
-            "CgZCdWZmZXISEgoKY29ubmVjdGlvbhgBIAEoBSKDAQoMU3lzdGVtUG9saWN5",
+            "CgZCdWZmZXISEgoKY29ubmVjdGlvbhgBIAEoBSK3AQoMU3lzdGVtUG9saWN5",
             "EjgKBXN0YXRzGAEgASgLMikudjJyYXkuY29yZS5hcHAucG9saWN5LlN5c3Rl",
-            "bVBvbGljeS5TdGF0cxo5CgVTdGF0cxIWCg5pbmJvdW5kX3VwbGluaxgBIAEo",
-            "CBIYChBpbmJvdW5kX2Rvd25saW5rGAIgASgIIsMBCgZDb25maWcSNwoFbGV2",
-            "ZWwYASADKAsyKC52MnJheS5jb3JlLmFwcC5wb2xpY3kuQ29uZmlnLkxldmVs",
-            "RW50cnkSMwoGc3lzdGVtGAIgASgLMiMudjJyYXkuY29yZS5hcHAucG9saWN5",
-            "LlN5c3RlbVBvbGljeRpLCgpMZXZlbEVudHJ5EgsKA2tleRgBIAEoDRIsCgV2",
-            "YWx1ZRgCIAEoCzIdLnYycmF5LmNvcmUuYXBwLnBvbGljeS5Qb2xpY3k6AjgB",
-            "Qj0KGWNvbS52MnJheS5jb3JlLmFwcC5wb2xpY3lQAVoGcG9saWN5qgIVVjJS",
-            "YXkuQ29yZS5BcHAuUG9saWN5YgZwcm90bzM="));
+            "bVBvbGljeS5TdGF0cxptCgVTdGF0cxIWCg5pbmJvdW5kX3VwbGluaxgBIAEo",
+            "CBIYChBpbmJvdW5kX2Rvd25saW5rGAIgASgIEhcKD291dGJvdW5kX3VwbGlu",
+            "axgDIAEoCBIZChFvdXRib3VuZF9kb3dubGluaxgEIAEoCCLDAQoGQ29uZmln",
+            "EjcKBWxldmVsGAEgAygLMigudjJyYXkuY29yZS5hcHAucG9saWN5LkNvbmZp",
+            "Zy5MZXZlbEVudHJ5EjMKBnN5c3RlbRgCIAEoCzIjLnYycmF5LmNvcmUuYXBw",
+            "LnBvbGljeS5TeXN0ZW1Qb2xpY3kaSwoKTGV2ZWxFbnRyeRILCgNrZXkYASAB",
+            "KA0SLAoFdmFsdWUYAiABKAsyHS52MnJheS5jb3JlLmFwcC5wb2xpY3kuUG9s",
+            "aWN5OgI4AUI9Chljb20udjJyYXkuY29yZS5hcHAucG9saWN5UAFaBnBvbGlj",
+            "eaoCFVYyUmF5LkNvcmUuQXBwLlBvbGljeWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -53,7 +54,7 @@ namespace V2Ray.Core.App.Policy {
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy), global::V2Ray.Core.App.Policy.Policy.Parser, new[]{ "Timeout", "Stats", "Buffer" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy.Types.Timeout), global::V2Ray.Core.App.Policy.Policy.Types.Timeout.Parser, new[]{ "Handshake", "ConnectionIdle", "UplinkOnly", "DownlinkOnly" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy.Types.Stats), global::V2Ray.Core.App.Policy.Policy.Types.Stats.Parser, new[]{ "UserUplink", "UserDownlink" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Policy.Types.Buffer), global::V2Ray.Core.App.Policy.Policy.Types.Buffer.Parser, new[]{ "Connection" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.SystemPolicy), global::V2Ray.Core.App.Policy.SystemPolicy.Parser, new[]{ "Stats" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats), global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats.Parser, new[]{ "InboundUplink", "InboundDownlink" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.SystemPolicy), global::V2Ray.Core.App.Policy.SystemPolicy.Parser, new[]{ "Stats" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats), global::V2Ray.Core.App.Policy.SystemPolicy.Types.Stats.Parser, new[]{ "InboundUplink", "InboundDownlink", "OutboundUplink", "OutboundDownlink" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Policy.Config), global::V2Ray.Core.App.Policy.Config.Parser, new[]{ "Level", "System" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));
     }
@@ -1093,6 +1094,8 @@ namespace V2Ray.Core.App.Policy {
         public Stats(Stats other) : this() {
           inboundUplink_ = other.inboundUplink_;
           inboundDownlink_ = other.inboundDownlink_;
+          outboundUplink_ = other.outboundUplink_;
+          outboundDownlink_ = other.outboundDownlink_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -1123,6 +1126,28 @@ namespace V2Ray.Core.App.Policy {
           }
         }
 
+        /// <summary>Field number for the "outbound_uplink" field.</summary>
+        public const int OutboundUplinkFieldNumber = 3;
+        private bool outboundUplink_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool OutboundUplink {
+          get { return outboundUplink_; }
+          set {
+            outboundUplink_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "outbound_downlink" field.</summary>
+        public const int OutboundDownlinkFieldNumber = 4;
+        private bool outboundDownlink_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool OutboundDownlink {
+          get { return outboundDownlink_; }
+          set {
+            outboundDownlink_ = value;
+          }
+        }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as Stats);
@@ -1138,6 +1163,8 @@ namespace V2Ray.Core.App.Policy {
           }
           if (InboundUplink != other.InboundUplink) return false;
           if (InboundDownlink != other.InboundDownlink) return false;
+          if (OutboundUplink != other.OutboundUplink) return false;
+          if (OutboundDownlink != other.OutboundDownlink) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -1146,6 +1173,8 @@ namespace V2Ray.Core.App.Policy {
           int hash = 1;
           if (InboundUplink != false) hash ^= InboundUplink.GetHashCode();
           if (InboundDownlink != false) hash ^= InboundDownlink.GetHashCode();
+          if (OutboundUplink != false) hash ^= OutboundUplink.GetHashCode();
+          if (OutboundDownlink != false) hash ^= OutboundDownlink.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -1167,6 +1196,14 @@ namespace V2Ray.Core.App.Policy {
             output.WriteRawTag(16);
             output.WriteBool(InboundDownlink);
           }
+          if (OutboundUplink != false) {
+            output.WriteRawTag(24);
+            output.WriteBool(OutboundUplink);
+          }
+          if (OutboundDownlink != false) {
+            output.WriteRawTag(32);
+            output.WriteBool(OutboundDownlink);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -1179,6 +1216,12 @@ namespace V2Ray.Core.App.Policy {
             size += 1 + 1;
           }
           if (InboundDownlink != false) {
+            size += 1 + 1;
+          }
+          if (OutboundUplink != false) {
+            size += 1 + 1;
+          }
+          if (OutboundDownlink != false) {
             size += 1 + 1;
           }
           if (_unknownFields != null) {
@@ -1198,6 +1241,12 @@ namespace V2Ray.Core.App.Policy {
           if (other.InboundDownlink != false) {
             InboundDownlink = other.InboundDownlink;
           }
+          if (other.OutboundUplink != false) {
+            OutboundUplink = other.OutboundUplink;
+          }
+          if (other.OutboundDownlink != false) {
+            OutboundDownlink = other.OutboundDownlink;
+          }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
 
@@ -1215,6 +1264,14 @@ namespace V2Ray.Core.App.Policy {
               }
               case 16: {
                 InboundDownlink = input.ReadBool();
+                break;
+              }
+              case 24: {
+                OutboundUplink = input.ReadBool();
+                break;
+              }
+              case 32: {
+                OutboundDownlink = input.ReadBool();
                 break;
               }
             }

@@ -16,6 +16,8 @@ namespace V2Ray.Core.App.Stats.Command {
     static readonly grpc::Marshaller<global::V2Ray.Core.App.Stats.Command.GetStatsResponse> __Marshaller_v2ray_core_app_stats_command_GetStatsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::V2Ray.Core.App.Stats.Command.GetStatsResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::V2Ray.Core.App.Stats.Command.QueryStatsRequest> __Marshaller_v2ray_core_app_stats_command_QueryStatsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::V2Ray.Core.App.Stats.Command.QueryStatsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::V2Ray.Core.App.Stats.Command.QueryStatsResponse> __Marshaller_v2ray_core_app_stats_command_QueryStatsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::V2Ray.Core.App.Stats.Command.QueryStatsResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::V2Ray.Core.App.Stats.Command.SysStatsRequest> __Marshaller_v2ray_core_app_stats_command_SysStatsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::V2Ray.Core.App.Stats.Command.SysStatsRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::V2Ray.Core.App.Stats.Command.SysStatsResponse> __Marshaller_v2ray_core_app_stats_command_SysStatsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::V2Ray.Core.App.Stats.Command.SysStatsResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::V2Ray.Core.App.Stats.Command.GetStatsRequest, global::V2Ray.Core.App.Stats.Command.GetStatsResponse> __Method_GetStats = new grpc::Method<global::V2Ray.Core.App.Stats.Command.GetStatsRequest, global::V2Ray.Core.App.Stats.Command.GetStatsResponse>(
         grpc::MethodType.Unary,
@@ -30,6 +32,13 @@ namespace V2Ray.Core.App.Stats.Command {
         "QueryStats",
         __Marshaller_v2ray_core_app_stats_command_QueryStatsRequest,
         __Marshaller_v2ray_core_app_stats_command_QueryStatsResponse);
+
+    static readonly grpc::Method<global::V2Ray.Core.App.Stats.Command.SysStatsRequest, global::V2Ray.Core.App.Stats.Command.SysStatsResponse> __Method_GetSysStats = new grpc::Method<global::V2Ray.Core.App.Stats.Command.SysStatsRequest, global::V2Ray.Core.App.Stats.Command.SysStatsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetSysStats",
+        __Marshaller_v2ray_core_app_stats_command_SysStatsRequest,
+        __Marshaller_v2ray_core_app_stats_command_SysStatsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -47,6 +56,11 @@ namespace V2Ray.Core.App.Stats.Command {
       }
 
       public virtual global::System.Threading.Tasks.Task<global::V2Ray.Core.App.Stats.Command.QueryStatsResponse> QueryStats(global::V2Ray.Core.App.Stats.Command.QueryStatsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      public virtual global::System.Threading.Tasks.Task<global::V2Ray.Core.App.Stats.Command.SysStatsResponse> GetSysStats(global::V2Ray.Core.App.Stats.Command.SysStatsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -108,6 +122,22 @@ namespace V2Ray.Core.App.Stats.Command {
       {
         return CallInvoker.AsyncUnaryCall(__Method_QueryStats, null, options, request);
       }
+      public virtual global::V2Ray.Core.App.Stats.Command.SysStatsResponse GetSysStats(global::V2Ray.Core.App.Stats.Command.SysStatsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetSysStats(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::V2Ray.Core.App.Stats.Command.SysStatsResponse GetSysStats(global::V2Ray.Core.App.Stats.Command.SysStatsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetSysStats, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::V2Ray.Core.App.Stats.Command.SysStatsResponse> GetSysStatsAsync(global::V2Ray.Core.App.Stats.Command.SysStatsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetSysStatsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::V2Ray.Core.App.Stats.Command.SysStatsResponse> GetSysStatsAsync(global::V2Ray.Core.App.Stats.Command.SysStatsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetSysStats, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override StatsServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -121,7 +151,8 @@ namespace V2Ray.Core.App.Stats.Command {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetStats, serviceImpl.GetStats)
-          .AddMethod(__Method_QueryStats, serviceImpl.QueryStats).Build();
+          .AddMethod(__Method_QueryStats, serviceImpl.QueryStats)
+          .AddMethod(__Method_GetSysStats, serviceImpl.GetSysStats).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -132,6 +163,7 @@ namespace V2Ray.Core.App.Stats.Command {
     {
       serviceBinder.AddMethod(__Method_GetStats, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::V2Ray.Core.App.Stats.Command.GetStatsRequest, global::V2Ray.Core.App.Stats.Command.GetStatsResponse>(serviceImpl.GetStats));
       serviceBinder.AddMethod(__Method_QueryStats, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::V2Ray.Core.App.Stats.Command.QueryStatsRequest, global::V2Ray.Core.App.Stats.Command.QueryStatsResponse>(serviceImpl.QueryStats));
+      serviceBinder.AddMethod(__Method_GetSysStats, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::V2Ray.Core.App.Stats.Command.SysStatsRequest, global::V2Ray.Core.App.Stats.Command.SysStatsResponse>(serviceImpl.GetSysStats));
     }
 
   }

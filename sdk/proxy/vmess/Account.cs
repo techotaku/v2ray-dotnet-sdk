@@ -26,15 +26,16 @@ namespace V2Ray.Core.Proxy.Vmess {
           string.Concat(
             "Cih2MnJheS5jb20vY29yZS9wcm94eS92bWVzcy9hY2NvdW50LnByb3RvEhZ2",
             "MnJheS5jb3JlLnByb3h5LnZtZXNzGix2MnJheS5jb20vY29yZS9jb21tb24v",
-            "cHJvdG9jb2wvaGVhZGVycy5wcm90byJuCgdBY2NvdW50EgoKAmlkGAEgASgJ",
-            "EhAKCGFsdGVyX2lkGAIgASgNEkUKEXNlY3VyaXR5X3NldHRpbmdzGAMgASgL",
-            "MioudjJyYXkuY29yZS5jb21tb24ucHJvdG9jb2wuU2VjdXJpdHlDb25maWdC",
-            "PgoaY29tLnYycmF5LmNvcmUucHJveHkudm1lc3NQAVoFdm1lc3OqAhZWMlJh",
-            "eS5Db3JlLlByb3h5LlZtZXNzYgZwcm90bzM="));
+            "cHJvdG9jb2wvaGVhZGVycy5wcm90byKFAQoHQWNjb3VudBIKCgJpZBgBIAEo",
+            "CRIQCghhbHRlcl9pZBgCIAEoDRJFChFzZWN1cml0eV9zZXR0aW5ncxgDIAEo",
+            "CzIqLnYycmF5LmNvcmUuY29tbW9uLnByb3RvY29sLlNlY3VyaXR5Q29uZmln",
+            "EhUKDXRlc3RzX2VuYWJsZWQYBCABKAlCPgoaY29tLnYycmF5LmNvcmUucHJv",
+            "eHkudm1lc3NQAVoFdm1lc3OqAhZWMlJheS5Db3JlLlByb3h5LlZtZXNzYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Protocol.HeadersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Account), global::V2Ray.Core.Proxy.Vmess.Account.Parser, new[]{ "Id", "AlterId", "SecuritySettings" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Vmess.Account), global::V2Ray.Core.Proxy.Vmess.Account.Parser, new[]{ "Id", "AlterId", "SecuritySettings", "TestsEnabled" }, null, null, null, null)
           }));
     }
     #endregion
@@ -69,6 +70,7 @@ namespace V2Ray.Core.Proxy.Vmess {
       id_ = other.id_;
       alterId_ = other.alterId_;
       securitySettings_ = other.securitySettings_ != null ? other.securitySettings_.Clone() : null;
+      testsEnabled_ = other.testsEnabled_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -119,6 +121,20 @@ namespace V2Ray.Core.Proxy.Vmess {
       }
     }
 
+    /// <summary>Field number for the "tests_enabled" field.</summary>
+    public const int TestsEnabledFieldNumber = 4;
+    private string testsEnabled_ = "";
+    /// <summary>
+    /// Define tests enabled for this account
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string TestsEnabled {
+      get { return testsEnabled_; }
+      set {
+        testsEnabled_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Account);
@@ -135,6 +151,7 @@ namespace V2Ray.Core.Proxy.Vmess {
       if (Id != other.Id) return false;
       if (AlterId != other.AlterId) return false;
       if (!object.Equals(SecuritySettings, other.SecuritySettings)) return false;
+      if (TestsEnabled != other.TestsEnabled) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -144,6 +161,7 @@ namespace V2Ray.Core.Proxy.Vmess {
       if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (AlterId != 0) hash ^= AlterId.GetHashCode();
       if (securitySettings_ != null) hash ^= SecuritySettings.GetHashCode();
+      if (TestsEnabled.Length != 0) hash ^= TestsEnabled.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -169,6 +187,10 @@ namespace V2Ray.Core.Proxy.Vmess {
         output.WriteRawTag(26);
         output.WriteMessage(SecuritySettings);
       }
+      if (TestsEnabled.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(TestsEnabled);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -185,6 +207,9 @@ namespace V2Ray.Core.Proxy.Vmess {
       }
       if (securitySettings_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SecuritySettings);
+      }
+      if (TestsEnabled.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TestsEnabled);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -208,6 +233,9 @@ namespace V2Ray.Core.Proxy.Vmess {
           SecuritySettings = new global::V2Ray.Core.Common.Protocol.SecurityConfig();
         }
         SecuritySettings.MergeFrom(other.SecuritySettings);
+      }
+      if (other.TestsEnabled.Length != 0) {
+        TestsEnabled = other.TestsEnabled;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -233,6 +261,10 @@ namespace V2Ray.Core.Proxy.Vmess {
               SecuritySettings = new global::V2Ray.Core.Common.Protocol.SecurityConfig();
             }
             input.ReadMessage(SecuritySettings);
+            break;
+          }
+          case 34: {
+            TestsEnabled = input.ReadString();
             break;
           }
         }

@@ -31,20 +31,22 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
             "DSIfCg5VcGxpbmtDYXBhY2l0eRINCgV2YWx1ZRgBIAEoDSIhChBEb3dubGlu",
             "a0NhcGFjaXR5Eg0KBXZhbHVlGAEgASgNIhsKC1dyaXRlQnVmZmVyEgwKBHNp",
             "emUYASABKA0iGgoKUmVhZEJ1ZmZlchIMCgRzaXplGAEgASgNIiEKD0Nvbm5l",
-            "Y3Rpb25SZXVzZRIOCgZlbmFibGUYASABKAgi8QMKBkNvbmZpZxIzCgNtdHUY",
-            "ASABKAsyJi52MnJheS5jb3JlLnRyYW5zcG9ydC5pbnRlcm5ldC5rY3AuTVRV",
-            "EjMKA3R0aRgCIAEoCzImLnYycmF5LmNvcmUudHJhbnNwb3J0LmludGVybmV0",
-            "LmtjcC5UVEkSSgoPdXBsaW5rX2NhcGFjaXR5GAMgASgLMjEudjJyYXkuY29y",
-            "ZS50cmFuc3BvcnQuaW50ZXJuZXQua2NwLlVwbGlua0NhcGFjaXR5Ek4KEWRv",
-            "d25saW5rX2NhcGFjaXR5GAQgASgLMjMudjJyYXkuY29yZS50cmFuc3BvcnQu",
-            "aW50ZXJuZXQua2NwLkRvd25saW5rQ2FwYWNpdHkSEgoKY29uZ2VzdGlvbhgF",
-            "IAEoCBJECgx3cml0ZV9idWZmZXIYBiABKAsyLi52MnJheS5jb3JlLnRyYW5z",
-            "cG9ydC5pbnRlcm5ldC5rY3AuV3JpdGVCdWZmZXISQgoLcmVhZF9idWZmZXIY",
-            "ByABKAsyLS52MnJheS5jb3JlLnRyYW5zcG9ydC5pbnRlcm5ldC5rY3AuUmVh",
-            "ZEJ1ZmZlchI9Cg1oZWFkZXJfY29uZmlnGAggASgLMiYudjJyYXkuY29yZS5j",
-            "b21tb24uc2VyaWFsLlR5cGVkTWVzc2FnZUoECAkQCkJSCiVjb20udjJyYXku",
-            "Y29yZS50cmFuc3BvcnQuaW50ZXJuZXQua2NwUAFaA2tjcKoCIVYyUmF5LkNv",
-            "cmUuVHJhbnNwb3J0LkludGVybmV0LktjcGIGcHJvdG8z"));
+            "Y3Rpb25SZXVzZRIOCgZlbmFibGUYASABKAgiHgoORW5jcnlwdGlvblNlZWQS",
+            "DAoEc2VlZBgBIAEoCSKyBAoGQ29uZmlnEjMKA210dRgBIAEoCzImLnYycmF5",
+            "LmNvcmUudHJhbnNwb3J0LmludGVybmV0LmtjcC5NVFUSMwoDdHRpGAIgASgL",
+            "MiYudjJyYXkuY29yZS50cmFuc3BvcnQuaW50ZXJuZXQua2NwLlRUSRJKCg91",
+            "cGxpbmtfY2FwYWNpdHkYAyABKAsyMS52MnJheS5jb3JlLnRyYW5zcG9ydC5p",
+            "bnRlcm5ldC5rY3AuVXBsaW5rQ2FwYWNpdHkSTgoRZG93bmxpbmtfY2FwYWNp",
+            "dHkYBCABKAsyMy52MnJheS5jb3JlLnRyYW5zcG9ydC5pbnRlcm5ldC5rY3Au",
+            "RG93bmxpbmtDYXBhY2l0eRISCgpjb25nZXN0aW9uGAUgASgIEkQKDHdyaXRl",
+            "X2J1ZmZlchgGIAEoCzIuLnYycmF5LmNvcmUudHJhbnNwb3J0LmludGVybmV0",
+            "LmtjcC5Xcml0ZUJ1ZmZlchJCCgtyZWFkX2J1ZmZlchgHIAEoCzItLnYycmF5",
+            "LmNvcmUudHJhbnNwb3J0LmludGVybmV0LmtjcC5SZWFkQnVmZmVyEj0KDWhl",
+            "YWRlcl9jb25maWcYCCABKAsyJi52MnJheS5jb3JlLmNvbW1vbi5zZXJpYWwu",
+            "VHlwZWRNZXNzYWdlEj8KBHNlZWQYCiABKAsyMS52MnJheS5jb3JlLnRyYW5z",
+            "cG9ydC5pbnRlcm5ldC5rY3AuRW5jcnlwdGlvblNlZWRKBAgJEApCUgolY29t",
+            "LnYycmF5LmNvcmUudHJhbnNwb3J0LmludGVybmV0LmtjcFABWgNrY3CqAiFW",
+            "MlJheS5Db3JlLlRyYW5zcG9ydC5JbnRlcm5ldC5LY3BiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Serial.TypedMessageReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -55,7 +57,8 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.WriteBuffer), global::V2Ray.Core.Transport.Internet.Kcp.WriteBuffer.Parser, new[]{ "Size" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.ReadBuffer), global::V2Ray.Core.Transport.Internet.Kcp.ReadBuffer.Parser, new[]{ "Size" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.ConnectionReuse), global::V2Ray.Core.Transport.Internet.Kcp.ConnectionReuse.Parser, new[]{ "Enable" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.Config), global::V2Ray.Core.Transport.Internet.Kcp.Config.Parser, new[]{ "Mtu", "Tti", "UplinkCapacity", "DownlinkCapacity", "Congestion", "WriteBuffer", "ReadBuffer", "HeaderConfig" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.EncryptionSeed), global::V2Ray.Core.Transport.Internet.Kcp.EncryptionSeed.Parser, new[]{ "Seed" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Transport.Internet.Kcp.Config), global::V2Ray.Core.Transport.Internet.Kcp.Config.Parser, new[]{ "Mtu", "Tti", "UplinkCapacity", "DownlinkCapacity", "Congestion", "WriteBuffer", "ReadBuffer", "HeaderConfig", "Seed" }, null, null, null, null)
           }));
     }
     #endregion
@@ -983,6 +986,138 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
 
   }
 
+  /// <summary>
+  /// Maximum Transmission Unit, in bytes.
+  /// </summary>
+  public sealed partial class EncryptionSeed : pb::IMessage<EncryptionSeed> {
+    private static readonly pb::MessageParser<EncryptionSeed> _parser = new pb::MessageParser<EncryptionSeed>(() => new EncryptionSeed());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<EncryptionSeed> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::V2Ray.Core.Transport.Internet.Kcp.ConfigReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public EncryptionSeed() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public EncryptionSeed(EncryptionSeed other) : this() {
+      seed_ = other.seed_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public EncryptionSeed Clone() {
+      return new EncryptionSeed(this);
+    }
+
+    /// <summary>Field number for the "seed" field.</summary>
+    public const int SeedFieldNumber = 1;
+    private string seed_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Seed {
+      get { return seed_; }
+      set {
+        seed_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as EncryptionSeed);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(EncryptionSeed other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Seed != other.Seed) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Seed.Length != 0) hash ^= Seed.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Seed.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Seed);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Seed.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Seed);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(EncryptionSeed other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Seed.Length != 0) {
+        Seed = other.Seed;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Seed = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class Config : pb::IMessage<Config> {
     private static readonly pb::MessageParser<Config> _parser = new pb::MessageParser<Config>(() => new Config());
     private pb::UnknownFieldSet _unknownFields;
@@ -991,7 +1126,7 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::V2Ray.Core.Transport.Internet.Kcp.ConfigReflection.Descriptor.MessageTypes[7]; }
+      get { return global::V2Ray.Core.Transport.Internet.Kcp.ConfigReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1016,6 +1151,7 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
       writeBuffer_ = other.writeBuffer_ != null ? other.writeBuffer_.Clone() : null;
       readBuffer_ = other.readBuffer_ != null ? other.readBuffer_.Clone() : null;
       headerConfig_ = other.headerConfig_ != null ? other.headerConfig_.Clone() : null;
+      seed_ = other.seed_ != null ? other.seed_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1112,6 +1248,17 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
       }
     }
 
+    /// <summary>Field number for the "seed" field.</summary>
+    public const int SeedFieldNumber = 10;
+    private global::V2Ray.Core.Transport.Internet.Kcp.EncryptionSeed seed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::V2Ray.Core.Transport.Internet.Kcp.EncryptionSeed Seed {
+      get { return seed_; }
+      set {
+        seed_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Config);
@@ -1133,6 +1280,7 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
       if (!object.Equals(WriteBuffer, other.WriteBuffer)) return false;
       if (!object.Equals(ReadBuffer, other.ReadBuffer)) return false;
       if (!object.Equals(HeaderConfig, other.HeaderConfig)) return false;
+      if (!object.Equals(Seed, other.Seed)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1147,6 +1295,7 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
       if (writeBuffer_ != null) hash ^= WriteBuffer.GetHashCode();
       if (readBuffer_ != null) hash ^= ReadBuffer.GetHashCode();
       if (headerConfig_ != null) hash ^= HeaderConfig.GetHashCode();
+      if (seed_ != null) hash ^= Seed.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1192,6 +1341,10 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
         output.WriteRawTag(66);
         output.WriteMessage(HeaderConfig);
       }
+      if (seed_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(Seed);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1223,6 +1376,9 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
       }
       if (headerConfig_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(HeaderConfig);
+      }
+      if (seed_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Seed);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1279,6 +1435,12 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
           HeaderConfig = new global::V2Ray.Core.Common.Serial.TypedMessage();
         }
         HeaderConfig.MergeFrom(other.HeaderConfig);
+      }
+      if (other.seed_ != null) {
+        if (seed_ == null) {
+          Seed = new global::V2Ray.Core.Transport.Internet.Kcp.EncryptionSeed();
+        }
+        Seed.MergeFrom(other.Seed);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1342,6 +1504,13 @@ namespace V2Ray.Core.Transport.Internet.Kcp {
               HeaderConfig = new global::V2Ray.Core.Common.Serial.TypedMessage();
             }
             input.ReadMessage(HeaderConfig);
+            break;
+          }
+          case 82: {
+            if (seed_ == null) {
+              Seed = new global::V2Ray.Core.Transport.Internet.Kcp.EncryptionSeed();
+            }
+            input.ReadMessage(Seed);
             break;
           }
         }

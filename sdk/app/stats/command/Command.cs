@@ -31,15 +31,22 @@ namespace V2Ray.Core.App.Stats.Command {
             "bnNlEjAKBHN0YXQYASABKAsyIi52MnJheS5jb3JlLmFwcC5zdGF0cy5jb21t",
             "YW5kLlN0YXQiMwoRUXVlcnlTdGF0c1JlcXVlc3QSDwoHcGF0dGVybhgBIAEo",
             "CRINCgVyZXNldBgCIAEoCCJGChJRdWVyeVN0YXRzUmVzcG9uc2USMAoEc3Rh",
-            "dBgBIAMoCzIiLnYycmF5LmNvcmUuYXBwLnN0YXRzLmNvbW1hbmQuU3RhdCII",
-            "CgZDb25maWcy7gEKDFN0YXRzU2VydmljZRJrCghHZXRTdGF0cxItLnYycmF5",
-            "LmNvcmUuYXBwLnN0YXRzLmNvbW1hbmQuR2V0U3RhdHNSZXF1ZXN0Gi4udjJy",
-            "YXkuY29yZS5hcHAuc3RhdHMuY29tbWFuZC5HZXRTdGF0c1Jlc3BvbnNlIgAS",
-            "cQoKUXVlcnlTdGF0cxIvLnYycmF5LmNvcmUuYXBwLnN0YXRzLmNvbW1hbmQu",
-            "UXVlcnlTdGF0c1JlcXVlc3QaMC52MnJheS5jb3JlLmFwcC5zdGF0cy5jb21t",
-            "YW5kLlF1ZXJ5U3RhdHNSZXNwb25zZSIAQkwKIGNvbS52MnJheS5jb3JlLmFw",
-            "cC5zdGF0cy5jb21tYW5kUAFaB2NvbW1hbmSqAhxWMlJheS5Db3JlLkFwcC5T",
-            "dGF0cy5Db21tYW5kYgZwcm90bzM="));
+            "dBgBIAMoCzIiLnYycmF5LmNvcmUuYXBwLnN0YXRzLmNvbW1hbmQuU3RhdCIR",
+            "Cg9TeXNTdGF0c1JlcXVlc3QiwgEKEFN5c1N0YXRzUmVzcG9uc2USFAoMTnVt",
+            "R29yb3V0aW5lGAEgASgNEg0KBU51bUdDGAIgASgNEg0KBUFsbG9jGAMgASgE",
+            "EhIKClRvdGFsQWxsb2MYBCABKAQSCwoDU3lzGAUgASgEEg8KB01hbGxvY3MY",
+            "BiABKAQSDQoFRnJlZXMYByABKAQSEwoLTGl2ZU9iamVjdHMYCCABKAQSFAoM",
+            "UGF1c2VUb3RhbE5zGAkgASgEEg4KBlVwdGltZRgKIAEoDSIICgZDb25maWcy",
+            "3gIKDFN0YXRzU2VydmljZRJrCghHZXRTdGF0cxItLnYycmF5LmNvcmUuYXBw",
+            "LnN0YXRzLmNvbW1hbmQuR2V0U3RhdHNSZXF1ZXN0Gi4udjJyYXkuY29yZS5h",
+            "cHAuc3RhdHMuY29tbWFuZC5HZXRTdGF0c1Jlc3BvbnNlIgAScQoKUXVlcnlT",
+            "dGF0cxIvLnYycmF5LmNvcmUuYXBwLnN0YXRzLmNvbW1hbmQuUXVlcnlTdGF0",
+            "c1JlcXVlc3QaMC52MnJheS5jb3JlLmFwcC5zdGF0cy5jb21tYW5kLlF1ZXJ5",
+            "U3RhdHNSZXNwb25zZSIAEm4KC0dldFN5c1N0YXRzEi0udjJyYXkuY29yZS5h",
+            "cHAuc3RhdHMuY29tbWFuZC5TeXNTdGF0c1JlcXVlc3QaLi52MnJheS5jb3Jl",
+            "LmFwcC5zdGF0cy5jb21tYW5kLlN5c1N0YXRzUmVzcG9uc2UiAEJMCiBjb20u",
+            "djJyYXkuY29yZS5hcHAuc3RhdHMuY29tbWFuZFABWgdjb21tYW5kqgIcVjJS",
+            "YXkuQ29yZS5BcHAuU3RhdHMuQ29tbWFuZGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -48,6 +55,8 @@ namespace V2Ray.Core.App.Stats.Command {
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.GetStatsResponse), global::V2Ray.Core.App.Stats.Command.GetStatsResponse.Parser, new[]{ "Stat" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.QueryStatsRequest), global::V2Ray.Core.App.Stats.Command.QueryStatsRequest.Parser, new[]{ "Pattern", "Reset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.QueryStatsResponse), global::V2Ray.Core.App.Stats.Command.QueryStatsResponse.Parser, new[]{ "Stat" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.SysStatsRequest), global::V2Ray.Core.App.Stats.Command.SysStatsRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.SysStatsResponse), global::V2Ray.Core.App.Stats.Command.SysStatsResponse.Parser, new[]{ "NumGoroutine", "NumGC", "Alloc", "TotalAlloc", "Sys", "Mallocs", "Frees", "LiveObjects", "PauseTotalNs", "Uptime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Stats.Command.Config), global::V2Ray.Core.App.Stats.Command.Config.Parser, null, null, null, null, null)
           }));
     }
@@ -788,6 +797,488 @@ namespace V2Ray.Core.App.Stats.Command {
 
   }
 
+  public sealed partial class SysStatsRequest : pb::IMessage<SysStatsRequest> {
+    private static readonly pb::MessageParser<SysStatsRequest> _parser = new pb::MessageParser<SysStatsRequest>(() => new SysStatsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SysStatsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::V2Ray.Core.App.Stats.Command.CommandReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SysStatsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SysStatsRequest(SysStatsRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SysStatsRequest Clone() {
+      return new SysStatsRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SysStatsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SysStatsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SysStatsRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class SysStatsResponse : pb::IMessage<SysStatsResponse> {
+    private static readonly pb::MessageParser<SysStatsResponse> _parser = new pb::MessageParser<SysStatsResponse>(() => new SysStatsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SysStatsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::V2Ray.Core.App.Stats.Command.CommandReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SysStatsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SysStatsResponse(SysStatsResponse other) : this() {
+      numGoroutine_ = other.numGoroutine_;
+      numGC_ = other.numGC_;
+      alloc_ = other.alloc_;
+      totalAlloc_ = other.totalAlloc_;
+      sys_ = other.sys_;
+      mallocs_ = other.mallocs_;
+      frees_ = other.frees_;
+      liveObjects_ = other.liveObjects_;
+      pauseTotalNs_ = other.pauseTotalNs_;
+      uptime_ = other.uptime_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SysStatsResponse Clone() {
+      return new SysStatsResponse(this);
+    }
+
+    /// <summary>Field number for the "NumGoroutine" field.</summary>
+    public const int NumGoroutineFieldNumber = 1;
+    private uint numGoroutine_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint NumGoroutine {
+      get { return numGoroutine_; }
+      set {
+        numGoroutine_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "NumGC" field.</summary>
+    public const int NumGCFieldNumber = 2;
+    private uint numGC_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint NumGC {
+      get { return numGC_; }
+      set {
+        numGC_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Alloc" field.</summary>
+    public const int AllocFieldNumber = 3;
+    private ulong alloc_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong Alloc {
+      get { return alloc_; }
+      set {
+        alloc_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "TotalAlloc" field.</summary>
+    public const int TotalAllocFieldNumber = 4;
+    private ulong totalAlloc_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong TotalAlloc {
+      get { return totalAlloc_; }
+      set {
+        totalAlloc_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Sys" field.</summary>
+    public const int SysFieldNumber = 5;
+    private ulong sys_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong Sys {
+      get { return sys_; }
+      set {
+        sys_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Mallocs" field.</summary>
+    public const int MallocsFieldNumber = 6;
+    private ulong mallocs_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong Mallocs {
+      get { return mallocs_; }
+      set {
+        mallocs_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Frees" field.</summary>
+    public const int FreesFieldNumber = 7;
+    private ulong frees_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong Frees {
+      get { return frees_; }
+      set {
+        frees_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "LiveObjects" field.</summary>
+    public const int LiveObjectsFieldNumber = 8;
+    private ulong liveObjects_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong LiveObjects {
+      get { return liveObjects_; }
+      set {
+        liveObjects_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "PauseTotalNs" field.</summary>
+    public const int PauseTotalNsFieldNumber = 9;
+    private ulong pauseTotalNs_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong PauseTotalNs {
+      get { return pauseTotalNs_; }
+      set {
+        pauseTotalNs_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Uptime" field.</summary>
+    public const int UptimeFieldNumber = 10;
+    private uint uptime_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Uptime {
+      get { return uptime_; }
+      set {
+        uptime_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SysStatsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SysStatsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (NumGoroutine != other.NumGoroutine) return false;
+      if (NumGC != other.NumGC) return false;
+      if (Alloc != other.Alloc) return false;
+      if (TotalAlloc != other.TotalAlloc) return false;
+      if (Sys != other.Sys) return false;
+      if (Mallocs != other.Mallocs) return false;
+      if (Frees != other.Frees) return false;
+      if (LiveObjects != other.LiveObjects) return false;
+      if (PauseTotalNs != other.PauseTotalNs) return false;
+      if (Uptime != other.Uptime) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (NumGoroutine != 0) hash ^= NumGoroutine.GetHashCode();
+      if (NumGC != 0) hash ^= NumGC.GetHashCode();
+      if (Alloc != 0UL) hash ^= Alloc.GetHashCode();
+      if (TotalAlloc != 0UL) hash ^= TotalAlloc.GetHashCode();
+      if (Sys != 0UL) hash ^= Sys.GetHashCode();
+      if (Mallocs != 0UL) hash ^= Mallocs.GetHashCode();
+      if (Frees != 0UL) hash ^= Frees.GetHashCode();
+      if (LiveObjects != 0UL) hash ^= LiveObjects.GetHashCode();
+      if (PauseTotalNs != 0UL) hash ^= PauseTotalNs.GetHashCode();
+      if (Uptime != 0) hash ^= Uptime.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (NumGoroutine != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(NumGoroutine);
+      }
+      if (NumGC != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(NumGC);
+      }
+      if (Alloc != 0UL) {
+        output.WriteRawTag(24);
+        output.WriteUInt64(Alloc);
+      }
+      if (TotalAlloc != 0UL) {
+        output.WriteRawTag(32);
+        output.WriteUInt64(TotalAlloc);
+      }
+      if (Sys != 0UL) {
+        output.WriteRawTag(40);
+        output.WriteUInt64(Sys);
+      }
+      if (Mallocs != 0UL) {
+        output.WriteRawTag(48);
+        output.WriteUInt64(Mallocs);
+      }
+      if (Frees != 0UL) {
+        output.WriteRawTag(56);
+        output.WriteUInt64(Frees);
+      }
+      if (LiveObjects != 0UL) {
+        output.WriteRawTag(64);
+        output.WriteUInt64(LiveObjects);
+      }
+      if (PauseTotalNs != 0UL) {
+        output.WriteRawTag(72);
+        output.WriteUInt64(PauseTotalNs);
+      }
+      if (Uptime != 0) {
+        output.WriteRawTag(80);
+        output.WriteUInt32(Uptime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (NumGoroutine != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NumGoroutine);
+      }
+      if (NumGC != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NumGC);
+      }
+      if (Alloc != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Alloc);
+      }
+      if (TotalAlloc != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(TotalAlloc);
+      }
+      if (Sys != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Sys);
+      }
+      if (Mallocs != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Mallocs);
+      }
+      if (Frees != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Frees);
+      }
+      if (LiveObjects != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(LiveObjects);
+      }
+      if (PauseTotalNs != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(PauseTotalNs);
+      }
+      if (Uptime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Uptime);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SysStatsResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.NumGoroutine != 0) {
+        NumGoroutine = other.NumGoroutine;
+      }
+      if (other.NumGC != 0) {
+        NumGC = other.NumGC;
+      }
+      if (other.Alloc != 0UL) {
+        Alloc = other.Alloc;
+      }
+      if (other.TotalAlloc != 0UL) {
+        TotalAlloc = other.TotalAlloc;
+      }
+      if (other.Sys != 0UL) {
+        Sys = other.Sys;
+      }
+      if (other.Mallocs != 0UL) {
+        Mallocs = other.Mallocs;
+      }
+      if (other.Frees != 0UL) {
+        Frees = other.Frees;
+      }
+      if (other.LiveObjects != 0UL) {
+        LiveObjects = other.LiveObjects;
+      }
+      if (other.PauseTotalNs != 0UL) {
+        PauseTotalNs = other.PauseTotalNs;
+      }
+      if (other.Uptime != 0) {
+        Uptime = other.Uptime;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            NumGoroutine = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            NumGC = input.ReadUInt32();
+            break;
+          }
+          case 24: {
+            Alloc = input.ReadUInt64();
+            break;
+          }
+          case 32: {
+            TotalAlloc = input.ReadUInt64();
+            break;
+          }
+          case 40: {
+            Sys = input.ReadUInt64();
+            break;
+          }
+          case 48: {
+            Mallocs = input.ReadUInt64();
+            break;
+          }
+          case 56: {
+            Frees = input.ReadUInt64();
+            break;
+          }
+          case 64: {
+            LiveObjects = input.ReadUInt64();
+            break;
+          }
+          case 72: {
+            PauseTotalNs = input.ReadUInt64();
+            break;
+          }
+          case 80: {
+            Uptime = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class Config : pb::IMessage<Config> {
     private static readonly pb::MessageParser<Config> _parser = new pb::MessageParser<Config>(() => new Config());
     private pb::UnknownFieldSet _unknownFields;
@@ -796,7 +1287,7 @@ namespace V2Ray.Core.App.Stats.Command {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::V2Ray.Core.App.Stats.Command.CommandReflection.Descriptor.MessageTypes[5]; }
+      get { return global::V2Ray.Core.App.Stats.Command.CommandReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

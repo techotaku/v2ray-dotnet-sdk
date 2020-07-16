@@ -25,24 +25,186 @@ namespace V2Ray.Core.Proxy.Http {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiZ2MnJheS5jb20vY29yZS9wcm94eS9odHRwL2NvbmZpZy5wcm90bxIVdjJy",
-            "YXkuY29yZS5wcm94eS5odHRwIsgBCgxTZXJ2ZXJDb25maWcSEwoHdGltZW91",
-            "dBgBIAEoDUICGAESQwoIYWNjb3VudHMYAiADKAsyMS52MnJheS5jb3JlLnBy",
-            "b3h5Lmh0dHAuU2VydmVyQ29uZmlnLkFjY291bnRzRW50cnkSGQoRYWxsb3df",
-            "dHJhbnNwYXJlbnQYAyABKAgSEgoKdXNlcl9sZXZlbBgEIAEoDRovCg1BY2Nv",
-            "dW50c0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiDgoM",
-            "Q2xpZW50Q29uZmlnQjsKGWNvbS52MnJheS5jb3JlLnByb3h5Lmh0dHBQAVoE",
-            "aHR0cKoCFVYyUmF5LkNvcmUuUHJveHkuSHR0cGIGcHJvdG8z"));
+            "YXkuY29yZS5wcm94eS5odHRwGjB2MnJheS5jb20vY29yZS9jb21tb24vcHJv",
+            "dG9jb2wvc2VydmVyX3NwZWMucHJvdG8iLQoHQWNjb3VudBIQCgh1c2VybmFt",
+            "ZRgBIAEoCRIQCghwYXNzd29yZBgCIAEoCSLIAQoMU2VydmVyQ29uZmlnEhMK",
+            "B3RpbWVvdXQYASABKA1CAhgBEkMKCGFjY291bnRzGAIgAygLMjEudjJyYXku",
+            "Y29yZS5wcm94eS5odHRwLlNlcnZlckNvbmZpZy5BY2NvdW50c0VudHJ5EhkK",
+            "EWFsbG93X3RyYW5zcGFyZW50GAMgASgIEhIKCnVzZXJfbGV2ZWwYBCABKA0a",
+            "LwoNQWNjb3VudHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6",
+            "AjgBIkoKDENsaWVudENvbmZpZxI6CgZzZXJ2ZXIYASADKAsyKi52MnJheS5j",
+            "b3JlLmNvbW1vbi5wcm90b2NvbC5TZXJ2ZXJFbmRwb2ludEI7Chljb20udjJy",
+            "YXkuY29yZS5wcm94eS5odHRwUAFaBGh0dHCqAhVWMlJheS5Db3JlLlByb3h5",
+            "Lkh0dHBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Protocol.ServerSpecReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Http.Account), global::V2Ray.Core.Proxy.Http.Account.Parser, new[]{ "Username", "Password" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Http.ServerConfig), global::V2Ray.Core.Proxy.Http.ServerConfig.Parser, new[]{ "Timeout", "Accounts", "AllowTransparent", "UserLevel" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Http.ClientConfig), global::V2Ray.Core.Proxy.Http.ClientConfig.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.Proxy.Http.ClientConfig), global::V2Ray.Core.Proxy.Http.ClientConfig.Parser, new[]{ "Server" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
+  public sealed partial class Account : pb::IMessage<Account> {
+    private static readonly pb::MessageParser<Account> _parser = new pb::MessageParser<Account>(() => new Account());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Account> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::V2Ray.Core.Proxy.Http.ConfigReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Account() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Account(Account other) : this() {
+      username_ = other.username_;
+      password_ = other.password_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Account Clone() {
+      return new Account(this);
+    }
+
+    /// <summary>Field number for the "username" field.</summary>
+    public const int UsernameFieldNumber = 1;
+    private string username_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Username {
+      get { return username_; }
+      set {
+        username_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "password" field.</summary>
+    public const int PasswordFieldNumber = 2;
+    private string password_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Password {
+      get { return password_; }
+      set {
+        password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Account);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Account other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Username != other.Username) return false;
+      if (Password != other.Password) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Username.Length != 0) hash ^= Username.GetHashCode();
+      if (Password.Length != 0) hash ^= Password.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Username.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Username);
+      }
+      if (Password.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Password);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Username.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Username);
+      }
+      if (Password.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Account other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Username.Length != 0) {
+        Username = other.Username;
+      }
+      if (other.Password.Length != 0) {
+        Password = other.Password;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Username = input.ReadString();
+            break;
+          }
+          case 18: {
+            Password = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   /// <summary>
   /// Config for HTTP proxy server.
   /// </summary>
@@ -54,7 +216,7 @@ namespace V2Ray.Core.Proxy.Http {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::V2Ray.Core.Proxy.Http.ConfigReflection.Descriptor.MessageTypes[0]; }
+      get { return global::V2Ray.Core.Proxy.Http.ConfigReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -253,7 +415,7 @@ namespace V2Ray.Core.Proxy.Http {
   }
 
   /// <summary>
-  /// ClientConfig for HTTP proxy client.
+  /// ClientConfig is the protobuf config for HTTP proxy client.
   /// </summary>
   public sealed partial class ClientConfig : pb::IMessage<ClientConfig> {
     private static readonly pb::MessageParser<ClientConfig> _parser = new pb::MessageParser<ClientConfig>(() => new ClientConfig());
@@ -263,7 +425,7 @@ namespace V2Ray.Core.Proxy.Http {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::V2Ray.Core.Proxy.Http.ConfigReflection.Descriptor.MessageTypes[1]; }
+      get { return global::V2Ray.Core.Proxy.Http.ConfigReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -280,12 +442,26 @@ namespace V2Ray.Core.Proxy.Http {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ClientConfig(ClientConfig other) : this() {
+      server_ = other.server_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ClientConfig Clone() {
       return new ClientConfig(this);
+    }
+
+    /// <summary>Field number for the "server" field.</summary>
+    public const int ServerFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::V2Ray.Core.Common.Protocol.ServerEndpoint> _repeated_server_codec
+        = pb::FieldCodec.ForMessage(10, global::V2Ray.Core.Common.Protocol.ServerEndpoint.Parser);
+    private readonly pbc::RepeatedField<global::V2Ray.Core.Common.Protocol.ServerEndpoint> server_ = new pbc::RepeatedField<global::V2Ray.Core.Common.Protocol.ServerEndpoint>();
+    /// <summary>
+    /// Sever is a list of HTTP server addresses.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::V2Ray.Core.Common.Protocol.ServerEndpoint> Server {
+      get { return server_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -301,12 +477,14 @@ namespace V2Ray.Core.Proxy.Http {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if(!server_.Equals(other.server_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      hash ^= server_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -320,6 +498,7 @@ namespace V2Ray.Core.Proxy.Http {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      server_.WriteTo(output, _repeated_server_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -328,6 +507,7 @@ namespace V2Ray.Core.Proxy.Http {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      size += server_.CalculateSize(_repeated_server_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -339,6 +519,7 @@ namespace V2Ray.Core.Proxy.Http {
       if (other == null) {
         return;
       }
+      server_.Add(other.server_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -350,6 +531,10 @@ namespace V2Ray.Core.Proxy.Http {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            server_.AddEntriesFrom(input, _repeated_server_codec);
+            break;
+          }
         }
       }
     }

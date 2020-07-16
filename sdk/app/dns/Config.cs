@@ -27,29 +27,31 @@ namespace V2Ray.Core.App.Dns {
             "CiN2MnJheS5jb20vY29yZS9hcHAvZG5zL2NvbmZpZy5wcm90bxISdjJyYXku",
             "Y29yZS5hcHAuZG5zGid2MnJheS5jb20vY29yZS9jb21tb24vbmV0L2FkZHJl",
             "c3MucHJvdG8aK3YycmF5LmNvbS9jb3JlL2NvbW1vbi9uZXQvZGVzdGluYXRp",
-            "b24ucHJvdG8i4QEKCk5hbWVTZXJ2ZXISMAoHYWRkcmVzcxgBIAEoCzIfLnYy",
-            "cmF5LmNvcmUuY29tbW9uLm5ldC5FbmRwb2ludBJJChJwcmlvcml0aXplZF9k",
-            "b21haW4YAiADKAsyLS52MnJheS5jb3JlLmFwcC5kbnMuTmFtZVNlcnZlci5Q",
-            "cmlvcml0eURvbWFpbhpWCg5Qcmlvcml0eURvbWFpbhI0CgR0eXBlGAEgASgO",
-            "MiYudjJyYXkuY29yZS5hcHAuZG5zLkRvbWFpbk1hdGNoaW5nVHlwZRIOCgZk",
-            "b21haW4YAiABKAki2QMKBkNvbmZpZxI4CgtOYW1lU2VydmVycxgBIAMoCzIf",
-            "LnYycmF5LmNvcmUuY29tbW9uLm5ldC5FbmRwb2ludEICGAESMwoLbmFtZV9z",
-            "ZXJ2ZXIYBSADKAsyHi52MnJheS5jb3JlLmFwcC5kbnMuTmFtZVNlcnZlchI4",
-            "CgVIb3N0cxgCIAMoCzIlLnYycmF5LmNvcmUuYXBwLmRucy5Db25maWcuSG9z",
-            "dHNFbnRyeUICGAESEQoJY2xpZW50X2lwGAMgASgMEjwKDHN0YXRpY19ob3N0",
-            "cxgEIAMoCzImLnYycmF5LmNvcmUuYXBwLmRucy5Db25maWcuSG9zdE1hcHBp",
-            "bmcSCwoDdGFnGAYgASgJGk8KCkhvc3RzRW50cnkSCwoDa2V5GAEgASgJEjAK",
-            "BXZhbHVlGAIgASgLMiEudjJyYXkuY29yZS5jb21tb24ubmV0LklQT3JEb21h",
-            "aW46AjgBGncKC0hvc3RNYXBwaW5nEjQKBHR5cGUYASABKA4yJi52MnJheS5j",
-            "b3JlLmFwcC5kbnMuRG9tYWluTWF0Y2hpbmdUeXBlEg4KBmRvbWFpbhgCIAEo",
-            "CRIKCgJpcBgDIAMoDBIWCg5wcm94aWVkX2RvbWFpbhgEIAEoCSpFChJEb21h",
-            "aW5NYXRjaGluZ1R5cGUSCAoERnVsbBAAEg0KCVN1YmRvbWFpbhABEgsKB0tl",
-            "eXdvcmQQAhIJCgVSZWdleBADQjQKFmNvbS52MnJheS5jb3JlLmFwcC5kbnNQ",
-            "AVoDZG5zqgISVjJSYXkuQ29yZS5BcHAuRG5zYgZwcm90bzM="));
+            "b24ucHJvdG8aJnYycmF5LmNvbS9jb3JlL2FwcC9yb3V0ZXIvY29uZmlnLnBy",
+            "b3RvIo4CCgpOYW1lU2VydmVyEjAKB2FkZHJlc3MYASABKAsyHy52MnJheS5j",
+            "b3JlLmNvbW1vbi5uZXQuRW5kcG9pbnQSSQoScHJpb3JpdGl6ZWRfZG9tYWlu",
+            "GAIgAygLMi0udjJyYXkuY29yZS5hcHAuZG5zLk5hbWVTZXJ2ZXIuUHJpb3Jp",
+            "dHlEb21haW4SKwoFZ2VvaXAYAyADKAsyHC52MnJheS5jb3JlLmFwcC5yb3V0",
+            "ZXIuR2VvSVAaVgoOUHJpb3JpdHlEb21haW4SNAoEdHlwZRgBIAEoDjImLnYy",
+            "cmF5LmNvcmUuYXBwLmRucy5Eb21haW5NYXRjaGluZ1R5cGUSDgoGZG9tYWlu",
+            "GAIgASgJItkDCgZDb25maWcSOAoLTmFtZVNlcnZlcnMYASADKAsyHy52MnJh",
+            "eS5jb3JlLmNvbW1vbi5uZXQuRW5kcG9pbnRCAhgBEjMKC25hbWVfc2VydmVy",
+            "GAUgAygLMh4udjJyYXkuY29yZS5hcHAuZG5zLk5hbWVTZXJ2ZXISOAoFSG9z",
+            "dHMYAiADKAsyJS52MnJheS5jb3JlLmFwcC5kbnMuQ29uZmlnLkhvc3RzRW50",
+            "cnlCAhgBEhEKCWNsaWVudF9pcBgDIAEoDBI8CgxzdGF0aWNfaG9zdHMYBCAD",
+            "KAsyJi52MnJheS5jb3JlLmFwcC5kbnMuQ29uZmlnLkhvc3RNYXBwaW5nEgsK",
+            "A3RhZxgGIAEoCRpPCgpIb3N0c0VudHJ5EgsKA2tleRgBIAEoCRIwCgV2YWx1",
+            "ZRgCIAEoCzIhLnYycmF5LmNvcmUuY29tbW9uLm5ldC5JUE9yRG9tYWluOgI4",
+            "ARp3CgtIb3N0TWFwcGluZxI0CgR0eXBlGAEgASgOMiYudjJyYXkuY29yZS5h",
+            "cHAuZG5zLkRvbWFpbk1hdGNoaW5nVHlwZRIOCgZkb21haW4YAiABKAkSCgoC",
+            "aXAYAyADKAwSFgoOcHJveGllZF9kb21haW4YBCABKAkqRQoSRG9tYWluTWF0",
+            "Y2hpbmdUeXBlEggKBEZ1bGwQABINCglTdWJkb21haW4QARILCgdLZXl3b3Jk",
+            "EAISCQoFUmVnZXgQA0I0ChZjb20udjJyYXkuY29yZS5hcHAuZG5zUAFaA2Ru",
+            "c6oCElYyUmF5LkNvcmUuQXBwLkRuc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.AddressReflection.Descriptor, global::V2Ray.Core.Common.Net.DestinationReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::V2Ray.Core.Common.Net.AddressReflection.Descriptor, global::V2Ray.Core.Common.Net.DestinationReflection.Descriptor, global::V2Ray.Core.App.Router.ConfigReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::V2Ray.Core.App.Dns.DomainMatchingType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer), global::V2Ray.Core.App.Dns.NameServer.Parser, new[]{ "Address", "PrioritizedDomain" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain), global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain.Parser, new[]{ "Type", "Domain" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer), global::V2Ray.Core.App.Dns.NameServer.Parser, new[]{ "Address", "PrioritizedDomain", "Geoip" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain), global::V2Ray.Core.App.Dns.NameServer.Types.PriorityDomain.Parser, new[]{ "Type", "Domain" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config), global::V2Ray.Core.App.Dns.Config.Parser, new[]{ "NameServers", "NameServer", "Hosts", "ClientIp", "StaticHosts", "Tag" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, new pbr::GeneratedClrTypeInfo(typeof(global::V2Ray.Core.App.Dns.Config.Types.HostMapping), global::V2Ray.Core.App.Dns.Config.Types.HostMapping.Parser, new[]{ "Type", "Domain", "Ip", "ProxiedDomain" }, null, null, null, null)})
           }));
     }
@@ -94,6 +96,7 @@ namespace V2Ray.Core.App.Dns {
     public NameServer(NameServer other) : this() {
       address_ = other.address_ != null ? other.address_.Clone() : null;
       prioritizedDomain_ = other.prioritizedDomain_.Clone();
+      geoip_ = other.geoip_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -123,6 +126,16 @@ namespace V2Ray.Core.App.Dns {
       get { return prioritizedDomain_; }
     }
 
+    /// <summary>Field number for the "geoip" field.</summary>
+    public const int GeoipFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::V2Ray.Core.App.Router.GeoIP> _repeated_geoip_codec
+        = pb::FieldCodec.ForMessage(26, global::V2Ray.Core.App.Router.GeoIP.Parser);
+    private readonly pbc::RepeatedField<global::V2Ray.Core.App.Router.GeoIP> geoip_ = new pbc::RepeatedField<global::V2Ray.Core.App.Router.GeoIP>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::V2Ray.Core.App.Router.GeoIP> Geoip {
+      get { return geoip_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as NameServer);
@@ -138,6 +151,7 @@ namespace V2Ray.Core.App.Dns {
       }
       if (!object.Equals(Address, other.Address)) return false;
       if(!prioritizedDomain_.Equals(other.prioritizedDomain_)) return false;
+      if(!geoip_.Equals(other.geoip_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -146,6 +160,7 @@ namespace V2Ray.Core.App.Dns {
       int hash = 1;
       if (address_ != null) hash ^= Address.GetHashCode();
       hash ^= prioritizedDomain_.GetHashCode();
+      hash ^= geoip_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -164,6 +179,7 @@ namespace V2Ray.Core.App.Dns {
         output.WriteMessage(Address);
       }
       prioritizedDomain_.WriteTo(output, _repeated_prioritizedDomain_codec);
+      geoip_.WriteTo(output, _repeated_geoip_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -176,6 +192,7 @@ namespace V2Ray.Core.App.Dns {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Address);
       }
       size += prioritizedDomain_.CalculateSize(_repeated_prioritizedDomain_codec);
+      size += geoip_.CalculateSize(_repeated_geoip_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -194,6 +211,7 @@ namespace V2Ray.Core.App.Dns {
         Address.MergeFrom(other.Address);
       }
       prioritizedDomain_.Add(other.prioritizedDomain_);
+      geoip_.Add(other.geoip_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -214,6 +232,10 @@ namespace V2Ray.Core.App.Dns {
           }
           case 18: {
             prioritizedDomain_.AddEntriesFrom(input, _repeated_prioritizedDomain_codec);
+            break;
+          }
+          case 26: {
+            geoip_.AddEntriesFrom(input, _repeated_geoip_codec);
             break;
           }
         }
@@ -472,7 +494,7 @@ namespace V2Ray.Core.App.Dns {
     public const int ClientIpFieldNumber = 3;
     private pb::ByteString clientIp_ = pb::ByteString.Empty;
     /// <summary>
-    /// Client IP for EDNS client subnet. Must be 4 bytes (IPv4) or 16 bytes (IPv6). 
+    /// Client IP for EDNS client subnet. Must be 4 bytes (IPv4) or 16 bytes (IPv6).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pb::ByteString ClientIp {
